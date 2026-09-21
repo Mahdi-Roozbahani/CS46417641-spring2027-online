@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project Breakdown on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</title>
+    <link>/docs/grading/project-breakdown/</link>
+    <description>Recent content in Project Breakdown on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/docs/grading/project-breakdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proposal</title>
+      <link>/docs/grading/project-breakdown/proposal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/proposal/</guid>
+      <description>Project Proposal and Team Charter - 5% # The primary goal of the proposal is to define a meaningful machine-learning, artificial-intelligence, or deep-learning problem and establish a feasible plan for completing the project during the semester.
+The proposal should identify the problem, relevant prior work, data, proposed methods, evaluation strategy, major risks, and responsibilities of each team member.
+Research projects naturally evolve. The final project does not need to remain identical to the original proposal.</description>
+    </item>
+    
+    <item>
+      <title>Midterm Checkpoint</title>
+      <link>/docs/grading/project-breakdown/midterm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/midterm/</guid>
+      <description>Midterm Project Report - 10% # The midterm report is a major project checkpoint. By this point, the team must have progressed beyond planning and must provide concrete evidence of implementation and experimentation.
+At minimum, the team should have prepared the data, implemented a working experimental pipeline, and evaluated at least one meaningful baseline or model.
+The midterm report should update and extend the proposal rather than repeat it without revision.</description>
+    </item>
+    
+    <item>
+      <title>Final Report</title>
+      <link>/docs/grading/project-breakdown/final/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/final/</guid>
+      <description>Final Project Submission and Presentation - 35% # The final project stage consists of two required components:
+Component Course weight Final website, report, code, and reproducibility package 25% Final presentation and individual project-wide Q&amp;amp;A 10% Final-stage total 35% The final submission should present a complete, carefully evaluated project and clearly explain what the team attempted, what was implemented, what evidence was obtained, what failed, and what was learned.
+The final report should update and extend the midterm report.</description>
+    </item>
+    
+    <item>
+      <title>Project TA Meeting</title>
+      <link>/docs/grading/project-breakdown/project-ta-meeting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/project-ta-meeting/</guid>
+      <description>Required TA Progress Meeting - 5% # This is the first of exactly two required TA interactions. It takes place after the project proposal and before the midterm project report.
+Every team member must attend and must be prepared to answer individual questions about any part of the project. The individual Q&amp;amp;A is graded separately for each student. A student who cannot demonstrate sufficient understanding of the project may receive a lower score than the other members of the same team.</description>
+    </item>
+    
+    <item>
+      <title>Bonus</title>
+      <link>/docs/grading/project-breakdown/project-bonus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/project-bonus/</guid>
+      <description>Optional Advanced Project Bonus - Up to +5% # The project bonus is added on top of the required 100% course grade.
+Required coursework: 100%. Maximum project bonus: +5 course percentage points. Maximum possible final course score: 105%. The bonus is intended to provide a meaningful cushion and reward teams that take their project beyond the complete required standard. It is optional. A strong project may earn full credit for the required 55% without earning bonus points.</description>
+    </item>
+    
+    <item>
+      <title>Awards Galore</title>
+      <link>/docs/grading/project-breakdown/award_galore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/award_galore/</guid>
+      <description>Why Awards Matter # Awards serve as a tangible recognition of the dedication and creativity students bring to their machine learning projects. Each semester, these select honors are chosen from among hundreds of submitted projects, making the competition fierce and underscoring the ingenuity and motivation of participating teams. By highlighting outstanding work, we encourage students to push boundaries, refine technical skills, and communicate findings more effectively.
+This recognition also benefits students’ academic and professional growth—award recipients can feature their projects on resumes and link directly to showcased work for added visibility.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,160 @@
+generatedYear: 2026
+tableRows:
+- 1:
+  Week: 1
+  Dates: 5/18 - 5/22
+  Topics:
+  - '[Course Overview](/course/nimisha/01-introduction.pdf) ([Notes](/course/nimisha/01-introduction-note.pdf),L1)'
+  - '[Data analysis toolbox - Part 1](/course/nimisha/02-data_analysis_toolbox1.ipynb) ([Notes](/course/nimisha/02-data_analysis_toolbox1-note.pdf),L2)'
+  Readings:
+  - '[GT Honor Code](https://policies.gatech.edu/student-life/academic-honor-code)'
+  - '[Debugging Common Errors in NumPy](/other/Debugging_Common_Errors_in_NumPy.ipynb)'
+  - '[Heilmeier Catechism](https://www.darpa.mil/about/heilmeier-catechism)'
+  - '[GitHub Pages Quickstart](https://docs.github.com/en/pages/quickstart)'
+  - '[YAML Configuration](https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml)'
+  - '[NumPy Tutorial](https://cs231n.github.io/python-numpy-tutorial/)'
+  - '[seaborn: statistical data visualization](https://seaborn.pydata.org/)'
+  - '[Overleaf for GT students](https://www.overleaf.com/edu/gatech)'
+  Quizzes: Q0 - L1,L2 (Warmup)
+- 2:
+  Week: 2
+  Dates: 5/25 - 5/29
+  Topics:
+  - '[Linear Algebra](/course/nimisha/03-linear-algebra.pdf) ([Notes](/course/nimisha/03-linear-algebra-note.pdf), L3)'
+  - '[Probability and Statistics](/course/nimisha/04-probability.pdf) ([Notes](/course/nimisha/04-probability-note.pdf), L4)'
+  Homework:
+  - A1 out 5/25
+  Project:
+  - Project team composition due 5/29
+  Readings:
+  - '[Linear Algebra Review by Zico Kolter](https://cs229.stanford.edu/section/cs229-linalg.pdf)'
+  - '[Correlation vs Covariance](https://stats.stackexchange.com/questions/18082/how-would-you-explain-the-difference-between-correlation-and-covariance)'
+  - '[Independence, Correlation, Orthogonality](https://www.youtube.com/watch?v=s5lCl3aQ_A4&ab_channel=linanhuang)'
+  Quizzes: Q1 - L3 & Syllabus Quiz
+- 3:
+  Week: 3
+  Dates: 6/1 - 6/5
+  Topics:
+  - Memorial Day Holiday
+  - '[Information Theory](/course/nimisha/05-info-theory.pdf) ([Notes](/course/nimisha/05-info-theory-note.pdf), L5)'
+  - '[Optimization](/course/nimisha/06-optimization.pdf) ([Notes](/course/nimisha/06-optimization-note.pdf), L6)'
+  Homework: null
+  Readings:
+  - '[The Differences Between Data, Information and Knowledge](https://web.archive.org/web/20210107132902/http://www.infogineering.net/data-information-knowledge.htm)'
+  - '[Visual Information Theory by Chris Olah](http://colah.github.io/posts/2015-09-Visual-Information/)'
+  - '[Understand Cross Entropy Loss in Minutes](https://medium.com/data-science-bootcamp/understand-cross-entropy-loss-in-minutes-9fb263caee9a)'
+  - '[More about Cross Entropy and KLD](https://machinelearningmastery.com/cross-entropy-for-machine-learning/)'
+  - '[KKT for inequality constrained optimization](https://www.youtube.com/watch?v=TqN-8fxYUYY)'
+  - '[Gradient Descent short video](/other/GD%20and%20momentum.mp4)'
+  Quizzes: Q2 - L4
+- 4:
+  Week: 4
+  Dates: 6/8 - 6/12
+  Topics:
+  - '[Toolbox - Part 2](/course/nimisha/07-data_analysis_toolbox2.ipynb) (L7)'
+  - '[Clustering & K-Means](/course/nimisha/08-clustering.pdf) ([Notes](/course/nimisha/08-clustering-note.pdf) L8)'
+  Homework:
+  - '**A1 due 6/12**'
+  - A2 out 6/12
+  Project: null
+  Readings:
+  - '[Matplotlib Tutorials](https://matplotlib.org/stable/tutorials/index.html)'
+  - '[seaborn: statistical data visualization](https://seaborn.pydata.org/)'
+  Quizzes: Q3 - L5 (CE and KL slides included)
+- 5:
+  Week: 5
+  Dates: 6/15 - 6/19
+  Topics:
+  - '[Gaussian Mixture Model - Part 1](/course/nimisha/09-gaussian-mixture.pdf) ([Notes](/course/nimisha/09-gaussian-mixture-note.pdf) L9)'
+  - '[Gaussian Mixture Model - Part 2](/course/nimisha/09-gaussian-mixture.pdf) ([Notes](/course/nimisha/09-gaussian-mixture-note.pdf) L10)'
+  Homework: null
+  Project:
+  - Project proposal due 6/19
+  - Peer Evaluation 6/24
+  Quizzes: Q4 - L6,L7 (includes toolbox 1),L8
+- 6:
+  Week: 6
+  Dates: 6/22 - 6/26
+  Topics:
+  - '[Hierarchical Clustering](/course/nimisha/10-hierarchical-clustering.pdf) ([Notes](/course/nimisha/10-hierarchical-clustering-note.pdf) L11)'
+  - '[Density-Based Spatial Clustering (DBSCAN)](/course/nimisha/11-density-clustering.pdf) ([Notes](/course/nimisha/11-density-clustering-note.pdf) L12)'
+  - Juneteenth Holiday
+  Readings:
+  - '[Understanding the concept of Hierarchical clustering Technique](https://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec)'
+  - '[Dendrogram Visualization](https://www.data-to-viz.com/graph/dendrogram.html)'
+  - '[Jupyter Notebook: K-Means and DBSCAN](/other/06-and-08-plot_dbscan.ipynb)'
+  Quizzes: Q5 - L9,L10
+- 7:
+  Week: 7
+  Dates: 6/29 - 7/3
+  Topics:
+  - '[Clustering Evaluation](/course/nimisha/12-clustering-evaluation.pdf) ([Notes](/course/nimisha/12-clustering-evaluation-note.pdf) L13)'
+  - '[Dimension Reduction](/course/nimisha/14-dimension-reduction.pdf) ([Notes](/course/nimisha/14-dimension-reduction-note.pdf) L14)'
+  Homework:
+  - '**A2 due 7/3**'
+  - A3 out 7/3
+  Project: null
+  Readings:
+  - '[Image reconstruction using Principal Component Analysis](https://stats.stackexchange.com/questions/229092/how-to-reverse-pca-and-reconstruct-original-variables-from-several-principal-com)'
+  - '[Feature extraction using Principal Component Analysis](https://www.visiondummy.com/2014/05/feature-extraction-using-pca/)'
+  - '[Principal Component Analysis for images](https://people.ciirc.cvut.cz/~hlavac/TeachPresEn/11ImageProc/15PCA.pdf)'
+  - '[Principal Component Analysis as linear combination of features](/other/pca_linear.pdf)'
+  - '[Principal Component Analysis and Linear Discriminant Analysis](/other/lda.pdf)'
+  Quizzes: Q6 - L11,L12
+- 8:
+  Week: 8
+  Dates: 7/6 - 7/10
+  Topics:
+  - '[Linear Regression](/course/nimisha/15-linear-regression.pdf) ([Notes](/course/nimisha/15-linear-regression-note.pdf) L15)'
+  - '[Regularization](/course/nimisha/16-regularized-regression.pdf) ([Notes](/course/nimisha/16-regularized-regression-note.pdf) L16)'
+  - '[Project Practical Advice](/course/nimisha/175-practical-advice.pdf)'
+  Project:
+  - Project midpoint report 7/10 ( **Note:** You may submit it without penalty until 7/13. )
+  - Peer Evaluation 7/17
+  Readings:
+  - '[Simple Linear Regression in Matrix Format](/other/regression-cmu.pdf)'
+  - '[Adding Noise to Regression Predictors](http://madrury.github.io/jekyll/update/statistics/2017/08/12/noisy-regression.html)'
+  Quizzes: Q7 - L13 (out 10/15 and same due as others)
+- 9:
+  Week: 9
+  Dates: 7/13 - 7/17
+  Topics:
+  - '[Naive Bayes and Logistic Regression](/course/nimisha/17-logistic-regression.pdf) ([Notes](/course/nimisha/17-logistic-regression-note.pdf), L17)'
+  - '[Neural Networks](/course/nimisha/18-neural-network.pdf) ([Notes](/course/nimisha/18-neural-network-note.pdf) L18)'
+  Homework:
+  - '**A3 due 7/17**'
+  - A4 out 7/17
+  Readings:
+  - '[Why Cross Entropy over MSE for Classification](https://susanqq.github.io/tmp_post/2017-09-05-crossentropyvsmes/)'
+  - '[Understand Cross Entropy Loss in Minutes](https://medium.com/data-science-bootcamp/understand-cross-entropy-loss-in-minutes-9fb263caee9a)'
+  - '[More about Cross Entropy and KLD](https://machinelearningmastery.com/cross-entropy-for-machine-learning/)'
+  - '[Neural Network Playground](https://playground.tensorflow.org/)'
+  - '[Initializing neural networks](https://www.deeplearning.ai/ai-notes/initialization/index.html)'
+  - '[Back propagation numerical example](https://hmkcode.com/ai/backpropagation-step-by-step/)'
+  - '[More detailed introduction](/other/nn-intro.pdf)'
+  Quizzes: Q8 - L15 | Q9 - L16
+- 10:
+  Week: 10
+  Dates: 7/20 - 7/24
+  Topics:
+  - '[Convolutional Neural Network](/course/nimisha/19-neural-network-cnn.pdf) ([Notes](/course/nimisha/19-neural-network-cnn-note.pdf) L19)'
+  - '[Decision Tree](/course/nimisha/20-decision-tree.pdf) and [Random Forest](/course/nimisha/21-ensemble-learning-randomforest.pdf) (Notes [Decision Tree](/course/nimisha/20-decision-tree-note.pdf) & [Random Forest](/course/nimisha/21-ensemble-learning-randomforest-note.pdf), L20)'
+  Readings:
+  - '[Convolutional Neural Network Live Demo](https://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html)'
+  - '[A guide to efficient convolutional neural network hyper-parameter tuning](https://towardsdatascience.com/a-guide-to-an-efficient-way-to-build-neural-network-architectures-part-ii-hyper-parameter-42efca01e5d7)'
+  - '[Back Propagation in Convolutional Neural Networks](https://www.jefkine.com/general/2016/09/05/backpropagation-in-convolutional-neural-networks/)'
+  Quizzes: Q10 - L17 | Q11 - L18,L19
+- 11:
+  Week: 11
+  Dates: 7/27 - 7/28
+  Topics:
+  - '[Support Vector Machine](/course/nimisha/22-svm.pdf) ([Notes](/course/nimisha/22-svm-note.pdf), L21)'
+  - '[Support Vector Machine Kernel- recorded video on Canvas](/course/nimisha/23-svm-kernel.pdf) ([Notes](/course/nimisha/23-svm-kernel-note.pdf), L22)'
+  - Final Instructional Day
+  Homework:
+  - '**A4 due 7/27** can submit till 7/31 without any penalty'
+  Project:
+  - Final Project due 7/28
+  - Peer Evaluation due 7/28
+  Readings:
+  - '[KKT and Support Vector Machines](/other/kkt-svm-stanford.pdf)'

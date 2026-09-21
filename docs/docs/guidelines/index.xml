@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guidelines on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</title>
+    <link>/docs/guidelines/</link>
+    <description>Recent content in Guidelines on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/docs/guidelines/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General</title>
+      <link>/docs/guidelines/general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/guidelines/general/</guid>
+      <description>General Course Policies # Online and Asynchronous Participation # All core lectures are pre-recorded. There is no required live lecture attendance. Students are responsible for watching the assigned videos, studying the lecture notes, completing assessments within their availability windows, and participating in the team project.
+Because this is an asynchronous course with students in many time zones, routine deadlines use Anywhere on Earth so every student can use the full listed calendar date.</description>
+    </item>
+    
+    <item>
+      <title>Office Hours</title>
+      <link>/docs/guidelines/office-hours/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/guidelines/office-hours/</guid>
+      <description>Online Office Hours # Office hours are optional, online, and designed to provide focused help without requiring students to reserve spreadsheet time slots.
+How an Office-Hour Session Works # A TA posts an Ed thread announcing that the office-hour session has started. The title will identify the TA, date, time, and general topic if the session has a focus. Students who need help reply to that thread with a short description of the question.</description>
+    </item>
+    
+  </channel>
+</rss>

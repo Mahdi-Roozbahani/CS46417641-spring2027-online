@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resources on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</title>
+    <link>/docs/resources/</link>
+    <description>Recent content in Resources on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/docs/resources/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Collection</title>
+      <link>/docs/resources/collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/resources/collection/</guid>
+      <description>GT Resources # For any resources related to Student Engagement and Wellbeing such as Dean of Student&amp;rsquo;s contacts, Library, etc., please refer to this LINK
+Class Resources # Required Course Materials # No textbook will be required for this course, however you are strongly encouraged to complete the readings indicated for each class. You may also find the following books very helpful:
+Learning from data, by Yaser S. Abu-Mostafa Pattern recognition and machine learning, by Christopher Bishop Machine learning, by Tom Mitchell Data Mining: Concepts and Techniques, by Jiawei Han, Micheline Kamber, and Jian Pei The Elements of Statistical Learning, by Trevor Hastie, Robert Tibshirani, and Jerome Friedman Deep Learning, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville Other resources, such as machine learning toolboxes and datasets, will be provided throughout the course.</description>
+    </item>
+    
+    <item>
+      <title>Print Website</title>
+      <link>/docs/resources/print-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/resources/print-website/</guid>
+      <description>Print Website # Choose the pages you want, preview the combined document, and then use your browser&amp;rsquo;s print dialog to save it as a PDF.</description>
+    </item>
+    
+  </channel>
+</rss>

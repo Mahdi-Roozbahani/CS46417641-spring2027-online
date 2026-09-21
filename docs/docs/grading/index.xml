@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grading on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</title>
+    <link>/docs/grading/</link>
+    <description>Recent content in Grading on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/docs/grading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Categories</title>
+      <link>/docs/grading/categories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/categories/</guid>
+      <description>Grading Categories # Required Course Grade # The required course components total 100%.
+Component Weight 14 graded weekly quizzes 20% Midterm exam 12.5% Final exam 12.5% Required semester project 55% Required total 100% Optional Project Bonus # Students may earn up to 5 additional course percentage points for exceptional optional work in the semester project.
+The bonus is added on top of the required 100%. It is not included inside the required 55% project.</description>
+    </item>
+    
+  </channel>
+</rss>

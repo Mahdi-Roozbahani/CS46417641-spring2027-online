@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</title>
+    <link>/</link>
+    <description>Recent content in Home on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Categories</title>
+      <link>/docs/grading/categories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/categories/</guid>
+      <description>Grading Categories # Required Course Grade # The required course components total 100%.
+Component Weight 14 graded weekly quizzes 20% Midterm exam 12.5% Final exam 12.5% Required semester project 55% Required total 100% Optional Project Bonus # Students may earn up to 5 additional course percentage points for exceptional optional work in the semester project.
+The bonus is added on top of the required 100%. It is not included inside the required 55% project.</description>
+    </item>
+    
+    <item>
+      <title>Collection</title>
+      <link>/docs/resources/collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/resources/collection/</guid>
+      <description>GT Resources # For any resources related to Student Engagement and Wellbeing such as Dean of Student&amp;rsquo;s contacts, Library, etc., please refer to this LINK
+Class Resources # Required Course Materials # No textbook will be required for this course, however you are strongly encouraged to complete the readings indicated for each class. You may also find the following books very helpful:
+Learning from data, by Yaser S. Abu-Mostafa Pattern recognition and machine learning, by Christopher Bishop Machine learning, by Tom Mitchell Data Mining: Concepts and Techniques, by Jiawei Han, Micheline Kamber, and Jian Pei The Elements of Statistical Learning, by Trevor Hastie, Robert Tibshirani, and Jerome Friedman Deep Learning, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville Other resources, such as machine learning toolboxes and datasets, will be provided throughout the course.</description>
+    </item>
+    
+    <item>
+      <title>Course Overview</title>
+      <link>/docs/course-info/course-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/course-info/course-overview/</guid>
+      <description>Course Overview # Important
+CSE students should note that CS 7641 is not allowed as a substitute for the CSE core course CSE 6740, and that they cannot get credit for both CSE 6740 and CS 7641. Course Description # This course introduces techniques in machine learning with an emphasis on algorithms and their applications to real-world data. We will investigate the following question: how to computationally extract useful knowledge from data for decision making and task support!</description>
+    </item>
+    
+    <item>
+      <title>General</title>
+      <link>/docs/guidelines/general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/guidelines/general/</guid>
+      <description>General Course Policies # Online and Asynchronous Participation # All core lectures are pre-recorded. There is no required live lecture attendance. Students are responsible for watching the assigned videos, studying the lecture notes, completing assessments within their availability windows, and participating in the team project.
+Because this is an asynchronous course with students in many time zones, routine deadlines use Anywhere on Earth so every student can use the full listed calendar date.</description>
+    </item>
+    
+    <item>
+      <title>Proposal</title>
+      <link>/docs/grading/project-breakdown/proposal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/proposal/</guid>
+      <description>Project Proposal and Team Charter - 5% # The primary goal of the proposal is to define a meaningful machine-learning, artificial-intelligence, or deep-learning problem and establish a feasible plan for completing the project during the semester.
+The proposal should identify the problem, relevant prior work, data, proposed methods, evaluation strategy, major risks, and responsibilities of each team member.
+Research projects naturally evolve. The final project does not need to remain identical to the original proposal.</description>
+    </item>
+    
+    <item>
+      <title>Midterm Checkpoint</title>
+      <link>/docs/grading/project-breakdown/midterm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/midterm/</guid>
+      <description>Midterm Project Report - 10% # The midterm report is a major project checkpoint. By this point, the team must have progressed beyond planning and must provide concrete evidence of implementation and experimentation.
+At minimum, the team should have prepared the data, implemented a working experimental pipeline, and evaluated at least one meaningful baseline or model.
+The midterm report should update and extend the proposal rather than repeat it without revision.</description>
+    </item>
+    
+    <item>
+      <title>Office Hours</title>
+      <link>/docs/guidelines/office-hours/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/guidelines/office-hours/</guid>
+      <description>Online Office Hours # Office hours are optional, online, and designed to provide focused help without requiring students to reserve spreadsheet time slots.
+How an Office-Hour Session Works # A TA posts an Ed thread announcing that the office-hour session has started. The title will identify the TA, date, time, and general topic if the session has a focus. Students who need help reply to that thread with a short description of the question.</description>
+    </item>
+    
+    <item>
+      <title>People</title>
+      <link>/docs/course-info/instructors-and-tas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/course-info/instructors-and-tas/</guid>
+      <description> People # Instructors # Max Mahdi Roozbahani https://mahdi-roozbahani.github.io/ </description>
+    </item>
+    
+    <item>
+      <title>Print Website</title>
+      <link>/docs/resources/print-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/resources/print-website/</guid>
+      <description>Print Website # Choose the pages you want, preview the combined document, and then use your browser&amp;rsquo;s print dialog to save it as a PDF.</description>
+    </item>
+    
+    <item>
+      <title>Course Schedule (Mahdi)</title>
+      <link>/docs/course-info/course-schedule-mahdi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/course-info/course-schedule-mahdi/</guid>
+      <description>Schedule # Important
+All deadline and due dates in this course will be at 23:59 EST. Scroll horizontally to see the full schedule table on mobile devices Week Dates Topics (Available on canvas) Quizzes Exam Project Readings 1 Jan 11-15 Course Overview (L1) Data analysis toolbox - Part 1 (L2) Q0 - L1,L2 (Warmup) GT Honor Code Debugging Common Errors in NumPy Heilmeier Catechism GitHub Pages Quickstart YAML Configuration NumPy Tutorial seaborn: statistical data visualization Overleaf for GT students 2 Jan 18-22 Linear Algebra (Notes, L3) Probability and Statistics (Notes, L4) Official institute holiday &amp;ndash; Martin Luther King, Jr.</description>
+    </item>
+    
+    <item>
+      <title>Final Report</title>
+      <link>/docs/grading/project-breakdown/final/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/final/</guid>
+      <description>Final Project Submission and Presentation - 35% # The final project stage consists of two required components:
+Component Course weight Final website, report, code, and reproducibility package 25% Final presentation and individual project-wide Q&amp;amp;A 10% Final-stage total 35% The final submission should present a complete, carefully evaluated project and clearly explain what the team attempted, what was implemented, what evidence was obtained, what failed, and what was learned.
+The final report should update and extend the midterm report.</description>
+    </item>
+    
+    <item>
+      <title>Project TA Meeting</title>
+      <link>/docs/grading/project-breakdown/project-ta-meeting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/project-ta-meeting/</guid>
+      <description>Required TA Progress Meeting - 5% # This is the first of exactly two required TA interactions. It takes place after the project proposal and before the midterm project report.
+Every team member must attend and must be prepared to answer individual questions about any part of the project. The individual Q&amp;amp;A is graded separately for each student. A student who cannot demonstrate sufficient understanding of the project may receive a lower score than the other members of the same team.</description>
+    </item>
+    
+    <item>
+      <title>Bonus</title>
+      <link>/docs/grading/project-breakdown/project-bonus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/project-bonus/</guid>
+      <description>Optional Advanced Project Bonus - Up to +5% # The project bonus is added on top of the required 100% course grade.
+Required coursework: 100%. Maximum project bonus: +5 course percentage points. Maximum possible final course score: 105%. The bonus is intended to provide a meaningful cushion and reward teams that take their project beyond the complete required standard. It is optional. A strong project may earn full credit for the required 55% without earning bonus points.</description>
+    </item>
+    
+    <item>
+      <title>Awards Galore</title>
+      <link>/docs/grading/project-breakdown/award_galore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/award_galore/</guid>
+      <description>Why Awards Matter # Awards serve as a tangible recognition of the dedication and creativity students bring to their machine learning projects. Each semester, these select honors are chosen from among hundreds of submitted projects, making the competition fierce and underscoring the ingenuity and motivation of participating teams. By highlighting outstanding work, we encourage students to push boundaries, refine technical skills, and communicate findings more effectively.
+This recognition also benefits students’ academic and professional growth—award recipients can feature their projects on resumes and link directly to showcased work for added visibility.</description>
+    </item>
+    
+  </channel>
+</rss>

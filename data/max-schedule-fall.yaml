@@ -1,0 +1,179 @@
+generatedYear: 2026
+tableRows:
+- 1:
+  Week: 1
+  Dates: Aug 24-28
+  Topics:
+  - '[Course Overview](/course/max/01-introduction.pdf) (L1)'
+  - '[Data analysis toolbox - Part 1](/course/max/02-numpy_broadcasting_tutorial.ipynb) (L2)'
+  Readings:
+  - '[GT Honor Code](https://policies.gatech.edu/student-life/academic-honor-code)'
+  - '[Debugging Common Errors in NumPy](/other/Debugging_Common_Errors_in_NumPy.ipynb)'
+  - '[Heilmeier Catechism](https://www.darpa.mil/about/heilmeier-catechism)'
+  - '[GitHub Pages Quickstart](https://docs.github.com/en/pages/quickstart)'
+  - '[YAML Configuration](https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml)'
+  - '[NumPy Tutorial](https://cs231n.github.io/python-numpy-tutorial/)'
+  - '[seaborn: statistical data visualization](https://seaborn.pydata.org/)'
+  - '[Overleaf for GT students](https://www.overleaf.com/edu/gatech)'
+  Quizzes: Q0 - L1,L2 (Warmup)
+- 2:
+  Week: 2
+  Dates: Aug 31-Sep 4
+  Topics:
+  - '[Linear Algebra](/course/max/03-linear-algebra.pdf) ([Notes](/course/max/03-linear-algebra-note.pdf), L3)'
+  Readings:
+  - '[Linear Algebra Review by Zico Kolter](https://cs229.stanford.edu/section/cs229-linalg.pdf)'
+  Quizzes: Q1 - L3 & Syllabus Quiz
+- 3:
+  Week: 3
+  Dates: Sep 7-11
+  Topics:
+  - '[Probability and Statistics](/course/max/04-probability.pdf) ([Notes](/course/max/04-probability-note.pdf), L4)'
+  Homework:
+  - A1 out Sep 8
+  Readings:
+  - '[Correlation vs Covariance](https://stats.stackexchange.com/questions/18082/how-would-you-explain-the-difference-between-correlation-and-covariance)'
+  - '[Independence, Correlation, Orthogonality](https://www.youtube.com/watch?v=s5lCl3aQ_A4&ab_channel=linanhuang)'
+  Quizzes: Q2 - L4
+- 4:
+  Week: 4
+  Dates: Sep 14-18
+  Topics:
+  - '[Information Theory](/course/max/05-info-theory.pdf) ([Notes](/course/max/05-info-theory-note.pdf), L5)'
+  - '[Optimization](/course/max/06-optimization.pdf) (L6)'
+  Readings:
+  - '[The Differences Between Data, Information and Knowledge](https://web.archive.org/web/20210107132902/http://www.infogineering.net/data-information-knowledge.htm)'
+  - '[Visual Information Theory by Chris Olah](http://colah.github.io/posts/2015-09-Visual-Information/)'
+  - '[Understand Cross Entropy Loss in Minutes](https://medium.com/data-science-bootcamp/understand-cross-entropy-loss-in-minutes-9fb263caee9a)'
+  - '[More about Cross Entropy and KLD](https://machinelearningmastery.com/cross-entropy-for-machine-learning/)'
+  - '[KKT for inequality constrained optimization](https://www.youtube.com/watch?v=TqN-8fxYUYY)'
+  - '[Gradient Descent short video](/other/GD%20and%20momentum.mp4)'
+  Quizzes: Q3 - L5,L6
+- 5:
+  Week: 5
+  Dates: Sep 21-25
+  Topics:
+  - '[Toolbox - Part 2](/course/max/02-numpy_broadcasting_tutorial.ipynb) (L7)'
+  - '[Clustering & K-Means](/course/max/08-clustering.pdf) ([Notes](/course/max/08-clustering-note.pdf) L8)'
+  Homework:
+  - '**A1 due Sept-25**'
+  - A2 out Sept-25
+  Readings:
+  - '[Matplotlib Tutorials](https://matplotlib.org/stable/tutorials/index.html)'
+  - '[seaborn: statistical data visualization](https://seaborn.pydata.org/)'
+  Quizzes: Q4 - L7,L8
+- 6:
+  Week: 6
+  Dates: Sep 28-Oct 2
+  Topics:
+  - '[Gaussian Mixture Model](/course/max/09-gaussian-mixture.pdf) ([Notes](/course/max/09-gaussian-mixture-note.pdf) L9)'
+  Quizzes: Q5 - L9
+- 7:
+  Week: 7
+  Dates: Oct 5-9
+  Topics:
+  - '[Hierarchical Clustering](/course/max/10-hierarchical-clustering.pdf) ([Notes](/course/max/10-hierarchical-clustering-note.pdf) L10)'
+  - '[Density-Based Spatial Clustering (DBSCAN)](/course/max/11-density-clustering.pdf) ([Notes](/course/max/11-density-clustering-note.pdf) L11)'
+  Readings:
+  - '[Understanding the concept of Hierarchical clustering Technique](https://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec)'
+  - '[Dendrogram Visualization](https://www.data-to-viz.com/graph/dendrogram.html)'
+  - '[Jupyter Notebook: K-Means and DBSCAN](/other/06-and-08-plot_dbscan.ipynb)'
+  Quizzes: Q6 - L10,L11
+- 8:
+  Week: 8
+  Dates: Oct 12-16
+  Topics:
+  - Fall Break (Oct 12-13)
+  - '[Clustering Evaluation](/course/max/12-clustering-evaluation.pdf) ([Notes](/course/max/12-clustering-evaluation-note.pdf) L12)'
+  Quizzes: Q7 - L12
+- 9:
+  Week: 9
+  Dates: Oct 19-23
+  Topics:
+  - '[Density Estimation](/course/max/13-density-estimation.pdf) ([Notes](/course/max/13-density-estimation-note.pdf) L13)'
+  - '[Dimension Reduction](/course/max/14-dimension-reduction.pdf) ([Notes](/course/max/14-dimension-reduction-note.pdf) L14)'
+  Homework:
+  - '**A2 due Oct 23**'
+  - A3 out Oct 23
+  Exam:
+  - Closed-book midterm exam released Monday of this week; available for 1 week; covers all material through Dimension Reduction; details on Canvas
+  Readings:
+  - '[KDE interactive visualization](https://mathisonian.github.io/kde/)'
+  - '[KDE sampling](https://stats.stackexchange.com/questions/321542/how-can-i-draw-a-value-randomly-from-a-kernel-density-estimate)'
+  - '[KernelDensity in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KernelDensity.html)'
+  - '[Image reconstruction using Principal Component Analysis](https://stats.stackexchange.com/questions/229092/how-to-reverse-pca-and-reconstruct-original-variables-from-several-principal-com)'
+  - '[Feature extraction using Principal Component Analysis](https://www.visiondummy.com/2014/05/feature-extraction-using-pca/)'
+  - '[Principal Component Analysis for images](https://people.ciirc.cvut.cz/~hlavac/TeachPresEn/11ImageProc/15PCA.pdf)'
+  - '[Principal Component Analysis as linear combination of features](/other/pca_linear.pdf)'
+  - '[Principal Component Analysis and Linear Discriminant Analysis](/other/lda.pdf)'
+  Quizzes: Q8 - L13,L14
+- 10:
+  Week: 10
+  Dates: Oct 26-30
+  Topics:
+  - '[Linear Regression](/course/max/15-linear-regression.pdf) ([Notes](/course/max/15-linear-regression-note.pdf) L15)'
+  - '[Regularization](/course/max/16-regularized-regression.pdf) ([Notes](/course/max/16-regularized-regression-note.pdf) L16)'
+  Readings:
+  - '[Simple Linear Regression in Matrix Format](/other/regression-cmu.pdf)'
+  - '[Adding Noise to Regression Predictors](http://madrury.github.io/jekyll/update/statistics/2017/08/12/noisy-regression.html)'
+  Quizzes: Q9 - L15,L16
+- 11:
+  Week: 11
+  Dates: Nov 2-6
+  Topics:
+  - '[Naive Bayes and Logistic Regression](/course/max/17-logistic-regression.pdf) ([Notes](/course/max/17-logistic-regression-note.pdf) L17)'
+  Readings:
+  - '[Why Cross Entropy over MSE for Classification](https://susanqq.github.io/tmp_post/2017-09-05-crossentropyvsmes/)'
+  - '[Understand Cross Entropy Loss in Minutes](https://medium.com/data-science-bootcamp/understand-cross-entropy-loss-in-minutes-9fb263caee9a)'
+  - '[More about Cross Entropy and KLD](https://machinelearningmastery.com/cross-entropy-for-machine-learning/)'
+  Quizzes: Q10 - L17
+- 12:
+  Week: 12
+  Dates: Nov 9-13
+  Topics:
+  - '[Neural Networks](/course/max/18-neural-network.pdf) ([Notes](/course/max/18-neural-network-note.pdf) L18)'
+  Readings:
+  - '[Neural Network Playground](https://playground.tensorflow.org/)'
+  - '[Initializing neural networks](https://www.deeplearning.ai/ai-notes/initialization/index.html)'
+  - '[Back propagation numerical example](https://hmkcode.com/ai/backpropagation-step-by-step/)'
+  - '[More detailed introduction](/other/nn-intro.pdf)'
+  Quizzes: Q11 - L18
+- 13:
+  Week: 13
+  Dates: Nov 16-20
+  Topics:
+  - '[Convolutional Neural Network](/course/max/19-neural-network-cnn.pdf) ([Notes](/course/max/19-neural-network-cnn-note.pdf) L19)'
+  Homework:
+  - '**A3 due Nov 20**'
+  - A4 out Nov 20
+  Readings:
+  - '[Convolutional Neural Network Live Demo](https://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html)'
+  - '[A guide to efficient convolutional neural network hyper-parameter tuning](https://towardsdatascience.com/a-guide-to-an-efficient-way-to-build-neural-network-architectures-part-ii-hyper-parameter-42efca01e5d7)'
+  - '[Back Propagation in Convolutional Neural Networks](https://www.jefkine.com/general/2016/09/05/backpropagation-in-convolutional-neural-networks/)'
+  Quizzes: Q12 - L19
+- 14:
+  Week: 14
+  Dates: Nov 23-27
+  Topics:
+  - '[Decision Tree](/course/max/20-decision-tree.pdf) ([Notes](/course/max/20-decision-tree-note.pdf), L20)'
+  - '[Random Forest](/course/max/21-ensemble-learning-randomforest.pdf) ([Notes](/course/max/21-ensemble-learning-randomforest-note.pdf), L21)'
+  Quizzes: Q13 - L20,L21
+- 15:
+  Week: 15
+  Dates: Nov 30-Dec 4
+  Topics:
+  - '[Support Vector Machine ](/course/max/22-svm.pdf) ([Notes](/course/max/22-svm-note.pdf), L22)'
+  - '[Support Vector Machine Kernel](/course/max/23-svm-kernel.pdf) ([Notes](/course/max/23-svm-kernel-note.pdf), L23)'
+  - Student Recess and Thanksgiving break (Dec 3, 4 and 5)
+  Readings:
+  - '[KKT and Support Vector Machines](/other/kkt-svm-stanford.pdf)'
+  Quizzes: Q14 - L22,L23
+- 16:
+  Week: 16
+  Dates: Dec 7-8
+  Topics:
+  - Reading period (Dec 9-10)
+  Homework:
+  - '**A4 Due Dec 8**'
+  Exam:
+  - Closed-book final exam released Monday of this week; available for 1 week; covers all material after the midterm exam; details on Canvas
