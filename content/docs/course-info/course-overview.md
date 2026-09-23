@@ -1,10 +1,10 @@
 ---
-weight: 1
+weight: 10
 bookFlatSection: true
-title: "Course Overview"
+title: Course Overview
 bookToc: false
+bookHidden: false
 ---
-
 # Course Overview
 
 {{< hint info >}}

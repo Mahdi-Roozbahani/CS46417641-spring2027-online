@@ -1,10 +1,10 @@
 ---
-weight: 2
+weight: 20
 bookFlatSection: true
-title: "People"
-featureKey: "course_people"
+title: People
+featureKey: course_people
+bookHidden: false
 ---
-
 <!-- CHECK THE DATA DIRECTORY FOR SOURCES -->
 
 # People

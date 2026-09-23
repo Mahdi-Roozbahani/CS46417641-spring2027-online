@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/docs/grading/project-breakdown/individual/</loc>
+  </url><url>
     <loc>/docs/grading/categories/</loc>
   </url><url>
     <loc>/docs/resources/collection/</loc>
@@ -16,8 +18,6 @@
   </url><url>
     <loc>/docs/guidelines/</loc>
   </url><url>
-    <loc>/docs/grading/project-breakdown/midterm/</loc>
-  </url><url>
     <loc>/docs/guidelines/office-hours/</loc>
   </url><url>
     <loc>/docs/course-info/instructors-and-tas/</loc>
@@ -26,15 +26,17 @@
   </url><url>
     <loc>/docs/grading/qquizzes-and-exams/</loc>
   </url><url>
+    <loc>/docs/grading/project-breakdown/midterm/</loc>
+  </url><url>
     <loc>/docs/course-info/course-schedule-mahdi/</loc>
   </url><url>
     <loc>/docs/guidelines/ed-discussion/</loc>
   </url><url>
-    <loc>/docs/grading/project-breakdown/final/</loc>
-  </url><url>
     <loc>/docs/grading/</loc>
   </url><url>
     <loc>/docs/grading/project-breakdown/</loc>
+  </url><url>
+    <loc>/docs/grading/project-breakdown/final/</loc>
   </url><url>
     <loc>/docs/guidelines/honorlock/</loc>
   </url><url>

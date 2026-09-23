@@ -1,9 +1,9 @@
 ---
-weight: 1
+weight: 10
 bookFlatSection: true
 title: Collection
+bookHidden: false
 ---
-
 # GT Resources
 
 For any resources related to Student Engagement and Wellbeing such as Dean of Student's contacts, Library, etc., please refer to this [LINK](https://students.gatech.edu/student-resource-guide)

@@ -1,81 +1,19 @@
 ---
-weight: 3
-title: 'Ed Discussion'
+weight: 30
+title: Ed Discussion
+bookHidden: false
+bookFlatSection: false
 ---
+# Ed Discussion
 
-# Ed Discussion: Announcements and Course Communication
+Ed is the official channel for course announcements, class-wide clarifications, questions, and office-hour notices. Join through Canvas, enable notifications, and read pinned posts and megathreads before posting. Use a descriptive title and say which lecture, assessment, or project requirement your question concerns.
 
-## Ed Is the Official Announcement Channel
+## Public and private posts
 
-Ed Discussion is the main and official location for course announcements. The teaching team will use Ed for schedule updates, assessment clarifications, Honorlock notices, office-hour announcements, project instructions, common feedback, and urgent course information.
+Use a public post when the answer can help classmates, such as a conceptual question, a broken link, or a project-requirement clarification. Use a private post for grades, accommodations, emergencies, team conflicts, technical incidents, or possible misconduct. Do not include medical documents, personal data, complete solutions, or private grades in a public post.
 
-Students are responsible for:
+Ask a focused question and explain what you tried. The team can clarify concepts and isolated problems; it does not complete an assignment, choose a project for you, or pre-grade a submission.
 
-- Joining the course Ed space through Canvas.
-- Enabling announcement and post notifications.
-- Checking Ed regularly throughout the semester.
-- Reading pinned posts and megathreads before asking a question.
-- Following later clarifications even when an earlier website statement has not yet been updated.
+Do not share quiz or midterm questions while the assessment window remains open, even in private student-to-student messages. After feedback is released, use the designated discussion thread.
 
-A student who disables notifications or does not check Ed remains responsible for official announcements.
-
-## Ed Profile Recommendation
-
-Students are strongly encouraged to use their preferred name and add a recognizable profile photo. This helps the teaching team recognize students in a very large online course and during office hours or project meetings. A photo is not required when a student has a privacy, accessibility, religious, or personal concern.
-
-## Before Creating a New Post
-
-1. Search Ed for the same question.
-2. Read the relevant pinned post or megathread.
-3. Select the correct category and use a descriptive title.
-4. State the lecture, quiz, problem-set item, project deliverable, or policy involved.
-5. Explain what you understand and where the confusion begins.
-
-## Public Posts
-
-Use a public post when the answer could help other students. Appropriate public questions include:
-
-- A conceptual question about a lecture.
-- A clarification about a problem-set statement.
-- A question about a project requirement or rubric.
-- A possible typo, broken link, or inconsistency.
-- A request to explain why an answer choice or mathematical step is incorrect after quiz feedback has been released.
-
-Do not include private grades, accommodation details, personal emergencies, team-conflict allegations, complete code, quiz questions during an active window, or suspected academic misconduct in a public post.
-
-## Private Posts
-
-Use a private Ed post for:
-
-- Personal grades or regrades.
-- Approved accommodations.
-- Documented emergencies.
-- Team participation or conflict concerns.
-- Sensitive personal information.
-- A technical incident during a quiz or exam.
-- A concern about possible academic misconduct.
-
-A private Ed post is normally visible to the instructional team. If a matter should be restricted further, state that at the beginning of the post and request a smaller private chat with a Head TA or instructor.
-
-## Questions the Teaching Team Can and Cannot Answer
-
-### Good questions
-
-- "I understand the definition of conditional independence, but I do not see why this factorization follows."
-- "The problem-set feedback says my numerical value is incorrect. Can you explain which assumption I may have applied incorrectly?"
-- "Our project metric is unstable because the positive class is rare. Would precision-recall evaluation be more appropriate than accuracy?"
-- "The project page and Canvas appear to show different dates. Which one controls?"
-
-### Questions that are too broad
-
-- "Can you debug my code?"
-- "Can you tell me exactly what model our project should use?"
-- "Can you review our entire report before we submit it?"
-- "Can you tell me what will be on the exam?"
-
-The teaching team can clarify concepts, requirements, and isolated technical issues. It will not debug complete programs, design the project for a team, or pre-grade a submission.
-
-## Assessment Discussion
-
-Do not discuss the content of a quiz or exam while its assessment window remains open, including in private student-to-student messages. After answers or feedback are released, use the designated Ed thread for questions.
-
+For how to join an optional help session, see [Office Hours](../office-hours/). For proctored-assessment incidents, follow [Honorlock](../honorlock/) first, then send the private Ed report.

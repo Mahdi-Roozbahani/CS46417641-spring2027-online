@@ -1,112 +1,85 @@
-mode: online
-labels:
-  online_schedule_prefix: Online
-visibility:
-  features:
-    course_people: true
-    project_breakdown: false
-  people:
-    instructors: true
-    head-tas: false
-    tas: false
-schedule:
-  columns:
-    - key: Week
-      label: Week
-      type: text
-      class: week
-      width: 4
-    - key: Dates
-      label: Dates
-      type: text
-      class: dates
-      width: 9
-    - key: Topics
-      label: 'Topics (Available on canvas)'
-      type: topics
-      class: topics
-      width: 24
-    - key: Quizzes
-      label: Quizzes
-      type: text
-      class: quizzes
-      width: 11
-    - key: Exam
-      label: Exam
-      type: list
-      class: exam
-      width: 12
-    - key: Project
-      label: Project
-      type: list
-      class: project
-      width: 10
-    - key: Readings
-      label: Readings
-      type: list
-      class: readings
-      width: 16
-grading:
-  policy_sections:
-    - id: midterm_exam
-      markdown: |-
-        ## Midterm Exam (15%)
-
-        The midterm exam will be administered on Canvas. It is **closed book** and must be completed independently.
-
-        - The exam will be released on Monday of the exam week and will remain available for 1 week. The midterm covers all material through the end of the Dimension Reduction lecture. Coverage details for the active semester will be posted on Canvas and on the course schedule.
-        - Once you start the exam, you will have **1 hour** to complete and submit it.
-        - Honorlock, LockDown Browser, and other Georgia Tech approved proctoring or integrity tools may be required. Georgia Tech’s [Online Learning Toolkit](https://pe.gatech.edu/online-learning-toolkit) explains that proctored exams may restrict access to notes, textbooks, websites, electronic devices, or other people and may use Honorlock for identity verification and integrity review.
-        - Students should verify their internet connection, webcam, microphone, photo ID, and browser/computer setup before starting.
-        - Any suspected misconduct may be resolved under the [Georgia Tech Academic Honor Code](https://policies.gatech.edu/student-life/academic-honor-code) and the [Student Code of Conduct](https://policies.gatech.edu/student-life/student-code-conduct) and may be referred to the [Office of Student Integrity (OSI)](https://osi.gatech.edu/).
-
-    - id: final_exam
-      markdown: |-
-        ## Final Exam (15%)
-
-        The final exam will be administered on Canvas. It is **closed book** and must be completed independently.
-
-        - The final exam will be released on Monday of the exam week and will remain available for 1 week. The final covers all material after the midterm exam. Coverage details for the active semester will be posted on Canvas and on the course schedule.
-        - Once you start the exam, you will have **1 hour** to complete and submit it.
-        - Honorlock, LockDown Browser, and other Georgia Tech approved proctoring or integrity tools may be required. Georgia Tech’s [Online Learning Toolkit](https://pe.gatech.edu/online-learning-toolkit) explains that proctored exams may restrict access to notes, textbooks, websites, electronic devices, or other people and may use Honorlock for identity verification and integrity review.
-        - Students should verify their internet connection, webcam, microphone, photo ID, and browser/computer setup before starting.
-        - Any suspected misconduct may be resolved under the [Georgia Tech Academic Honor Code](https://policies.gatech.edu/student-life/academic-honor-code) and the [Student Code of Conduct](https://policies.gatech.edu/student-life/student-code-conduct) and may be referred to the [Office of Student Integrity (OSI)](https://osi.gatech.edu/).
-
-    - id: syllabus_quiz
-      markdown: |-
-        ## Syllabus Quiz (1%)
-
-        This is a **10-minute, closed-book** quiz on Canvas covering course rules, deadlines, academic integrity expectations, and logistics. You can obtain this 1% by carefully reading the website and course rules.
-
-        - The syllabus quiz will generally be released on Monday of that week and remain open for **1 week** on Canvas. Once you start it, you will have **10 minutes** to complete and submit it.
-        - Complete the syllabus quiz independently. You may not collaborate with others or use unauthorized aids while taking it.
-        - Honorlock, LockDown Browser, and other Georgia Tech approved integrity tools may be required.
-        - Any suspected misconduct may be handled under the [Georgia Tech Academic Honor Code](https://policies.gatech.edu/student-life/academic-honor-code) and may be referred to the [Office of Student Integrity (OSI)](https://osi.gatech.edu/).
-
-    - id: quizzes
-      markdown: |-
-        ## Quizzes (19%)
-
-        The total number of quizzes for the semester is listed on the official class schedule (excluding the syllabus quiz and warm-up quiz 0). The weight of each individual quiz is calculated by dividing the total category weight (19%) by the total number of quizzes administered. **All quizzes are mandatory.**
-
-        Each quiz will generally be released on Monday of that week and remain open for **1 week** on Canvas. Once you start a quiz, you will have **10 minutes** to complete and submit it.
-
-        All quizzes are **10-minute, closed-book** quizzes and will be proctored using Honorlock, LockDown Browser, and/or other Georgia Tech approved integrity tools announced by the course staff. To take a quiz, you must have a stable broadband internet connection, a webcam, a microphone, a valid photo ID, and a supported browser/computer setup. To ensure a smooth experience, please complete Quiz 0 (Practice Quiz) to familiarize yourself with the platform before your first graded quiz.
-
-        Georgia Tech’s [Online Learning Toolkit](https://pe.gatech.edu/online-learning-toolkit) explains that proctored exams and quizzes may restrict access to notes, textbooks, websites, electronic devices, or other people and may use Honorlock for identity verification and integrity review.
-
-        The topic of each quiz will coincide very closely with the content covered in class that week. Quizzes measure your understanding of the topics and will be mostly conceptual questions.
-
-        Quizzes will continue to follow the schedule posted on the course website and Canvas. Any date changes will be reflected there. Quizzes are due Monday, and course staff is not guaranteed to be available during Saturday or Sunday.
-
-        Quizzes’ answers will be released as soon as all students, including ODS students, have completed them. Please do not ask questions about a quiz on Edstem before the answers have been released.
-
-        Quiz questions are selected randomly from our question bank, which means that students will not receive the same questions for their quiz.
-        Any suspected misconduct may be resolved under the [Georgia Tech Academic Honor Code](https://policies.gatech.edu/student-life/academic-honor-code) and the [Student Code of Conduct](https://policies.gatech.edu/student-life/student-code-conduct) and may be referred to the [Office of Student Integrity (OSI)](https://osi.gatech.edu/).
-staff:
-  auto_discovery:
-    collections:
-      head-tas:
-        directory: profiles/head-tas
-      tas:
-        directory: profiles/tas
+{
+  "mode": "online",
+  "labels": {
+    "online_schedule_prefix": "Online"
+  },
+  "visibility": {
+    "features": {
+      "course_people": true,
+      "project_breakdown": false
+    },
+    "people": {
+      "instructors": true,
+      "head-tas": false,
+      "tas": false
+    }
+  },
+  "schedule": {
+    "columns": [
+      {
+        "key": "Week",
+        "label": "Week",
+        "type": "text",
+        "class": "week",
+        "width": 4
+      },
+      {
+        "key": "Dates",
+        "label": "Dates",
+        "type": "text",
+        "class": "dates",
+        "width": 9
+      },
+      {
+        "key": "Topics",
+        "label": "Topics (Available on canvas)",
+        "type": "topics",
+        "class": "topics",
+        "width": 24
+      },
+      {
+        "key": "Quizzes",
+        "label": "Quizzes",
+        "type": "list",
+        "class": "quizzes",
+        "width": 11
+      },
+      {
+        "key": "Exam",
+        "label": "Exam",
+        "type": "list",
+        "class": "exam",
+        "width": 12
+      },
+      {
+        "key": "Project",
+        "label": "Individual & team projects",
+        "type": "list",
+        "class": "project",
+        "width": 10
+      },
+      {
+        "key": "Readings",
+        "label": "Readings",
+        "type": "list",
+        "class": "readings",
+        "width": 16
+      }
+    ]
+  },
+  "grading": {
+    "policy_sections": []
+  },
+  "staff": {
+    "auto_discovery": {
+      "collections": {
+        "head-tas": {
+          "directory": "profiles/head-tas"
+        },
+        "tas": {
+          "directory": "profiles/tas"
+        }
+      }
+    }
+  }
+}

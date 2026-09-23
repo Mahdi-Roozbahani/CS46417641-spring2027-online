@@ -1,16 +1,16 @@
 ---
-weight: 5
+weight: 50
 bookFlatSection: true
 bookToc: false
-title: "Course Schedule (Rod)"
-schedulePerson: "rodrigo"
+title: Course Schedule (Rod)
+schedulePerson: rodrigo
+bookHidden: false
 ---
-
 # Schedule
 
 {{< hint info >}}
 **Important**  
-All deadline and due dates in this course will be at 23:59 EST.
+All deadline and due dates in this course will be at 11:59 PM ET.
 {{< /hint >}}
 
 {{< hint warning >}}

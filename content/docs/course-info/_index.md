@@ -1,6 +1,6 @@
 ---
-weight: 1
+weight: 10
 bookFlatSection: true
-title: 'Course Info'
+title: Course Info
+bookHidden: false
 ---
-

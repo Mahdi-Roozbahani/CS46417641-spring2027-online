@@ -1,16 +1,16 @@
 ---
-weight: 3
+weight: 30
 bookFlatSection: true
 bookToc: false
-title: "Course Schedule (Mahdi)"
-schedulePerson: "max"
+title: Course Schedule (Mahdi)
+schedulePerson: max
+bookHidden: false
 ---
-
 # Schedule
 
 {{< hint info >}}
 **Important**  
-All deadline and due dates in this course will be at 23:59 EST.
+All deadline and due dates in this course will be at 11:59 PM ET.
 {{< /hint >}}
 
 {{< hint warning >}}

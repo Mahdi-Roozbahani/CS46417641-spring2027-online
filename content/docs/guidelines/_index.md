@@ -1,5 +1,6 @@
 ---
-weight: 2
+weight: 20
 title: Guidelines
+bookHidden: false
+bookFlatSection: false
 ---
-

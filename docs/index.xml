@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</title>
+    <title>Home on Class Homepage</title>
     <link>/</link>
-    <description>Recent content in Home on Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online</description>
+    <description>Recent content in Home on Class Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Individual Project</title>
+      <link>/docs/grading/project-breakdown/individual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/individual/</guid>
+      <description>Individual Project # This is your own project, separate from the team project. Use one individual GitHub Pages website throughout the semester and register its link in ML Class Hub. Update the same website at midterm and final; do not create a new link for each checkpoint. The course-specific Hub assignment will identify the required dataset, label mappings, and submission details once staff configure it. CIFAR-10 is an example, not a required dataset.</description>
+    </item>
+    
     <item>
       <title>Categories</title>
       <link>/docs/grading/categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/categories/</guid>
-      <description>Grading Categories # Required Course Grade # The required course components total 100%.
-Component Weight 14 graded weekly quizzes 20% Midterm exam 12.5% Final exam 12.5% Required semester project 55% Required total 100% Optional Project Bonus # Students may earn up to 5 additional course percentage points for exceptional optional work in the semester project.
-The bonus is added on top of the required 100%. It is not included inside the required 55% project.</description>
+      <description>Grading Categories # The required course components total 100%. There is no final exam or optional project bonus.
+Component Course weight Quizzes 1–14 15% Midterm exam 15% Individual project 30% Team project 40% Total 100% Quiz 0 is required preparation but carries no course-grade weight. See Quizzes and Exams for assessment rules and Project Breakdown for the two project tracks. The project rubrics will describe how each stage is evaluated; this table does not assign separate course-grade percentages to project stages.</description>
     </item>
     
     <item>
@@ -44,30 +52,18 @@ CSE students should note that CS 7641 is not allowed as a substitute for the CSE
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/guidelines/general/</guid>
-      <description>General Course Policies # Online and Asynchronous Participation # All core lectures are pre-recorded. There is no required live lecture attendance. Students are responsible for watching the assigned videos, studying the lecture notes, completing assessments within their availability windows, and participating in the team project.
-Because this is an asynchronous course with students in many time zones, routine deadlines use Anywhere on Earth so every student can use the full listed calendar date.</description>
+      <description>General Course Policies # Online participation and course materials # Core lectures are pre-recorded; live lecture attendance is not required. Study the assigned videos and notes, complete assessments within their availability windows, and work on both the individual and team projects. The schedule also links interactive visualizations and demonstrations when available.
+Course-created videos, notes, assessment questions, and code are for enrolled students. Do not redistribute them outside the course without written permission.</description>
     </item>
     
     <item>
-      <title>Proposal</title>
+      <title>Team Proposal</title>
       <link>/docs/grading/project-breakdown/proposal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/proposal/</guid>
-      <description>Project Proposal and Team Charter - 5% # The primary goal of the proposal is to define a meaningful machine-learning, artificial-intelligence, or deep-learning problem and establish a feasible plan for completing the project during the semester.
-The proposal should identify the problem, relevant prior work, data, proposed methods, evaluation strategy, major risks, and responsibilities of each team member.
-Research projects naturally evolve. The final project does not need to remain identical to the original proposal.</description>
-    </item>
-    
-    <item>
-      <title>Midterm Checkpoint</title>
-      <link>/docs/grading/project-breakdown/midterm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/grading/project-breakdown/midterm/</guid>
-      <description>Midterm Project Report - 10% # The midterm report is a major project checkpoint. By this point, the team must have progressed beyond planning and must provide concrete evidence of implementation and experimentation.
-At minimum, the team should have prepared the data, implemented a working experimental pipeline, and evaluated at least one meaningful baseline or model.
-The midterm report should update and extend the proposal rather than repeat it without revision.</description>
+      <description>Team Project Proposal # Submit a concise proposal on your team&amp;rsquo;s existing project website and register the website link and team in ML Class Hub by the date on the course schedule. Keep using this site through midterm and final; no separate proposal website is needed. This milestone is for the team project, not the individual project.
+Choose the question # Start with a real problem that your team can investigate within one semester.</description>
     </item>
     
     <item>
@@ -76,8 +72,8 @@ The midterm report should update and extend the proposal rather than repeat it w
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/guidelines/office-hours/</guid>
-      <description>Online Office Hours # Office hours are optional, online, and designed to provide focused help without requiring students to reserve spreadsheet time slots.
-How an Office-Hour Session Works # A TA posts an Ed thread announcing that the office-hour session has started. The title will identify the TA, date, time, and general topic if the session has a focus. Students who need help reply to that thread with a short description of the question.</description>
+      <description>Online Office Hours # Office hours are optional online help sessions. They do not replace scheduled project reviews.
+Joining a session # A TA announces the session in an Ed thread with the time and any focus topic. Reply with a short, specific question and what you have tried. Do not post private information, complete code, grades, or confidential project data. The TA answers in the thread when useful to the class, or sends a private meeting link when screen sharing or individual discussion is needed.</description>
     </item>
     
     <item>
@@ -99,24 +95,32 @@ How an Office-Hour Session Works # A TA posts an Ed thread announcing that the o
     </item>
     
     <item>
+      <title>Team Midterm Review</title>
+      <link>/docs/grading/project-breakdown/midterm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/midterm/</guid>
+      <description>Team Midterm Website Review and TA Meeting # Update the same team project website before your scheduled TA meeting. The meeting is the team midterm checkpoint. There is no separate team midterm report or video, and the individual project&amp;rsquo;s video is a different requirement. The course schedule gives the two-week review window; arrange the meeting with your assigned TA through the course process.
+Show progress, not a finished paper # On the website, state the current question and any change since the proposal; data access and preparation; a working baseline or early experiment if available; evaluation completed so far; honest failures and blockers; each member&amp;rsquo;s contribution; and the next concrete experiments.</description>
+    </item>
+    
+    <item>
       <title>Course Schedule (Mahdi)</title>
       <link>/docs/course-info/course-schedule-mahdi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/course-info/course-schedule-mahdi/</guid>
       <description>Schedule # Important
-All deadline and due dates in this course will be at 23:59 EST. Scroll horizontally to see the full schedule table on mobile devices Week Dates Topics (Available on canvas) Quizzes Exam Project Readings 1 Jan 11-15 Course Overview (L1) Data analysis toolbox - Part 1 (L2) Q0 - L1,L2 (Warmup) GT Honor Code Debugging Common Errors in NumPy Heilmeier Catechism GitHub Pages Quickstart YAML Configuration NumPy Tutorial seaborn: statistical data visualization Overleaf for GT students 2 Jan 18-22 Linear Algebra (Notes, L3) Probability and Statistics (Notes, L4) Official institute holiday &amp;ndash; Martin Luther King, Jr.</description>
+All deadline and due dates in this course will be at 11:59 PM ET. Scroll horizontally to see the full schedule table on mobile devices Week Dates Topics (Available on canvas) Quizzes Exam Individual &amp;amp; team projects Readings 1 Jan 11th - Jan 15th Course introduction (L1) NumPy and broadcasting (L2) Q0: L1, L2 (warmup) Individual and team projects released: Jan 15th Team project requirements and examples introduced: Jan 15th GT Honor Code Heilmeier Catechism GitHub Pages Quickstart YAML Configuration NumPy Tutorial seaborn: statistical data visualization Overleaf for GT students NumPy tutorial 2 Jan 18th - Jan 22nd Official institute holiday &amp;ndash; Martin Luther King, Jr.</description>
     </item>
     
     <item>
-      <title>Final Report</title>
+      <title>Team Final Report</title>
       <link>/docs/grading/project-breakdown/final/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/final/</guid>
-      <description>Final Project Submission and Presentation - 35% # The final project stage consists of two required components:
-Component Course weight Final website, report, code, and reproducibility package 25% Final presentation and individual project-wide Q&amp;amp;A 10% Final-stage total 35% The final submission should present a complete, carefully evaluated project and clearly explain what the team attempted, what was implemented, what evidence was obtained, what failed, and what was learned.
-The final report should update and extend the midterm report.</description>
+      <description>Team Final Report, Website, and TA Interview # The team delivers a paper-style report on the same team website, supporting code and reproduction instructions, and a TA interview. The interview is in the two-week final-review window; the completed website is due on the last instructional day shown in the course schedule. Keep the same ML Class Hub team link. The individual project&amp;rsquo;s final website and interview are separate; see Individual Project.</description>
     </item>
     
     <item>
@@ -125,8 +129,7 @@ The final report should update and extend the midterm report.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/project-ta-meeting/</guid>
-      <description>Required TA Progress Meeting - 5% # This is the first of exactly two required TA interactions. It takes place after the project proposal and before the midterm project report.
-Every team member must attend and must be prepared to answer individual questions about any part of the project. The individual Q&amp;amp;A is graded separately for each student. A student who cannot demonstrate sufficient understanding of the project may receive a lower score than the other members of the same team.</description>
+      <description>Project TA Meetings # The current Spring 2027 project-review schedule is explained on the Individual and Team Projects page and the course schedule. This older page is hidden from navigation so it does not duplicate or contradict those instructions.</description>
     </item>
     
     <item>
@@ -135,18 +138,16 @@ Every team member must attend and must be prepared to answer individual question
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/project-bonus/</guid>
-      <description>Optional Advanced Project Bonus - Up to +5% # The project bonus is added on top of the required 100% course grade.
-Required coursework: 100%. Maximum project bonus: +5 course percentage points. Maximum possible final course score: 105%. The bonus is intended to provide a meaningful cushion and reward teams that take their project beyond the complete required standard. It is optional. A strong project may earn full credit for the required 55% without earning bonus points.</description>
+      <description>Project Bonus # The current Spring 2027 grading plan has no optional project bonus. See Categories for the 100% course-grade breakdown. This older page is hidden from navigation so it does not present obsolete bonus criteria.</description>
     </item>
     
     <item>
-      <title>Awards Galore</title>
+      <title>Awards and Examples</title>
       <link>/docs/grading/project-breakdown/award_galore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/award_galore/</guid>
-      <description>Why Awards Matter # Awards serve as a tangible recognition of the dedication and creativity students bring to their machine learning projects. Each semester, these select honors are chosen from among hundreds of submitted projects, making the competition fierce and underscoring the ingenuity and motivation of participating teams. By highlighting outstanding work, we encourage students to push boundaries, refine technical skills, and communicate findings more effectively.
-This recognition also benefits students’ academic and professional growth—award recipients can feature their projects on resumes and link directly to showcased work for added visibility.</description>
+      <description>Project Awards and Examples # These awards recognize exceptional individual and team projects. They are distinct from course grades: an award is not needed for full credit, and the current Spring 2027 grading plan does not include extra course-grade points for awards. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See Grading Categories for the course-grade weights.</description>
     </item>
     
   </channel>

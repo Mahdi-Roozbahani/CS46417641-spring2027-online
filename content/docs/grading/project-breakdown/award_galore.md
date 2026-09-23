@@ -1,30 +1,27 @@
 ---
-weight: 6
-title: 'Awards Galore'
+weight: 60
+title: Awards and Examples
+bookHidden: false
+bookFlatSection: false
 ---
+# Project Awards and Examples
 
-# Why Awards Matter
-Awards serve as a tangible recognition of the dedication and creativity students bring to their machine learning projects. Each semester, these select honors are chosen **from among hundreds of submitted projects**, making the competition fierce and underscoring the ingenuity and motivation of participating teams. By highlighting outstanding work, we encourage students to push boundaries, refine technical skills, and communicate findings more effectively.  
+These awards recognize exceptional **individual and team projects**. They are distinct from course grades: an award is not needed for full credit, and the current Spring 2027 grading plan does not include extra course-grade points for awards. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See [Grading Categories](../../categories/) for the course-grade weights.
 
-This recognition also benefits students’ academic and professional growth—award recipients can feature their projects on resumes and link directly to showcased work for added visibility. Additionally, **all projects remain live** on the class website for future semesters, ensuring that both current and prospective students can discover, learn from, and be inspired by past successes. This tradition fosters continuity in the course and builds a growing body of shared knowledge. Being featured on the website is thus both an honor and a motivator, inspiring future cohorts to strive for the same high standard of excellence.
+## What makes a project stand out
 
+- A clear, important question and an honest account of related work.
+- Correct methods, a meaningful baseline, valid evaluation, and careful failure analysis.
+- A distinctive insight, application, dataset, method adaptation, rigorous comparison, or useful working system. Originality is not just a new model name or a polished interface.
+- Reproducible code and evidence, responsible data use, verified citations, and clear disclosure of contributions and generative-AI assistance.
+- A website and explanation that let another person understand what was attempted, what the evidence supports, and what remains unresolved.
 
+The instructional team reviews completed websites and TA interview evidence after the final website deadline. It can recognize different strengths, such as research potential, applied impact, reproducibility, responsible AI, or effective communication; no category or number of awards is guaranteed. Website presentation alone does not overcome invalid experiments or unsupported claims. Public showcasing of a student's work requires permission and a privacy/licensing review; merely submitting a project does not grant permission to publish it elsewhere.
 
-# Project Awardees
-Below you will find awardees for each semester. The most recent semester is expanded by default, while previous semesters are collapsed for a cleaner browsing experience. Click on a specific semester to view its award recipients.
+## Explore earlier projects
 
-<details close>
-<summary><strong>Project Awardees for Spring 2026</strong></summary>
+The following links were already listed in the course's historical award archive. They are **examples for inspiration, not approved templates or verified current links**. Many Georgia Tech GitHub Pages links require Institute sign-in, and access can change. Do not copy another team's text, code, data, or experimental design. The placeholder Spring 2026 entries have been removed.
 
-### Future Awardee Project Title
-- **Project Website:** [https://www.github.com/gburdell3/outstanding_project](https://www.github.com/gburdell3/outstanding_project)  
-- **Contributors:** Richard Koulen, Max Mahdi Roozbahani, Gururaj Deshpande  
-
-### Future Awardee Project Title
-- **Project Website:** [https://www.github.com/gburdell3/outstanding_project](https://www.github.com/gburdell3/outstanding_project)  
-- **Contributors:** Ghazal Mirzazadeh, Ethan Yang, Nimisha Roy  
-
-</details>
 <details open>
 <summary><strong>Project Awardees for Fall 2025</strong></summary>
 
@@ -80,10 +77,3 @@ Below you will find awardees for each semester. The most recent semester is expa
 <!-- Add more projects here as needed, each in the same format -->
 
 </details>
-
-<!-- </details>
-
-<details> -->
-
-
-
