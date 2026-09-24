@@ -1,7 +1,7 @@
 ---
 weight: 20
 title: Team Midterm Review
-bookHidden: false
+bookHidden: true
 bookFlatSection: false
 ---
 # Team Midterm Website Review and TA Meeting
@@ -13,11 +13,13 @@ Update the **same team website** before the meeting with your assigned TA. This 
 Keep the proposal's section headings and turn plans into evidence:
 
 1. **Introduction and related work:** refine the question and explain any justified change since the proposal.
-2. **Problem definition and data:** show the data obtained, preparation completed, access or privacy constraints, and any data limitations.
-3. **Methods and baseline:** distinguish implemented methods from planned ones. Demonstrate a working baseline or early experiment where feasible and explain your choices.
-4. **Evaluation and preliminary results:** show quantitative measures and useful figures, interpret them, and identify failures, leakage risks, and what remains uncertain. Do not claim results for unfinished experiments.
-5. **Project plan and contributions:** update the [proposal Gantt chart](../proposal/) and identify each member's work, blockers, and next experiments.
-6. **References and AI disclosure:** update sources and disclosed AI assistance actually used.
+2. **Problem definition and data:** show the data obtained, preparation completed, access or privacy constraints, and data limitations.
+3. **Methods and baseline:** distinguish methods you have run from methods still planned. Show a working simple comparison or early experiment where feasible and explain your choices.
+4. **Evaluation and results:** show early quantitative measures and useful figures, explain what they mean, and identify unfinished experiments. Do not claim results you have not obtained.
+5. **Discussion and limitations:** explain an early success, failure, or obstacle; identify what the evidence cannot yet establish.
+6. **Conclusion and next steps:** summarize what you have learned so far and the next experiments before final.
+7. **Project plan and member contributions:** update the [proposal Gantt chart](../proposal/) and identify each member's work, blockers, and next responsibilities.
+8. **References and AI-use disclosure:** update sources and disclosed AI assistance actually used.
 
 - <strong><span style="background-color:#e7f1fb;color:#123b67;border-left:4px solid #123b67;padding:0.1em 0.35em">CS 4641 · Undergraduate</span></strong>: run at least one ML model on your data, show its result with a suitable measure or figure, and compare it with a simple baseline.
 - <strong><span style="background-color:#f4eafa;color:#54236b;border-left:4px solid #54236b;padding:0.1em 0.35em">CS 7641 · Graduate</span></strong>: run at least one supervised model and one unsupervised method on your data. Show a result for each with suitable measures or figures, and explain what you learned.

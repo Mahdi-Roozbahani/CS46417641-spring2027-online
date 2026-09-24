@@ -1,7 +1,7 @@
 ---
 weight: 30
 title: Team Final Report
-bookHidden: false
+bookHidden: true
 bookFlatSection: false
 ---
 # Team Final Report, Website, and TA Interview
@@ -14,14 +14,14 @@ Use the [rendered team website template](../team-website-template/) as the minim
 
 Develop the proposal and midterm sections into a coherent final paper:
 
-1. **Introduction and related work:** question, motivation, verified prior work, and the specific contribution or comparison. Do not claim novelty or publication without evidence.
-2. **Problem definition and data:** data source, license, preparation, splits, responsible use, and limitations.
-3. **Methods and baselines:** implemented approaches, justified baselines, and enough detail for a fair, reproducible comparison.
-4. **Experiments and results:** metrics, tables or figures, meaningful comparisons, and robustness or ablation checks where relevant.
-5. **Discussion:** explain successes, failures, tradeoffs, alternative explanations, and what the evidence does and does not establish.
-6. **Conclusion and future work:** answer the original question as far as the evidence allows; identify limitations and the next useful experiment.
-7. **Project plan and contributions:** show the final Gantt-chart record or milestone summary and each member's actual contribution.
-8. **References and AI disclosure:** cite reviewed work and disclose tools, purpose, and scope of AI assistance. Be ready to show the project code to the TA if asked. Do not publish restricted data.
+1. **Introduction and related work:** state the question, motivation, verified prior work, and specific contribution or comparison. Do not claim novelty without evidence.
+2. **Problem definition and data:** describe the data source, license, preparation, data division, responsible use, and limitations.
+3. **Methods and baseline:** explain the methods you actually ran, the simple comparison, and enough detail for a fair comparison.
+4. **Evaluation and results:** present measures, tables or figures, meaningful comparisons, and the required interactive visualization of your own data or results.
+5. **Discussion and limitations:** explain successes, failures, tradeoffs, alternative explanations, and what the evidence does and does not establish.
+6. **Conclusion and next steps:** answer the original question as far as the evidence allows and identify the next useful experiment.
+7. **Project plan and member contributions:** show the final Gantt-chart record or milestone summary and each member's actual contribution.
+8. **References and AI-use disclosure:** cite reviewed work and disclose tools, purpose, and scope of AI assistance. Be ready to show the project code to the TA if asked. Do not publish restricted data.
 
 - <strong><span style="background-color:#e7f1fb;color:#123b67;border-left:4px solid #123b67;padding:0.1em 0.35em">CS 4641 · Undergraduate</span></strong>: run and compare at least three different ML models or baselines, including at least one supervised model trained on labeled examples.
 - <strong><span style="background-color:#f4eafa;color:#54236b;border-left:4px solid #54236b;padding:0.1em 0.35em">CS 7641 · Graduate</span></strong>: run and compare at least three different ML models or methods. Include both a supervised model trained on labels and an unsupervised method trained without labels.

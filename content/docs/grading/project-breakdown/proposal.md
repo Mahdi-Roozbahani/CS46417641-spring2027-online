@@ -1,7 +1,7 @@
 ---
 weight: 10
 title: Team Proposal
-bookHidden: false
+bookHidden: true
 bookFlatSection: false
 ---
 # Team Project Proposal
@@ -23,11 +23,13 @@ At this stage, name the planned methods, the question each one will answer, and 
 
 Use these headings so the same report can grow at midterm and final:
 
-1. **Introduction and related work:** the context, motivation, a brief literature review, and the gap or comparison your team will investigate.
-2. **Problem definition and data:** the precise question, dataset source and link when available, features or expected scale, access and license, privacy considerations, and feasibility.
-3. **Proposed methods and baseline:** preprocessing, candidate ML methods, a simple baseline, and why each comparison is informative. Distinguish what is planned from what is already implemented.
-4. **Evaluation plan:** data splits, suitable quantitative measures, error analysis, leakage checks, and the result that would answer your question. Include responsible-use or fairness checks where relevant.
-5. **Project plan and contributions:** milestones, owners, integration plan, and a Gantt chart covering the rest of the semester. The [sample Gantt chart](../../../../other/GanttChart.xlsx) is optional; a clear equivalent is fine. List every member and their contribution to this proposal.
-6. **References and AI disclosure:** cite sources you actually read and disclose planned or actual generative-AI use under the course policy.
+1. **Introduction and related work:** explain the question, motivation, relevant work you have read, and what your team plans to investigate.
+2. **Problem definition and data:** state the specific question, the dataset you plan to use, how you will obtain it, and any access, license, or privacy limits.
+3. **Methods and baseline:** name the simple comparison and at least three ML methods you plan to try; explain what each would tell you. Results are not required yet.
+4. **Evaluation and results:** say how you plan to divide the data, measure success, check errors, and compare methods answering the same question. Mark all expected results as planned, not completed.
+5. **Discussion and limitations:** briefly identify risks, likely data or method limitations, and a fallback if your first plan fails.
+6. **Conclusion and next steps:** state what a useful answer would look like and the next experiment you will run.
+7. **Project plan and member contributions:** include milestones, owners, and a Gantt chart for the rest of the semester. The [sample Gantt chart](../../../../other/GanttChart.xlsx) is optional; a clear equivalent is fine. Name each member's contribution to this proposal.
+8. **References and AI-use disclosure:** cite sources you actually read and disclose planned or actual generative-AI use under the course policy.
 
 Keep the proposal narrative **under 800 words**; references, the Gantt chart, and the contribution table do not count. A short, specific plan is more useful than a long speculative report. Your question and methods may evolve as evidence arrives; document and justify changes in the later website updates.

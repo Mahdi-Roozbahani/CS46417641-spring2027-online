@@ -1,43 +1,33 @@
 ---
 title: Individual Project
 weight: 5
-bookHidden: false
+bookHidden: true
 ---
 # Individual Project
 
-This is your own project, separate from the team project. Use one individual GitHub Pages website throughout the semester and register its link in [ML Class Hub](https://ml-class.cc.gatech.edu/). Improve that same site at midterm and final. The Hub assignment will identify the required dataset, label mappings, and submission details once staff configure it. **CIFAR-10 is an example, not a required dataset.** Dates appear on the [course schedule](../../../course-info/course-schedule-mahdi/).
+[ML Class Hub](https://ml-class.cc.gatech.edu/) will give you the **required dataset**. Do not choose a different one. The final prediction question or questions depend on that dataset and will be stated separately; this website template does not decide them. This is your own project, separate from the team project.
 
-You must follow the [rendered individual website template](../individual-website-template/) for the required headings and subsection order at midterm and final. Fill every section with your own data, methods, and results. It includes a copyable Markdown outline.
+## Start with the required website template
 
-## Website structure
+Create **your own GitHub Pages project website** and register its link in ML Class Hub. Keep that same link all semester. The word *website* below means **your project website**, not this course-instructions page.
 
-Use clear sections that develop throughout the semester: **Introduction and question; Data and preparation; Methods; Evaluation and results; Discussion and limitations; Conclusion and next steps; References; Code and reproducibility; AI-use disclosure.** Explain your own choices and cite sources you actually read. Keep earlier work visible as you add experiments; correct mistakes rather than silently hiding them.
+Open the [rendered individual website template](../individual-website-template/) to see the **required headings, subsection order, fill-in explanations, and example tables**. Use the download link near the top of that page to save the complete Markdown starter (`.md`) for your own website. Keep its numbered headings and fill them with your own work. The assigned dataset and target groups come from ML Class Hub; sample text is not a result to copy.
 
-## Midterm: unsupervised analysis
+## Midterm: find patterns without the answers
 
-Explore and preprocess the assigned data. Apply at least one unsupervised feature-selection or dimensionality-reduction method and compare it with the full-feature representation. Feature selection retains original features; methods such as PCA create new ones. Run a clustering algorithm on both representations and evaluate it with justified **internal measures**, such as silhouette score, Davies–Bouldin index, Calinski–Harabasz score, or another measure taught in class that fits the data. Explain what each chosen measure captures and its limitations; no single metric is required of everyone. Show representative clusters, failures, and what you will improve.
+First, prepare the assigned data. Then use at least one way to keep fewer original features or create fewer new features. Run a **clustering method** twice: once using all features and once using the smaller feature version. Clustering puts similar examples into groups **without using their known class labels to train**. Show the groups, use suitable class-taught measures that do not need labels, and explain what worked or failed. The [template's midterm section](../individual-website-template/#3-midterm-finding-patterns-without-using-the-answers) walks through every subsection.
 
-**Ground-truth labels are not required for this unsupervised checkpoint.** If the assigned data include reliable labels, you may report an external measure such as adjusted Rand index as optional post-fit analysis. Do not use labels to fit or tune the unsupervised method, and do not invent labels solely to obtain an external score. If labels are unavailable, explain that and use internal measures and qualitative inspection.
+Submit **one 10-minute unlisted YouTube video link** in the individual project area of ML Class Hub. Explain your work and a result in the video. There is no individual TA interview at midterm; the team midterm meeting is a separate requirement.
 
-On your website, fill in the relevant sections above with preliminary evidence and a concrete next-step plan. Submit **one 10-minute unlisted YouTube video link** in the individual project workspace in ML Class Hub. Show your implementation, one result, one limitation, and the next experiment. Test the link while signed out and keep it available for staff review. This checkpoint does not require a TA interview; the team project does not require this video.
+## Final: predict the answers the course assigned
 
-## Final: supervised comparisons and explanation
+Continue on the **same website**. A prediction model learns from examples with known answers (class labels) and predicts the answer for new examples. Once the course states what to predict for the dataset, write those questions on your project website in plain language. Do not assume that ML Class Hub has already supplied answer groups or a ready-made experiment.
 
-Extend the same website with completed experiments and conclusions.
+- <strong><span style="background-color:#e7f1fb;color:#123b67;border-left:4px solid #123b67;padding:0.1em 0.35em">CS 4641 · Undergraduate</span></strong>: run **two** feature-selection/reduction methods and **two** prediction models.
+- <strong><span style="background-color:#f4eafa;color:#54236b;border-left:4px solid #54236b;padding:0.1em 0.35em">CS 7641 · Graduate</span></strong>: run **three** feature-selection/reduction methods and **three** prediction models.
 
-- <strong><span style="background-color:#e7f1fb;color:#123b67;border-left:4px solid #123b67;padding:0.1em 0.35em">CS 4641 · Undergraduate</span></strong>: complete **two** feature-selection/reduction methods and **two** prediction models.
-- <strong><span style="background-color:#f4eafa;color:#54236b;border-left:4px solid #54236b;padding:0.1em 0.35em">CS 7641 · Graduate</span></strong>: complete **three** feature-selection/reduction methods and **three** prediction models.
+For **each** prediction question the course states for the dataset, test each prediction model with all features and with each smaller feature version. Use the same training, validation, and test examples across models so the comparison is fair. The [template's final section](../individual-website-template/#4-final-predicting-the-assigned-answers) gives the exact layout and an example results table. Explain mistakes and limits, not only your best score.
 
-Compare each model on the full-feature baseline and every reduced representation using the binary, five-class, and full-class tasks specified for the assigned dataset. Keep one documented label mapping per task. For CIFAR-10, the full-class task has ten classes; another assigned dataset can have a different count.
+## Final TA interview and deadline
 
-Use consistent train, validation, and test splits. Fit preprocessing and feature selection on training data only; keep the test set out of model selection. Explain metrics, class-wise errors, runtime, feature relevance, failures, and limitations. Accuracy alone is not the goal. Be ready to show your code if asked.
-
-Meet your TA during the final interview window with a working core algorithm, baseline, and preliminary results. Be ready to demonstrate the work and explain your choices. Complete the website by the last instructional day. No second routine video is required. There is no separate pre-interview upload or website freeze. Show your current website and code during the meeting; the TA asks questions about the work you can explain then. Later edits count toward the existing final website deadline, not toward answers given in the interview.
-
-## Prepared final-interview questions
-
-Common questions may cover the assigned data and task labels; train/validation/test separation and leakage prevention; how a reduction or selection method works; why the chosen clustering and prediction measures fit the task; what a comparison or failure case shows; and which work the student implemented. These are examples, not a complete question list. The TA may ask other relevant questions about any part of the project or request a small demonstration using the current website and code. The interview tests your understanding of the project.
-
-## What the TA looks for
-
-The TA looks for sound methodology, reproducible evidence, justified comparisons, honest interpretation, and your ability to explain your own work. The Hub project page shows checkpoint-specific instructions and feedback. See [Individual and Team Projects](../) for shared rules.
+Show your current website and code in the final TA meeting. Be ready to explain your data, method choices, comparisons, mistakes, and what you personally did. These are common question areas, **not a complete question list**; the TA may ask other relevant questions or request a small demonstration. There is no extra early website submission. You may keep improving the website until the final deadline on the [course schedule](../../../course-info/course-schedule-mahdi/).

@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/docs/grading/project-breakdown/individual-project/</loc>
+  </url><url>
     <loc>/docs/grading/project-breakdown/individual/</loc>
   </url><url>
     <loc>/docs/grading/project-breakdown/individual-website-template/</loc>
-  </url><url>
-    <loc>/docs/grading/project-breakdown/team-website-template/</loc>
   </url><url>
     <loc>/docs/grading/categories/</loc>
   </url><url>
@@ -17,6 +17,8 @@
     <loc>/docs/course-info/course-overview/</loc>
   </url><url>
     <loc>/docs/guidelines/general/</loc>
+  </url><url>
+    <loc>/docs/grading/project-breakdown/team-project/</loc>
   </url><url>
     <loc>/docs/grading/project-breakdown/proposal/</loc>
   </url><url>
@@ -41,6 +43,8 @@
     <loc>/docs/grading/project-breakdown/</loc>
   </url><url>
     <loc>/docs/grading/project-breakdown/final/</loc>
+  </url><url>
+    <loc>/docs/grading/project-breakdown/team-website-template/</loc>
   </url><url>
     <loc>/docs/guidelines/honorlock/</loc>
   </url><url>

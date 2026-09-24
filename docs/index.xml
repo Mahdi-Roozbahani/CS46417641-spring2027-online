@@ -12,25 +12,19 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/individual/</guid>
-      <description>Individual Project # This is your own project, separate from the team project. Use one individual GitHub Pages website throughout the semester and register its link in ML Class Hub. Improve that same site at midterm and final. The Hub assignment will identify the required dataset, label mappings, and submission details once staff configure it. CIFAR-10 is an example, not a required dataset. Dates appear on the course schedule.</description>
+      <description>Individual Project # ML Class Hub will give you the required dataset. Do not choose a different one. The final prediction question or questions depend on that dataset and will be stated separately; this website template does not decide them. This is your own project, separate from the team project.
+Start with the required website template # Create your own GitHub Pages project website and register its link in ML Class Hub.</description>
     </item>
     
     <item>
-      <title>Individual Website Template</title>
+      <title>Individual Project Website Template</title>
       <link>/docs/grading/project-breakdown/individual-website-template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/individual-website-template/</guid>
-      <description>Individual Project Website Template # This is a rendered Markdown example of the website&amp;rsquo;s required shape. For the individual project, follow the headings and subsection order exactly on one website. Replace every instruction and blank with your own work; do not omit a required subsection, even if its answer is that a result was unavailable and why. Your methods and findings will differ from another student&amp;rsquo;s. Do not copy sample results or assume a sample dataset is assigned.</description>
-    </item>
-    
-    <item>
-      <title>Team Website Template</title>
-      <link>/docs/grading/project-breakdown/team-website-template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/grading/project-breakdown/team-website-template/</guid>
-      <description>Team Project Website Template # This is a rendered Markdown example of the required team-report shape, not a sample project to copy. Keep these core headings on the same team website from proposal through final so TAs can find the required evidence. Teams may add subsections, improve the layout, and build richer interactive features or software beyond this starting structure; do not replace or hide the required content. At proposal, write a plan; at midterm, replace plans with work completed so far; at final, revise the same sections to report the full evidence.</description>
+      <description>Individual Project # Download the complete Markdown starter (.md)
+Open the downloaded file in a text editor and replace the instructions with your own work. If your browser displays the file instead of downloading it, save the page as a .md file.
+This is the required layout for your own individual project website (the GitHub Pages link you register in ML Class Hub). This course page is only the example; your website will contain your answers, figures, and results.</description>
     </item>
     
     <item>
@@ -144,6 +138,17 @@ Use the rendered team website template as the minimum report structure, includin
     </item>
     
     <item>
+      <title>Team Project Website Template</title>
+      <link>/docs/grading/project-breakdown/team-website-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/team-website-template/</guid>
+      <description>Team Project # Download the complete Markdown starter (.md)
+Open the downloaded file in a text editor and replace the instructions with your own work. If your browser displays the file instead of downloading it, save the page as a .md file.
+This is a starting layout for your team&amp;rsquo;s own project website, not a topic or result to copy. Keep the main headings so your TA can find the required work.</description>
+    </item>
+    
+    <item>
       <title>Project TA Meeting</title>
       <link>/docs/grading/project-breakdown/project-ta-meeting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -158,7 +163,7 @@ Use the rendered team website template as the minimum report structure, includin
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/project-bonus/</guid>
-      <description>Optional Team-Project Bonus # The required course components total 100%. A team can earn up to 5 additional course percentage points for exceptional work beyond the complete required team project, making 105% the maximum possible course score. The individual project has no separate bonus. Both CS 4641 · Undergraduate and CS 7641 · Graduate teams have the same five-point bonus ceiling, but bonus work must exceed the requirements for their course level.</description>
+      <description>Optional Team-Project Bonus # The required course components total 100%. A team can earn up to 5 additional course percentage points, making 105% the maximum possible score. The individual project has no separate bonus. The same five items apply to CS 4641 and CS 7641 teams, but each item must be additional to the required work for that course level. A team can earn full required-project credit without any bonus work.</description>
     </item>
     
     <item>

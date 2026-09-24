@@ -1,13 +1,4 @@
----
-title: Team Project Website Template
-weight: 31
-bookHidden: true
----
 # Team Project
-
-<a href="../../../../files/team-project-starter.md" download="team-project-starter.md">Download the complete Markdown starter (.md)</a>
-
-Open the downloaded file in a text editor and replace the instructions with your own work. If your browser displays the file instead of downloading it, save the page as a `.md` file.
 
 This is a starting layout for **your team's own project website**, not a topic or result to copy. Keep the main headings so your TA can find the required work. Your team **may add subsections, better explanations, interactive features, and a different visual design**. Use this same website for the proposal, midterm review, and final. At proposal, write what you plan; at midterm, show what you have done; at final, revise it to show completed work. The team chooses a feasible question and lawful dataset, unlike the individual assignment where the course supplies the data.
 

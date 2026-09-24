@@ -1,13 +1,4 @@
----
-title: Individual Project Website Template
-weight: 6
-bookHidden: true
----
 # Individual Project
-
-<a href="../../../../files/individual-project-starter.md" download="individual-project-starter.md">Download the complete Markdown starter (.md)</a>
-
-Open the downloaded file in a text editor and replace the instructions with your own work. If your browser displays the file instead of downloading it, save the page as a `.md` file.
 
 This is the required layout for **your own individual project website** (the GitHub Pages link you register in ML Class Hub). This course page is only the example; your website will contain **your** answers, figures, and results. Keep the numbered headings and subsections below in this order. Replace the instructions under them with your own writing. At midterm, complete Sections 1–3 and mark final-only work as planned. By the final deadline, complete every section. Do not copy an example result as if it were yours.
 
