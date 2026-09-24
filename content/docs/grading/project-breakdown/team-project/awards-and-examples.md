@@ -3,10 +3,12 @@ weight: 60
 title: Awards and Examples
 bookHidden: false
 bookFlatSection: false
+aliases:
+- /docs/grading/project-breakdown/award_galore/
 ---
 # Project Awards and Examples
 
-These awards recognize exceptional **individual and team projects**. Awards are distinct from course grades and the [optional team-project bonus](../project-bonus/); an award is not needed for full credit or bonus credit. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See [Grading Categories](../../categories/) for the course-grade weights.
+These awards recognize exceptional **individual and team projects**. Awards are distinct from course grades and the [optional team-project bonus](../bonus/); an award is not needed for full credit or bonus credit. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See [Grading Categories](../../../categories/) for the course-grade weights.
 
 ## What makes a project stand out
 

@@ -3,6 +3,8 @@ weight: 50
 title: Bonus
 bookHidden: false
 bookFlatSection: false
+aliases:
+- /docs/grading/project-breakdown/project-bonus/
 ---
 # Optional Team-Project Bonus
 
@@ -20,4 +22,4 @@ Add an **Optional bonus work** section to the final team website. For each item 
 4. **Build an enhanced interactive explanation (+1):** go beyond the required single interactive visualization. Provide at least three meaningful controls (for example, choose a model, choose a feature, and filter a data group) that update actual project data or model results. Show a comparison between at least two methods or groups, explain what readers learn from it, and demonstrate that the controls work. Extra colors, a static plot, or decorative animation do not count.
 5. **Build a working model-based tool (+1):** provide a separate usable workflow beyond the report and its visualization. A user must be able to supply a new input, run the team's trained model or method, and see an explained output. Show one example input and output and demonstrate the tool during the final interview. A mockup, static page, or visualization of existing results alone does not count.
 
-Privacy, honest reporting, citations, and disclosure of generative-AI use are required for **every** project; they do not earn bonus points by themselves. [Project awards](../award_galore/) are separate recognition.
+Privacy, honest reporting, citations, and disclosure of generative-AI use are required for **every** project; they do not earn bonus points by themselves. [Project awards](../awards-and-examples/) are separate recognition.

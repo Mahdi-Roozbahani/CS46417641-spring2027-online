@@ -26,11 +26,11 @@ Explain what the team cleaned or changed. State which examples were used to trai
 
 ### 3.1 What simple result are we trying to beat?
 
-A **baseline** is a simple comparison on the same question. For example, if the task predicts one of two labels, always predicting the more common label is one possible baseline. Name your baseline and show its actual result by midterm or final.
+Name the simple baseline you will compare against and show its actual result by midterm or final. Compare it with methods addressing the same question.
 
 ### 3.2 What other methods did we try?
 
-For each method, explain in ordinary language what it does, why you chose it, and whether it is **planned**, **in progress**, or **completed**. At proposal, name at least three methods or models you plan to test; you do not need results yet. By final, run and report at least three different methods or models in total. A baseline counts only when actually run and compared. CS 4641 must include a model that learns from known answers (**supervised**). CS 7641 must include that and a method that finds patterns without using those answers to train (**unsupervised**). See the [course project requirements](https://mahdi-roozbahani.github.io/CS46417641-spring2027-online/docs/grading/project-breakdown/final/) for details.
+For each method, explain why you chose it and whether it is **planned**, **in progress**, or **completed**. At proposal, name at least three methods or models you plan to test; results are not required yet. By final, run and report at least three different methods or models in total. A baseline counts only when actually run and compared. CS 4641 must include a supervised model; CS 7641 must include supervised and unsupervised methods. See the [course project requirements](https://mahdi-roozbahani.github.io/CS46417641-spring2027-online/docs/grading/project-breakdown/team-project/final/) for details.
 
 ## 4. Evaluation and results
 

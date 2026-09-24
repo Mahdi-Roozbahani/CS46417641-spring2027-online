@@ -1,14 +1,16 @@
 ---
 weight: 30
 title: Team Final Report
-bookHidden: true
+bookHidden: false
 bookFlatSection: false
+aliases:
+- /docs/grading/project-breakdown/final/
 ---
 # Team Final Report, Website, and TA Interview
 
-Complete a **paper-style report on the same team website**, with supporting code and reproduction instructions. The TA interview is in the two-week final-review window; the completed website is due on the last instructional day in the [course schedule](../../../course-info/course-schedule-mahdi/). Keep the same ML Class Hub team link. The individual final is separate; see [Individual Project](../individual/).
+Complete a **paper-style report on the same team website**, with supporting code and reproduction instructions. The TA interview is in the two-week final-review window; the completed website is due on the last instructional day in the [course schedule](../../../../course-info/course-schedule-mahdi/). Keep the same ML Class Hub team link. The individual final is separate; see [Individual Project](../../individual-project/requirements/).
 
-Use the [rendered team website template](../team-website-template/) as the minimum report structure, including the required interactive visualization. You may add useful sections and features beyond it while keeping the core headings.
+Use the [rendered team website template](../website-template/) as the minimum report structure, including the required interactive visualization. You may add useful sections and features beyond it while keeping the core headings.
 
 ## Complete the same report
 
@@ -23,12 +25,12 @@ Develop the proposal and midterm sections into a coherent final paper:
 7. **Project plan and member contributions:** show the final Gantt-chart record or milestone summary and each member's actual contribution.
 8. **References and AI-use disclosure:** cite reviewed work and disclose tools, purpose, and scope of AI assistance. Be ready to show the project code to the TA if asked. Do not publish restricted data.
 
-- <strong><span style="background-color:#e7f1fb;color:#123b67;border-left:4px solid #123b67;padding:0.1em 0.35em">CS 4641 · Undergraduate</span></strong>: run and compare at least three different ML models or baselines, including at least one supervised model trained on labeled examples.
-- <strong><span style="background-color:#f4eafa;color:#54236b;border-left:4px solid #54236b;padding:0.1em 0.35em">CS 7641 · Graduate</span></strong>: run and compare at least three different ML models or methods. Include both a supervised model trained on labels and an unsupervised method trained without labels.
+- <strong><span style="background-color:#e7f1fb;color:#123b67;border-left:4px solid #123b67;padding:0.1em 0.35em">CS 4641 · Undergraduate</span></strong>: run and compare at least three different ML models or baselines, including at least one supervised model.
+- <strong><span style="background-color:#f4eafa;color:#54236b;border-left:4px solid #54236b;padding:0.1em 0.35em">CS 7641 · Graduate</span></strong>: run and compare at least three different ML models or methods. Include both a supervised model and an unsupervised method.
 
-A simple baseline can count as one of the three only if the team actually runs it, reports its results, and compares models answering the same question with it. Show the results of all required methods and explain what the differences mean. Supervised prediction and unsupervised grouping answer different questions, so report each with suitable evidence rather than forcing one accuracy comparison across both. No external clustering measure is required when reliable labels are unavailable. See the [worked example](../#one-example-across-stages).
+A simple baseline can count as one of the three only if the team actually runs it, reports its results, and compares models answering the same question with it. Show the results of all required methods and explain what the differences mean. Supervised prediction and unsupervised grouping answer different questions, so report each with suitable evidence rather than forcing one accuracy comparison across both. No external clustering measure is required when reliable labels are unavailable. See the [worked example](../topic-example/#one-example-across-stages).
 
-The final team website must include an interactive visualization that lets a reader explore the team's own data or model results; a static plot alone does not satisfy this requirement. A working application beyond that visualization may be considered for the [optional bonus](../project-bonus/).
+The final team website must include an interactive visualization that lets a reader explore the team's own data or model results; a static plot alone does not satisfy this requirement. A working application beyond that visualization may be considered for the [optional bonus](../bonus/).
 
 The report is not subject to the proposal's 800-word limit. A working demo can help when relevant, but a polished interface does not replace valid ML evidence.
 

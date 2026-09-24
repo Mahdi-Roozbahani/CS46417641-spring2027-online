@@ -6,5 +6,26 @@
     <description>Recent content in Individual Project on Class Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/docs/grading/project-breakdown/individual-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Individual Project</title>
+      <link>/docs/grading/project-breakdown/individual-project/requirements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/individual-project/requirements/</guid>
+      <description>Individual Project # ML Class Hub will give you the required dataset. Do not choose a different one. The final prediction question or questions depend on that dataset and will be stated separately; this website template does not decide them. This is your own project, separate from the team project.
+Start with the required website template # Create your own GitHub Pages project website and register its link in ML Class Hub.</description>
+    </item>
+    
+    <item>
+      <title>Individual Project Website Template</title>
+      <link>/docs/grading/project-breakdown/individual-project/website-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/individual-project/website-template/</guid>
+      <description>Individual Project # Download the complete Markdown starter (.md)
+Open the downloaded file in a text editor and replace the instructions with your own work. If your browser displays the file instead of downloading it, save the page as a .md file.
+This is the required layout for your own individual project website (the GitHub Pages link you register in ML Class Hub). This course page is only the example; your website will contain your answers, figures, and results.</description>
+    </item>
+    
   </channel>
 </rss>

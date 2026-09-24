@@ -1,11 +1,14 @@
 ---
 title: Individual Project Website Template
-weight: 6
-bookHidden: true
+weight: 20
+bookHidden: false
+bookFlatSection: false
+aliases:
+- /docs/grading/project-breakdown/individual-website-template/
 ---
 # Individual Project
 
-<a href="../../../../files/individual-project-starter.md" download="individual-project-starter.md">Download the complete Markdown starter (.md)</a>
+<a href="../../../../../files/individual-project-starter.md" download="individual-project-starter.md">Download the complete Markdown starter (.md)</a>
 
 Open the downloaded file in a text editor and replace the instructions with your own work. If your browser displays the file instead of downloading it, save the page as a `.md` file.
 
@@ -31,19 +34,19 @@ Give the dataset name and the course-provided download or information link. Say 
 
 ### 2.2 What will I try to predict at the final?
 
-Write the prediction question or questions the course specifies **for the dataset you receive**. Say, in ordinary words, what the model will see and what answer it will try to give. If the course has not yet specified this for your dataset, write **"To be provided by the course"** here and do not invent an answer. The website will be updated when that information is available.
+Write the prediction question or questions the course specifies **for the dataset you receive**. State the input and the answer your model will predict. The course will post the dataset-specific prediction task in ML Class Hub. If it has not been posted yet, leave this subsection for the final update; do not invent a task or fill it with a placeholder.
 
 ### 2.3 How did I separate the data?
 
-Explain how you kept some examples for learning and others for checking your work. **Training data** are examples the model learns from. **Validation data** help you choose settings or decide between models. **Test data** are saved until the end to check how well your chosen model works on examples it has not seen. State how many examples you put in each part. Do not let the model learn from the test examples or use their answers while choosing a model. This mistake is sometimes called **data leakage**. When comparing models, use the same saved test examples for each one.
+State how many examples you put in the training, validation, and test sets. Do not let the model learn from test examples or use their answers while choosing a model; that is data leakage. When comparing models, use the same saved test examples for each one.
 
 ## 3. Midterm: finding patterns without using the answers
 
-This is **unsupervised learning**: your method finds patterns without using the known class labels to train it. Complete this section and the separate midterm video required in ML Class Hub.
+Complete this section and the separate midterm video required in ML Class Hub.
 
 ### 3.1 How did I prepare the data?
 
-Explain what you changed before running the method: for example, how you handled missing values or put numbers on a comparable scale. A **feature** is a piece of information about each example, such as a measurement or a column in a dataset. First use all available features. Later compare this with a version using less information. If a preparation step learns from data, fit it on training examples only.
+Explain what you changed before running the method, such as handling missing values or scaling numeric features. First use all available features, then compare with a reduced-feature version. If a preparation step learns from data, fit it on training examples only.
 
 ### 3.2 How did I choose or reduce features?
 
@@ -51,7 +54,7 @@ Use at least **one** method that reduces the amount of information given to clus
 
 ### 3.3 What groups did the clustering method find?
 
-**Clustering** means putting similar examples into groups without telling the method the correct class for each example. Name the clustering method and its important settings. Run it twice: once with all features and once with the smaller feature version from Section 3.2. State how many groups it found or was asked to find. Show examples or a figure that helps a reader see what the groups contain.
+Name the clustering method and its important settings. Run it twice: once with all features and once with the reduced-feature version from Section 3.2. State how many groups it found or was asked to find. Show examples or a figure that helps a reader see what the groups contain.
 
 ### 3.4 How did I judge the groups?
 
@@ -65,7 +68,7 @@ Summarize the main finding, one limitation, and the next experiment. Explain wea
 
 ## 4. Final: predicting the assigned answers
 
-This is **supervised learning**: a model learns from examples whose answers (class labels) are known, then predicts answers for other examples. Keep Section 3 on the website and add the work below.
+Keep Section 3 on the website and add the supervised-learning work below.
 
 ### 4.1 Which methods and prediction models did I run?
 

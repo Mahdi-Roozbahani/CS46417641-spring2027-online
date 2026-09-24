@@ -2,7 +2,6 @@
 title: Home
 type: docs
 ---
-
 ## Course Info
 
 {{% instructor_summary %}}

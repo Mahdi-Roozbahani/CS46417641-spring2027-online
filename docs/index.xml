@@ -7,24 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Individual Project</title>
-      <link>/docs/grading/project-breakdown/individual/</link>
+      <title>Topic and Project Example</title>
+      <link>/docs/grading/project-breakdown/team-project/topic-example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/grading/project-breakdown/individual/</guid>
-      <description>Individual Project # ML Class Hub will give you the required dataset. Do not choose a different one. The final prediction question or questions depend on that dataset and will be stated separately; this website template does not decide them. This is your own project, separate from the team project.
-Start with the required website template # Create your own GitHub Pages project website and register its link in ML Class Hub.</description>
-    </item>
-    
-    <item>
-      <title>Individual Project Website Template</title>
-      <link>/docs/grading/project-breakdown/individual-website-template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/grading/project-breakdown/individual-website-template/</guid>
-      <description>Individual Project # Download the complete Markdown starter (.md)
-Open the downloaded file in a text editor and replace the instructions with your own work. If your browser displays the file instead of downloading it, save the page as a .md file.
-This is the required layout for your own individual project website (the GitHub Pages link you register in ML Class Hub). This course page is only the example; your website will contain your answers, figures, and results.</description>
+      <guid>/docs/grading/project-breakdown/team-project/topic-example/</guid>
+      <description>Choosing a Team Project Topic # One example across stages # Suppose a team has customer reviews and asks &amp;ldquo;Can we predict whether a review is positive or negative, and what themes appear in the reviews?&amp;rdquo; This is only an example; teams may choose other questions, datasets, and algorithms.
+Proposal: describe the data and plan to try a majority-label baseline, logistic regression, and a decision tree to predict positive/negative labels.</description>
     </item>
     
     <item>
@@ -69,13 +58,34 @@ Course-created videos, notes, assessment questions, and code are for enrolled st
     </item>
     
     <item>
-      <title>Team Proposal</title>
-      <link>/docs/grading/project-breakdown/proposal/</link>
+      <title>Individual Project</title>
+      <link>/docs/grading/project-breakdown/individual-project/requirements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/grading/project-breakdown/proposal/</guid>
+      <guid>/docs/grading/project-breakdown/individual-project/requirements/</guid>
+      <description>Individual Project # ML Class Hub will give you the required dataset. Do not choose a different one. The final prediction question or questions depend on that dataset and will be stated separately; this website template does not decide them. This is your own project, separate from the team project.
+Start with the required website template # Create your own GitHub Pages project website and register its link in ML Class Hub.</description>
+    </item>
+    
+    <item>
+      <title>Team Proposal</title>
+      <link>/docs/grading/project-breakdown/team-project/proposal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/team-project/proposal/</guid>
       <description>Team Project Proposal # Write the proposal on the same team website you will use through midterm and final. Register the team and link in ML Class Hub by the course schedule deadline. This is for the team project, not the individual project. No proposal video or separate proposal website is required.
 Choose a feasible question # Identify a meaningful ML question, a lawful and obtainable dataset, a simple baseline, and a measurable outcome.</description>
+    </item>
+    
+    <item>
+      <title>Individual Project Website Template</title>
+      <link>/docs/grading/project-breakdown/individual-project/website-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/individual-project/website-template/</guid>
+      <description>Individual Project # Download the complete Markdown starter (.md)
+Open the downloaded file in a text editor and replace the instructions with your own work. If your browser displays the file instead of downloading it, save the page as a .md file.
+This is the required layout for your own individual project website (the GitHub Pages link you register in ML Class Hub). This course page is only the example; your website will contain your answers, figures, and results.</description>
     </item>
     
     <item>
@@ -108,10 +118,10 @@ Joining a session # A TA announces the session in an Ed thread with the time and
     
     <item>
       <title>Team Midterm Review</title>
-      <link>/docs/grading/project-breakdown/midterm/</link>
+      <link>/docs/grading/project-breakdown/team-project/midterm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/grading/project-breakdown/midterm/</guid>
+      <guid>/docs/grading/project-breakdown/team-project/midterm/</guid>
       <description>Team Midterm Website Review and TA Meeting # Update the same team website before the meeting with your assigned TA. This is the team midterm checkpoint, not a separate report or video. The course schedule gives the review window; the individual project&amp;rsquo;s video is a separate requirement.
 Update the proposal, do not start over # Keep the proposal&amp;rsquo;s section headings and turn plans into evidence:
 Introduction and related work: refine the question and explain any justified change since the proposal.</description>
@@ -128,27 +138,6 @@ All deadline and due dates in this course will be at 11:59 PM ET. Scroll horizon
     </item>
     
     <item>
-      <title>Team Final Report</title>
-      <link>/docs/grading/project-breakdown/final/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/grading/project-breakdown/final/</guid>
-      <description>Team Final Report, Website, and TA Interview # Complete a paper-style report on the same team website, with supporting code and reproduction instructions. The TA interview is in the two-week final-review window; the completed website is due on the last instructional day in the course schedule. Keep the same ML Class Hub team link. The individual final is separate; see Individual Project.
-Use the rendered team website template as the minimum report structure, including the required interactive visualization.</description>
-    </item>
-    
-    <item>
-      <title>Team Project Website Template</title>
-      <link>/docs/grading/project-breakdown/team-website-template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/grading/project-breakdown/team-website-template/</guid>
-      <description>Team Project # Download the complete Markdown starter (.md)
-Open the downloaded file in a text editor and replace the instructions with your own work. If your browser displays the file instead of downloading it, save the page as a .md file.
-This is a starting layout for your team&amp;rsquo;s own project website, not a topic or result to copy. Keep the main headings so your TA can find the required work.</description>
-    </item>
-    
-    <item>
       <title>Project TA Meeting</title>
       <link>/docs/grading/project-breakdown/project-ta-meeting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -158,20 +147,41 @@ This is a starting layout for your team&amp;rsquo;s own project website, not a t
     </item>
     
     <item>
-      <title>Bonus</title>
-      <link>/docs/grading/project-breakdown/project-bonus/</link>
+      <title>Team Final Report</title>
+      <link>/docs/grading/project-breakdown/team-project/final/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/grading/project-breakdown/project-bonus/</guid>
+      <guid>/docs/grading/project-breakdown/team-project/final/</guid>
+      <description>Team Final Report, Website, and TA Interview # Complete a paper-style report on the same team website, with supporting code and reproduction instructions. The TA interview is in the two-week final-review window; the completed website is due on the last instructional day in the course schedule. Keep the same ML Class Hub team link. The individual final is separate; see Individual Project.
+Use the rendered team website template as the minimum report structure, including the required interactive visualization.</description>
+    </item>
+    
+    <item>
+      <title>Team Project Website Template</title>
+      <link>/docs/grading/project-breakdown/team-project/website-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/team-project/website-template/</guid>
+      <description>Team Project # Download the complete Markdown starter (.md)
+Open the downloaded file in a text editor and replace the instructions with your own work. If your browser displays the file instead of downloading it, save the page as a .md file.
+This is a starting layout for your team&amp;rsquo;s own project website, not a topic or result to copy. Keep the main headings so your TA can find the required work.</description>
+    </item>
+    
+    <item>
+      <title>Bonus</title>
+      <link>/docs/grading/project-breakdown/team-project/bonus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/team-project/bonus/</guid>
       <description>Optional Team-Project Bonus # The required course components total 100%. A team can earn up to 5 additional course percentage points, making 105% the maximum possible score. The individual project has no separate bonus. The same five items apply to CS 4641 and CS 7641 teams, but each item must be additional to the required work for that course level. A team can earn full required-project credit without any bonus work.</description>
     </item>
     
     <item>
       <title>Awards and Examples</title>
-      <link>/docs/grading/project-breakdown/award_galore/</link>
+      <link>/docs/grading/project-breakdown/team-project/awards-and-examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/grading/project-breakdown/award_galore/</guid>
+      <guid>/docs/grading/project-breakdown/team-project/awards-and-examples/</guid>
       <description>Project Awards and Examples # These awards recognize exceptional individual and team projects. Awards are distinct from course grades and the optional team-project bonus; an award is not needed for full credit or bonus credit. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See Grading Categories for the course-grade weights.
 What makes a project stand out # A clear, important question and an honest account of related work.</description>
     </item>
