@@ -1,7 +1,8 @@
 ---
 title: Topic and Project Example
-weight: 5
+weight: 10
 bookHidden: false
+bookFlatSection: false
 ---
 # Choosing a Team Project Topic
 

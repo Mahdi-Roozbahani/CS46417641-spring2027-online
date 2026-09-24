@@ -1,5 +1,5 @@
 ---
-weight: 20
+weight: 30
 title: Team Midterm Review
 bookHidden: false
 bookFlatSection: false
@@ -29,3 +29,11 @@ Keep the proposal's section headings and turn plans into evidence:
 For both course levels, show the actual output, say what it means, explain what did not work, and identify what you will improve. A model listed in a plan but not run does not meet this checkpoint. See the [worked example](../topic-example/#one-example-across-stages).
 
 During the meeting, show the current website and working evidence, discuss blockers, and answer questions. Common questions may cover the research question, data, baseline or first experiment, evaluation plan, current result or obstacle, and each member's contribution. These are examples, not a complete question list. The TA may ask other relevant questions about any part of the team's work shown live. Every member should attend and understand the whole project. The TA records feedback and next steps. Apply it before the [final report](../final/). Methods not yet taught are not required at this checkpoint.
+
+## Attendance and individual participation
+
+The midterm review is worth 10 course percentage points: 7 for the team website and progress demonstrated at the meeting, and 3 for each member’s own discussion of the work. The TA gives the team one shared website/progress score and records an individual discussion score when participation differs. The questions listed above are examples; the TA can ask other relevant questions about the project.
+
+If an Institute-approved accommodation prevents attendance, contact the teaching team privately through ML Class Hub. Staff will arrange an appropriate alternative; teammates do not need to approve an accommodation. Do not post accommodation documents or details in team chat.
+
+For another scheduling conflict, tell the team and TA before the meeting. If every other team member agrees in the Hub team chat, the absent member can post a link to a 10-minute unlisted YouTube explanation of their contribution in that chat before the meeting and respond to the TA’s follow-up questions. The shared team score is unaffected. Without attendance or one of these alternatives, the member does not earn the 3 individual discussion points; demonstrated team work still receives its shared score.

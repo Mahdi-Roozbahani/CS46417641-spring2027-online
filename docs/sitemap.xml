@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/docs/grading/project-breakdown/team-project/topic-example/</loc>
-  </url><url>
     <loc>/docs/grading/categories/</loc>
   </url><url>
     <loc>/docs/resources/collection/</loc>
@@ -18,7 +16,7 @@
   </url><url>
     <loc>/docs/grading/project-breakdown/individual-project/requirements/</loc>
   </url><url>
-    <loc>/docs/grading/project-breakdown/team-project/proposal/</loc>
+    <loc>/docs/grading/project-breakdown/team-project/topic-example/</loc>
   </url><url>
     <loc>/docs/guidelines/</loc>
   </url><url>
@@ -32,9 +30,9 @@
   </url><url>
     <loc>/docs/grading/qquizzes-and-exams/</loc>
   </url><url>
-    <loc>/docs/grading/project-breakdown/team-project/midterm/</loc>
-  </url><url>
     <loc>/docs/grading/project-breakdown/team-project/</loc>
+  </url><url>
+    <loc>/docs/grading/project-breakdown/team-project/proposal/</loc>
   </url><url>
     <loc>/docs/course-info/course-schedule-mahdi/</loc>
   </url><url>
@@ -46,11 +44,13 @@
   </url><url>
     <loc>/docs/grading/project-breakdown/</loc>
   </url><url>
-    <loc>/docs/grading/project-breakdown/team-project/final/</loc>
+    <loc>/docs/grading/project-breakdown/team-project/midterm/</loc>
   </url><url>
     <loc>/docs/guidelines/honorlock/</loc>
   </url><url>
     <loc>/docs/resources/</loc>
+  </url><url>
+    <loc>/docs/grading/project-breakdown/team-project/final/</loc>
   </url><url>
     <loc>/docs/grading/project-breakdown/team-project/website-template/</loc>
   </url><url>

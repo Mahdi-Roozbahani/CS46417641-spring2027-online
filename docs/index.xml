@@ -7,16 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Topic and Project Example</title>
-      <link>/docs/grading/project-breakdown/team-project/topic-example/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/grading/project-breakdown/team-project/topic-example/</guid>
-      <description>Choosing a Team Project Topic # One example across stages # Suppose a team has customer reviews and asks &amp;ldquo;Can we predict whether a review is positive or negative, and what themes appear in the reviews?&amp;rdquo; This is only an example; teams may choose other questions, datasets, and algorithms.
-Proposal: describe the data and plan to try a majority-label baseline, logistic regression, and a decision tree to predict positive/negative labels.</description>
-    </item>
-    
-    <item>
       <title>Categories</title>
       <link>/docs/grading/categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -68,13 +58,13 @@ Start with the required website template # Create your own GitHub Pages project 
     </item>
     
     <item>
-      <title>Team Proposal</title>
-      <link>/docs/grading/project-breakdown/team-project/proposal/</link>
+      <title>Topic and Project Example</title>
+      <link>/docs/grading/project-breakdown/team-project/topic-example/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/grading/project-breakdown/team-project/proposal/</guid>
-      <description>Team Project Proposal # Write the proposal on the same team website you will use through midterm and final. Register the team and link in ML Class Hub by the course schedule deadline. This is for the team project, not the individual project. No proposal video or separate proposal website is required.
-Choose a feasible question # Identify a meaningful ML question, a lawful and obtainable dataset, a simple baseline, and a measurable outcome.</description>
+      <guid>/docs/grading/project-breakdown/team-project/topic-example/</guid>
+      <description>Choosing a Team Project Topic # One example across stages # Suppose a team has customer reviews and asks &amp;ldquo;Can we predict whether a review is positive or negative, and what themes appear in the reviews?&amp;rdquo; This is only an example; teams may choose other questions, datasets, and algorithms.
+Proposal: describe the data and plan to try a majority-label baseline, logistic regression, and a decision tree to predict positive/negative labels.</description>
     </item>
     
     <item>
@@ -117,14 +107,13 @@ Joining a session # A TA announces the session in an Ed thread with the time and
     </item>
     
     <item>
-      <title>Team Midterm Review</title>
-      <link>/docs/grading/project-breakdown/team-project/midterm/</link>
+      <title>Team Proposal</title>
+      <link>/docs/grading/project-breakdown/team-project/proposal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/grading/project-breakdown/team-project/midterm/</guid>
-      <description>Team Midterm Website Review and TA Meeting # Update the same team website before the meeting with your assigned TA. This is the team midterm checkpoint, not a separate report or video. The course schedule gives the review window; the individual project&amp;rsquo;s video is a separate requirement.
-Update the proposal, do not start over # Keep the proposal&amp;rsquo;s section headings and turn plans into evidence:
-Introduction and related work: refine the question and explain any justified change since the proposal.</description>
+      <guid>/docs/grading/project-breakdown/team-project/proposal/</guid>
+      <description>Team Project Proposal # Write the proposal on the same team website you will use through midterm and final. Register the team and link in ML Class Hub by the course schedule deadline. This is for the team project, not the individual project. No proposal video or separate proposal website is required.
+Choose a feasible question # Identify a meaningful ML question, a lawful and obtainable dataset, a simple baseline, and a measurable outcome.</description>
     </item>
     
     <item>
@@ -144,6 +133,17 @@ All deadline and due dates in this course will be at 11:59 PM ET. Scroll horizon
       
       <guid>/docs/grading/project-breakdown/project-ta-meeting/</guid>
       <description>Project TA Meetings # The current Spring 2027 project-review schedule is explained on the Individual and Team Projects page and the course schedule. This older page is hidden from navigation so it does not duplicate or contradict those instructions.</description>
+    </item>
+    
+    <item>
+      <title>Team Midterm Review</title>
+      <link>/docs/grading/project-breakdown/team-project/midterm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/team-project/midterm/</guid>
+      <description>Team Midterm Website Review and TA Meeting # Update the same team website before the meeting with your assigned TA. This is the team midterm checkpoint, not a separate report or video. The course schedule gives the review window; the individual project&amp;rsquo;s video is a separate requirement.
+Update the proposal, do not start over # Keep the proposal&amp;rsquo;s section headings and turn plans into evidence:
+Introduction and related work: refine the question and explain any justified change since the proposal.</description>
     </item>
     
     <item>

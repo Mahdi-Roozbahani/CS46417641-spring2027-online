@@ -1,6 +1,6 @@
 ---
 title: Team Project Website Template
-weight: 40
+weight: 50
 bookHidden: false
 bookFlatSection: false
 aliases:
