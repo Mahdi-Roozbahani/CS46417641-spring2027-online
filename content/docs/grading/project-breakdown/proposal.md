@@ -6,22 +6,21 @@ bookFlatSection: false
 ---
 # Team Project Proposal
 
-Submit a **concise proposal on your team's existing project website** and register the website link and team in [ML Class Hub](https://ml-class.cc.gatech.edu/) by the date on the [course schedule](../../../course-info/course-schedule-mahdi/). Keep using this site through midterm and final; no separate proposal website is needed. This milestone is for the **team project**, not the individual project.
+Write the proposal on the **same team website** you will use through midterm and final. Register the team and link in [ML Class Hub](https://ml-class.cc.gatech.edu/) by the [course schedule](../../../course-info/course-schedule-mahdi/) deadline. This is for the team project, not the individual project. No proposal video or separate proposal website is required.
 
-## Choose the question
+## Choose a feasible question
 
-Start with a real problem that your team can investigate within one semester. The [past awardees](../award_galore/) show different applications, but do not copy their questions, text, code, or experimental design. A strong proposal identifies what existing work already does and what *your* team will test or contribute. Novelty might be a new application or dataset, a useful baseline comparison, a method adaptation, a realistic deployment constraint, an interpretability or fairness question, or a more rigorous evaluation. A claim of novelty needs evidence from relevant prior work; novelty is not mandatory for full credit.
+Identify a meaningful ML question, a lawful and obtainable dataset, a simple baseline, and a measurable outcome. The [past awardees](../award_galore/) can inspire the scope, but do not copy their questions or work. Novelty can come from the question, data, application, method adaptation, realistic constraint, or rigorous comparison; it is **not required for full credit**. Investigate relevant prior work before claiming a contribution, and plan a smaller fallback if data or a complex method fails.
 
-Before committing, confirm you can obtain and lawfully use the data, implement a simple baseline, define a measurable outcome, and make progress before the midterm review. Have a smaller fallback if data access or a complex method fails. Human-subject data collection or publication may require separate Institute review; a class proposal does not grant that approval.
+## Proposal sections
 
-## What to put on the website
+Use these headings so the same report can grow at midterm and final:
 
-1. **Question and value:** the specific problem, intended users or scientific audience, and why the answer matters.
-2. **Prior work and contribution:** a few closely related sources you actually read, the gap or comparison you will investigate, and the claim you are *not* yet able to make.
-3. **Data and feasibility:** source, access and license, privacy risks, sample size or expected scale, and a fallback.
-4. **Methods and baseline:** an initial method, a simple comparison, and what would count as improvement or insight.
-5. **Evaluation:** splits, metrics, leakage checks, error analysis, and any fairness, robustness, or uncertainty question that matters.
-6. **Team charter and plan:** each member's responsibilities, communication plan, milestones, integration owner, and how conflicts or missed work will be handled.
-7. **AI and references:** planned generative-AI use and how outputs and citations will be verified.
+1. **Introduction and related work:** the context, motivation, a brief literature review, and the gap or comparison your team will investigate.
+2. **Problem definition and data:** the precise question, dataset source and link when available, features or expected scale, access and license, privacy considerations, and feasibility.
+3. **Proposed methods and baseline:** preprocessing, candidate ML methods, a simple baseline, and why each comparison is informative. Distinguish what is planned from what is already implemented.
+4. **Evaluation plan:** data splits, suitable quantitative measures, error analysis, leakage checks, and the result that would answer your question. Include responsible-use or fairness checks where relevant.
+5. **Project plan and contributions:** milestones, owners, integration plan, and a Gantt chart covering the rest of the semester. The [sample Gantt chart](../../../../other/GanttChart.xlsx) is optional; a clear equivalent is fine. List every member and their contribution to this proposal.
+6. **References and AI disclosure:** cite sources you actually read and disclose planned or actual generative-AI use under the course policy.
 
-Keep this an actionable plan, not a finished paper or a promise of publication. The TA will check clarity, feasibility, evidence, evaluation, and team accountability. Proposal feedback should guide revisions; the question can be refined as results emerge if the changes are documented. See the [team midterm review](../midterm/) for the next stage.
+Keep the proposal narrative **under 800 words**; references, the Gantt chart, and the contribution table do not count. A short, specific plan is more useful than a long speculative report. Your question and methods may evolve as evidence arrives; document and justify changes in the later website updates. There is no requirement to promise a publication.

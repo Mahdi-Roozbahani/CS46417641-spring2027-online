@@ -8,7 +8,7 @@ bookFlatSection: false
 ---
 # Individual and Team Projects
 
-There are **two separate projects**. The individual project contributes 30% and the team project 40% of the course grade; see [Grading Categories](../categories/). Keep one individual website link and one different team website link for the whole semester, improving each site at its scheduled checkpoints. Register and maintain the links in [ML Class Hub](https://ml-class.cc.gatech.edu/). The [course schedule](../../course-info/course-schedule-mahdi/) gives the dates.
+There are **two separate projects**. The individual project contributes 35% and the team project 40% of the course grade; see [Grading Categories](../categories/). Keep one individual website link and one different team website link for the whole semester, improving each site at its scheduled checkpoints. Register and maintain the links in [ML Class Hub](https://ml-class.cc.gatech.edu/). The [course schedule](../../course-info/course-schedule-mahdi/) gives the dates.
 
 ## Part 1: Individual project
 

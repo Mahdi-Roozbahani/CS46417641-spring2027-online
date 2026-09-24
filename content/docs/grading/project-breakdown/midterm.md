@@ -6,10 +6,17 @@ bookFlatSection: false
 ---
 # Team Midterm Website Review and TA Meeting
 
-Update the **same team project website** before your scheduled TA meeting. The meeting is the team midterm checkpoint. There is no separate team midterm report or video, and the individual project's video is a different requirement. The [course schedule](../../../course-info/course-schedule-mahdi/) gives the two-week review window; arrange the meeting with your assigned TA through the course process.
+Update the **same team website** before the meeting with your assigned TA. This is the team midterm checkpoint, not a separate report or video. The [course schedule](../../../course-info/course-schedule-mahdi/) gives the review window; the individual project's video is a separate requirement.
 
-## Show progress, not a finished paper
+## Update the proposal, do not start over
 
-On the website, state the current question and any change since the proposal; data access and preparation; a working baseline or early experiment if available; evaluation completed so far; honest failures and blockers; each member's contribution; and the next concrete experiments. Identify what is implemented versus planned. Include verified references and generative-AI disclosure for work already used.
+Keep the proposal's section headings and turn plans into evidence:
 
-During the meeting, show the current website and working evidence, discuss blockers, and answer questions. Every member should attend and be able to explain the whole team project. The TA records brief feedback and next steps. Apply that feedback before the [final review](../final/). Do not postpone all implementation until after this meeting, but you are not expected to have completed methods that the course has not yet taught.
+1. **Introduction and related work:** refine the question and explain any justified change since the proposal.
+2. **Problem definition and data:** show the data obtained, preparation completed, access or privacy constraints, and any data limitations.
+3. **Methods and baseline:** distinguish implemented methods from planned ones. Demonstrate a working baseline or early experiment where feasible and explain your choices.
+4. **Evaluation and preliminary results:** show quantitative measures and useful figures, interpret them, and identify failures, leakage risks, and what remains uncertain. Do not claim results for unfinished experiments.
+5. **Project plan and contributions:** update the [proposal Gantt chart](../proposal/) and identify each member's work, blockers, and next experiments.
+6. **References and AI disclosure:** update sources and disclosed AI assistance actually used.
+
+During the meeting, show the current website and working evidence, discuss blockers, and answer questions. Common questions may cover the research question, data, baseline or first experiment, evaluation plan, current result or obstacle, and each member's contribution. These are examples, not a complete question list. The TA may ask other relevant questions about any part of the team's work shown live. Every member should attend and understand the whole project. The TA records feedback and next steps. Apply it before the [final report](../final/). Methods not yet taught are not required at this checkpoint.

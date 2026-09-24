@@ -6,29 +6,29 @@ bookFlatSection: false
 ---
 # Quizzes and Exams
 
-This page covers assessment content, availability, and permitted materials. See [Categories](../categories/) for grade weights and [Honorlock](../../guidelines/honorlock/) for proctoring setup and technical problems. There is no final exam.
+This page covers assessment content, availability, and permitted materials. See [Grading Categories](../categories/) for weights and [Honorlock](../../guidelines/honorlock/) for proctoring setup and technical problems. There is no final exam.
 
 ## Quiz 0 and graded quizzes
 
-Quiz 0 is the ungraded course-readiness check. Quizzes 1–14 are graded, completed individually in Canvas, and proctored with Honorlock. Each graded quiz is closed book and closed notes: no reference sheet, lecture tab, external website, generative AI, calculator, communication, or help from another person unless that quiz's Canvas instructions explicitly authorize a resource. Do not share assessment content while its window is open.
+Quiz 0 is the ungraded course-readiness check. Quizzes 1–14 are graded, completed individually in Canvas, and proctored with Honorlock. Each graded quiz is closed book and closed notes: no reference sheet, lecture tab, external website, generative AI, calculator, communication, or help from another person unless that quiz's Canvas instructions explicitly authorize a resource.
 
-Questions are based on assigned lecture videos, slides, written notes, annotations, explanations, and examples. They primarily test concepts and may involve short calculations or interpretation; practice quizzes do not limit the graded question bank.
+The regular quiz window is **Friday at 12:00 AM through Monday at 11:59 PM Eastern Time (ET)**. The published Canvas times control if an individual quiz has an announced exception. Canvas also shows duration, points, and attempts. Once an attempt starts, its timer runs continuously; leaving the browser does not pause it. Start with enough time to finish before closing.
 
-Canvas shows each quiz's opening, closing, duration, points, and number of attempts. Quizzes normally open Thursday afternoon and close Monday at 11:59 PM ET, but the published Canvas dates control. Start early enough to finish before closing. Once an attempt starts, its timer runs continuously; leaving or closing the browser does not pause it. Do not open an assessment merely to preview it.
+Questions draw on assigned lecture videos, slides, written notes, annotations, explanations, and examples. Practice questions do not exhaust the graded bank. Do not share or discuss quiz questions or answers with other students or publicly, even after a quiz closes; direct a necessary question privately to the teaching team.
 
 ## Midterm exam
 
-The midterm is the only exam. It covers assigned material from the start of the course through dimensionality reduction (L14), inclusive. Later topics are excluded unless the teaching team announces a course-wide change. Study the assigned lecture videos, slides, and written notes; practice quizzes are not an exhaustive list of exam questions.
+The midterm is the only exam. It covers assigned material through dimensionality reduction (L14), inclusive. Study the assigned videos, slides, and written notes; practice quizzes are not an exhaustive list. The exam draws questions from a bank, so students can receive different questions. Do not assume another student's exam is identical to yours.
 
-The midterm is taken individually in Canvas with Honorlock. Canvas will publish its availability window, duration, and attempt limit. Once started, the timer runs continuously, and the attempt must be completed in one sitting. Start early enough to finish before the window closes. Do not discuss or share questions until the window has closed for everyone.
+Take the midterm individually in Canvas with Honorlock. Canvas publishes its availability window, duration, and attempt limit. Once started, the timer runs continuously and the attempt must be completed in one sitting. Start with enough time to finish before the window closes.
+
+**Exam questions, answers, screenshots, and details must remain private.** Do not discuss, copy, post, or share them with classmates, on Ed, or anywhere else, during or after the exam window. If you need to ask about a question or report a problem, contact the teaching team privately through the course's private support channel. Do not send exam content to another student.
 
 ## Midterm reference sheet
 
-You may prepare one personal PDF of at most **two pages and 5 MB**. Typed, handwritten, and scanned pages are allowed. The sheet must be legible at ordinary on-screen magnification; typed main content should be at least 9-point text. The reference sheet is not permitted for quizzes.
+You may prepare one personal PDF of at most **two pages and 5 MB**. Typed, handwritten, and scanned pages are allowed. It must be legible at ordinary on-screen magnification; typed main content should be at least 9-point text. The reference sheet is not permitted for quizzes.
 
-Upload and preview your PDF in [ML Class Hub](https://ml-class.cc.gatech.edu/midterm/reference-sheet/), not Canvas. The Hub keeps one current file per student. You may replace it before starting your exam; there is no separate course-wide upload deadline. Do not replace it during an active attempt.
-
-**Exam-time access is conditional.** The teaching team must first test the signed-in Hub preview with the actual Honorlock and Georgia Tech sign-in configuration. Open the Hub preview during a proctored attempt only if the published Canvas midterm instructions explicitly allow it. The teaching team will provide a practice workflow. Printed, locally saved, emailed, cloud-drive, or another student's copy is not permitted unless an approved accommodation says otherwise.
+Upload and preview the PDF in [ML Class Hub](https://ml-class.cc.gatech.edu/midterm/reference-sheet/), not Canvas. The Hub keeps one current file per student; you may replace it before starting your exam. Do not replace it during an active attempt. During the midterm, use only the authorized in-exam link to your Hub reference sheet. Other Hub pages, external websites, printed or locally saved copies, email, cloud drives, and another student's sheet are not permitted unless an approved accommodation says otherwise. If the authorized link does not open, contact Honorlock live support and the teaching team privately; do not bypass the browser restrictions.
 
 ## Accommodations and exceptional circumstances
 

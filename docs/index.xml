@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/individual/</guid>
-      <description>Individual Project # This is your own project, separate from the team project. Use one individual GitHub Pages website throughout the semester and register its link in ML Class Hub. Update the same website at midterm and final; do not create a new link for each checkpoint. The course-specific Hub assignment will identify the required dataset, label mappings, and submission details once staff configure it. CIFAR-10 is an example, not a required dataset.</description>
+      <description>Individual Project # This is your own project, separate from the team project. Use one individual GitHub Pages website throughout the semester and register its link in ML Class Hub. Improve that same site at midterm and final. The Hub assignment will identify the required dataset, label mappings, and submission details once staff configure it. CIFAR-10 is an example, not a required dataset. Dates appear on the course schedule.</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       
       <guid>/docs/grading/categories/</guid>
       <description>Grading Categories # The required course components total 100%. There is no final exam or optional project bonus.
-Component Course weight Quizzes 1–14 15% Midterm exam 15% Individual project 30% Team project 40% Total 100% Quiz 0 is required preparation but carries no course-grade weight. See Quizzes and Exams for assessment rules and Project Breakdown for the two project tracks. The project rubrics will describe how each stage is evaluated; this table does not assign separate course-grade percentages to project stages.</description>
+Component Course weight Quizzes 1–14 15% Midterm exam 10% Individual project 35% Team project 40% Total 100% Quiz 0 is required preparation but carries no course-grade weight. See Quizzes and Exams for assessment rules and Project Breakdown for the two project tracks. Project rubrics describe how each stage is evaluated; this table does not assign separate course-grade percentages to project stages.</description>
     </item>
     
     <item>
@@ -62,8 +62,8 @@ Course-created videos, notes, assessment questions, and code are for enrolled st
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/proposal/</guid>
-      <description>Team Project Proposal # Submit a concise proposal on your team&amp;rsquo;s existing project website and register the website link and team in ML Class Hub by the date on the course schedule. Keep using this site through midterm and final; no separate proposal website is needed. This milestone is for the team project, not the individual project.
-Choose the question # Start with a real problem that your team can investigate within one semester.</description>
+      <description>Team Project Proposal # Write the proposal on the same team website you will use through midterm and final. Register the team and link in ML Class Hub by the course schedule deadline. This is for the team project, not the individual project. No proposal video or separate proposal website is required.
+Choose a feasible question # Identify a meaningful ML question, a lawful and obtainable dataset, a simple baseline, and a measurable outcome.</description>
     </item>
     
     <item>
@@ -100,8 +100,9 @@ Joining a session # A TA announces the session in an Ed thread with the time and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/midterm/</guid>
-      <description>Team Midterm Website Review and TA Meeting # Update the same team project website before your scheduled TA meeting. The meeting is the team midterm checkpoint. There is no separate team midterm report or video, and the individual project&amp;rsquo;s video is a different requirement. The course schedule gives the two-week review window; arrange the meeting with your assigned TA through the course process.
-Show progress, not a finished paper # On the website, state the current question and any change since the proposal; data access and preparation; a working baseline or early experiment if available; evaluation completed so far; honest failures and blockers; each member&amp;rsquo;s contribution; and the next concrete experiments.</description>
+      <description>Team Midterm Website Review and TA Meeting # Update the same team website before the meeting with your assigned TA. This is the team midterm checkpoint, not a separate report or video. The course schedule gives the review window; the individual project&amp;rsquo;s video is a separate requirement.
+Update the proposal, do not start over # Keep the proposal&amp;rsquo;s section headings and turn plans into evidence:
+Introduction and related work: refine the question and explain any justified change since the proposal.</description>
     </item>
     
     <item>
@@ -120,7 +121,8 @@ All deadline and due dates in this course will be at 11:59 PM ET. Scroll horizon
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/final/</guid>
-      <description>Team Final Report, Website, and TA Interview # The team delivers a paper-style report on the same team website, supporting code and reproduction instructions, and a TA interview. The interview is in the two-week final-review window; the completed website is due on the last instructional day shown in the course schedule. Keep the same ML Class Hub team link. The individual project&amp;rsquo;s final website and interview are separate; see Individual Project.</description>
+      <description>Team Final Report, Website, and TA Interview # Complete a paper-style report on the same team website, with supporting code and reproduction instructions. The TA interview is in the two-week final-review window; the completed website is due on the last instructional day in the course schedule. Keep the same ML Class Hub team link. The individual final is separate; see Individual Project.
+Complete the same report # Develop the proposal and midterm sections into a coherent final paper:</description>
     </item>
     
     <item>

@@ -14,6 +14,10 @@ Complete Quiz 0 before Quiz 1 on the computer, browser, camera, microphone, netw
 
 Before each assessment, confirm that your camera and microphone work, disconnect external monitors and unauthorized devices, close communication, recording, remote-access, and AI applications, and launch from the Honorlock-enabled Canvas link.
 
+## Websites during an assessment
+
+Do not browse websites during a quiz or the midterm. The only sites permitted in the proctored browser are Canvas/Honorlock and, **for the midterm only**, the authorized ML Class Hub link to your own reference sheet. Other Hub pages are not permitted. Do not use a second device or another browser to reach a blocked site. If the reference-sheet link does not open during the midterm, contact Honorlock live support and the teaching team privately instead of bypassing the restriction.
+
 ## Access-code or technical problem
 
 If Canvas asks for an access code, do not request one from another student or the team. Exit before beginning, confirm Chrome and the Honorlock extension are active, then relaunch through the Honorlock-enabled Canvas link. Contact Honorlock live support if the problem continues.
