@@ -6,7 +6,7 @@ bookFlatSection: false
 ---
 # Project Awards and Examples
 
-These awards recognize exceptional **individual and team projects**. They are distinct from course grades: an award is not needed for full credit, and the current Spring 2027 grading plan does not include extra course-grade points for awards. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See [Grading Categories](../../categories/) for the course-grade weights.
+These awards recognize exceptional **individual and team projects**. Awards are distinct from course grades and the [optional team-project bonus](../project-bonus/); an award is not needed for full credit or bonus credit. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See [Grading Categories](../../categories/) for the course-grade weights.
 
 ## What makes a project stand out
 

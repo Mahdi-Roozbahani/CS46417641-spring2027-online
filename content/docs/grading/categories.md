@@ -6,7 +6,7 @@ bookFlatSection: false
 ---
 # Grading Categories
 
-The required course components total 100%. There is no final exam or optional project bonus.
+The required course components total 100%. There is no final exam. Teams can earn up to **5 additional course percentage points** for exceptional optional work beyond the required team project, for a maximum course score of 105%. The [bonus criteria](project-breakdown/project-bonus/) explain what qualifies.
 
 | Component | Course weight |
 |---|---:|

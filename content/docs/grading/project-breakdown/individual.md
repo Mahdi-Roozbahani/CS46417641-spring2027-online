@@ -7,6 +7,8 @@ bookHidden: false
 
 This is your own project, separate from the team project. Use one individual GitHub Pages website throughout the semester and register its link in [ML Class Hub](https://ml-class.cc.gatech.edu/). Improve that same site at midterm and final. The Hub assignment will identify the required dataset, label mappings, and submission details once staff configure it. **CIFAR-10 is an example, not a required dataset.** Dates appear on the [course schedule](../../../course-info/course-schedule-mahdi/).
 
+You must follow the [rendered individual website template](../individual-website-template/) for the required headings and subsection order at midterm and final. Fill every section with your own data, methods, and results. It includes a copyable Markdown outline.
+
 ## Website structure
 
 Use clear sections that develop throughout the semester: **Introduction and question; Data and preparation; Methods; Evaluation and results; Discussion and limitations; Conclusion and next steps; References; Code and reproducibility; AI-use disclosure.** Explain your own choices and cite sources you actually read. Keep earlier work visible as you add experiments; correct mistakes rather than silently hiding them.
@@ -21,15 +23,20 @@ On your website, fill in the relevant sections above with preliminary evidence a
 
 ## Final: supervised comparisons and explanation
 
-Extend the same website with completed experiments and conclusions. Undergraduate students complete **two** feature-selection/reduction methods and **two** prediction models; graduate students complete **three** methods and **three** prediction models. Compare each model on the full-feature baseline and every reduced representation using the binary, five-class, and full-class tasks specified for the assigned dataset. Keep one documented label mapping per task. For CIFAR-10, the full-class task has ten classes; another assigned dataset can have a different count.
+Extend the same website with completed experiments and conclusions.
 
-Use consistent train, validation, and test splits. Fit preprocessing and feature selection on training data only; keep the test set out of model selection. Explain metrics, class-wise errors, runtime, feature relevance, failures, and limitations. Include code, environment, and steps to reproduce the key results. Accuracy alone is not the goal.
+- <strong><span style="background-color:#e7f1fb;color:#123b67;border-left:4px solid #123b67;padding:0.1em 0.35em">CS 4641 · Undergraduate</span></strong>: complete **two** feature-selection/reduction methods and **two** prediction models.
+- <strong><span style="background-color:#f4eafa;color:#54236b;border-left:4px solid #54236b;padding:0.1em 0.35em">CS 7641 · Graduate</span></strong>: complete **three** feature-selection/reduction methods and **three** prediction models.
+
+Compare each model on the full-feature baseline and every reduced representation using the binary, five-class, and full-class tasks specified for the assigned dataset. Keep one documented label mapping per task. For CIFAR-10, the full-class task has ten classes; another assigned dataset can have a different count.
+
+Use consistent train, validation, and test splits. Fit preprocessing and feature selection on training data only; keep the test set out of model selection. Explain metrics, class-wise errors, runtime, feature relevance, failures, and limitations. Accuracy alone is not the goal. Be ready to show your code if asked.
 
 Meet your TA during the final interview window with a working core algorithm, baseline, and preliminary results. Be ready to demonstrate the work and explain your choices. Complete the website by the last instructional day. No second routine video is required. There is no separate pre-interview upload or website freeze. Show your current website and code during the meeting; the TA asks questions about the work you can explain then. Later edits count toward the existing final website deadline, not toward answers given in the interview.
 
 ## Prepared final-interview questions
 
-Common questions may cover the assigned data and task labels; train/validation/test separation and leakage prevention; how a reduction or selection method works; why the chosen clustering and prediction measures fit the task; what a comparison or failure case shows; and which work the student implemented. These are examples, not a complete question list. The TA may ask other relevant questions about any part of the project or request a small demonstration using the current website and code. The interview tests understanding, not whether the TA reviewed a website version in advance.
+Common questions may cover the assigned data and task labels; train/validation/test separation and leakage prevention; how a reduction or selection method works; why the chosen clustering and prediction measures fit the task; what a comparison or failure case shows; and which work the student implemented. These are examples, not a complete question list. The TA may ask other relevant questions about any part of the project or request a small demonstration using the current website and code. The interview tests your understanding of the project.
 
 ## What the TA looks for
 

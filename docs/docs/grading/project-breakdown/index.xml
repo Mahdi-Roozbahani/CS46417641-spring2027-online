@@ -16,6 +16,24 @@
     </item>
     
     <item>
+      <title>Individual Website Template</title>
+      <link>/docs/grading/project-breakdown/individual-website-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/individual-website-template/</guid>
+      <description>Individual Project Website Template # This is a rendered Markdown example of the website&amp;rsquo;s required shape. For the individual project, follow the headings and subsection order exactly on one website. Replace every instruction and blank with your own work; do not omit a required subsection, even if its answer is that a result was unavailable and why. Your methods and findings will differ from another student&amp;rsquo;s. Do not copy sample results or assume a sample dataset is assigned.</description>
+    </item>
+    
+    <item>
+      <title>Team Website Template</title>
+      <link>/docs/grading/project-breakdown/team-website-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/grading/project-breakdown/team-website-template/</guid>
+      <description>Team Project Website Template # This is a rendered Markdown example of the required team-report shape, not a sample project to copy. Keep these core headings on the same team website from proposal through final so TAs can find the required evidence. Teams may add subsections, improve the layout, and build richer interactive features or software beyond this starting structure; do not replace or hide the required content. At proposal, write a plan; at midterm, replace plans with work completed so far; at final, revise the same sections to report the full evidence.</description>
+    </item>
+    
+    <item>
       <title>Team Proposal</title>
       <link>/docs/grading/project-breakdown/proposal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -43,7 +61,7 @@ Introduction and related work: refine the question and explain any justified cha
       
       <guid>/docs/grading/project-breakdown/final/</guid>
       <description>Team Final Report, Website, and TA Interview # Complete a paper-style report on the same team website, with supporting code and reproduction instructions. The TA interview is in the two-week final-review window; the completed website is due on the last instructional day in the course schedule. Keep the same ML Class Hub team link. The individual final is separate; see Individual Project.
-Complete the same report # Develop the proposal and midterm sections into a coherent final paper:</description>
+Use the rendered team website template as the minimum report structure, including the required interactive visualization.</description>
     </item>
     
     <item>
@@ -61,7 +79,7 @@ Complete the same report # Develop the proposal and midterm sections into a cohe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/project-bonus/</guid>
-      <description>Project Bonus # The current Spring 2027 grading plan has no optional project bonus. See Categories for the 100% course-grade breakdown. This older page is hidden from navigation so it does not present obsolete bonus criteria.</description>
+      <description>Optional Team-Project Bonus # The required course components total 100%. A team can earn up to 5 additional course percentage points for exceptional work beyond the complete required team project, making 105% the maximum possible course score. The individual project has no separate bonus. Both CS 4641 · Undergraduate and CS 7641 · Graduate teams have the same five-point bonus ceiling, but bonus work must exceed the requirements for their course level.</description>
     </item>
     
     <item>
@@ -70,7 +88,8 @@ Complete the same report # Develop the proposal and midterm sections into a cohe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/award_galore/</guid>
-      <description>Project Awards and Examples # These awards recognize exceptional individual and team projects. They are distinct from course grades: an award is not needed for full credit, and the current Spring 2027 grading plan does not include extra course-grade points for awards. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See Grading Categories for the course-grade weights.</description>
+      <description>Project Awards and Examples # These awards recognize exceptional individual and team projects. Awards are distinct from course grades and the optional team-project bonus; an award is not needed for full credit or bonus credit. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See Grading Categories for the course-grade weights.
+What makes a project stand out # A clear, important question and an honest account of related work.</description>
     </item>
     
   </channel>
