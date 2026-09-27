@@ -34,6 +34,8 @@ During the meeting, show the current website and working evidence, discuss block
 
 The midterm review is worth 10 course percentage points: 7 for the team website and progress demonstrated at the meeting, and 3 for each member’s own discussion of the work. The TA gives the team one shared website/progress score and records an individual discussion score when participation differs. The questions listed above are examples; the TA can ask other relevant questions about the project.
 
-If an Institute-approved accommodation prevents attendance, contact the teaching team privately through ML Class Hub. Staff will arrange an appropriate alternative; teammates do not need to approve an accommodation. Do not post accommodation documents or details in team chat.
+If an Institute-approved accommodation prevents attendance, contact your assigned mentor through a private Ed Discussion post (see [contact instructions](../../../../guidelines/ed-discussion/#contact-your-mentor-through-ed-discussion)). Staff will arrange an appropriate alternative; teammates do not need to approve an accommodation. Do not post accommodation documents or details in team chat.
 
 For another scheduling conflict, tell the team and TA before the meeting. If every other team member agrees in the Hub team chat, the absent member can post a link to a 10-minute unlisted YouTube explanation of their contribution in that chat before the meeting and respond to the TA’s follow-up questions. The shared team score is unaffected. Without attendance or one of these alternatives, the member does not earn the 3 individual discussion points; demonstrated team work still receives its shared score.
+
+Before attending, read the [Project Interview Rules](../../../../guidelines/project-interviews/), which apply to both the team midterm and individual final interviews.

@@ -68,7 +68,7 @@ Include a Gantt chart or simple timeline showing milestones and who owns them. A
 
 ## 8. References and AI-use disclosure
 
-Cite sources the team actually used. If generative AI helped, name the tool, purpose, scope, and what the team verified under the course policy. If none was used, say so.
+Cite sources the team actually used. If generative AI helped, name the tool, purpose, scope, and what the team verified under the [course AI policy](../../../../guidelines/general/#academic-integrity-and-generative-ai). If none was used, say so.
 
 ## Optional bonus work (not required)
 

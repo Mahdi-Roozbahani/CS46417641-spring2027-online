@@ -21,7 +21,97 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   
-</head>
+<meta name="course-image-preview" content="enabled"><style>.book-brand { display: flex; flex-direction: column; align-items: center; gap: .75rem; text-align: center; }
+.book-brand > a { justify-content: center; width: 100%; line-height: 1.25; }
+.book-brand .course-image-open img { display: block; width: 8rem; height: 8rem; max-width: 100%; margin: 0; object-fit: contain; }
+.book-brand .course-image-open:focus:not(:focus-visible) { outline: none; }
+.book-brand .course-image-open { flex: none; padding: 0; border: 0; background: transparent; cursor: zoom-in; color: inherit; font: inherit; }
+.course-image-open:focus-visible, .course-image-close:focus-visible { outline: 2px solid var(--color-link); outline-offset: 3px; }
+.course-image-dialog { padding: 2.5rem 1rem 1rem; border: 1px solid var(--gray-200); border-radius: .25rem; background: var(--body-background); color: var(--body-font-color); max-width: 95vw; max-height: 95vh; }
+.course-image-dialog::backdrop { background: var(--body-font-color); opacity: .75; }
+.course-image-dialog > img { display: block; width: auto; height: auto; max-width: 88vw; max-height: 82vh; object-fit: contain; }
+.course-image-close { position: absolute; right: .5rem; top: .25rem; border: 0; background: transparent; color: inherit; font-size: 2rem; cursor: pointer; min-width: 2rem; }
+@media print { .course-image-dialog { display: none !important; } }
+</style><script>/* Used by the published site and the trusted, script-sandboxed draft wrapper. */
+window.initializeCourseImagePreview = function (doc) {
+  if (!doc.querySelector('meta[name="course-image-preview"]')) return;
+  const image = doc.querySelector('.book-brand img');
+  if (!image || image.closest('button')) return;
+  const link = image.closest('a');
+  if (!link) return;
+  const button = doc.createElement('button');
+  button.type = 'button';
+  button.className = 'course-image-open';
+  button.setAttribute('aria-label', 'Enlarge class picture');
+  link.before(button);
+  button.append(image);
+  const dialog = doc.createElement('dialog');
+  dialog.className = 'course-image-dialog';
+  dialog.setAttribute('aria-label', 'Class picture');
+  const close = doc.createElement('button');
+  close.type = 'button';
+  close.className = 'course-image-close';
+  close.setAttribute('aria-label', 'Close enlarged picture');
+  close.textContent = '\u00d7';
+  const enlarged = doc.createElement('img');
+  enlarged.alt = 'Enlarged class picture';
+  dialog.append(close, enlarged);
+  doc.body.append(dialog);
+  button.addEventListener('click', () => {
+    enlarged.src = image.currentSrc || image.src;
+    dialog.showModal();
+    close.focus();
+  });
+  close.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => button.focus());
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => window.initializeCourseImagePreview(document));
+} else {
+  window.initializeCourseImagePreview(document);
+}
+</script><style id="course-navigation-levels">/* Use the course theme's neutral palette for the sidebar hierarchy. */
+/* Let the desktop menu follow the document; retain the mobile drawer scroll. */
+@media screen and (min-width: 56.001rem) {
+  .book-menu .book-menu-content {
+    position: static;
+    overflow: visible;
+  }
+}
+
+.book-menu nav > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  font-weight: 700;
+}
+.book-menu nav > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 80%, var(--body-background));
+  font-weight: 400;
+}
+.book-menu nav > ul > li > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 85%, var(--body-background));
+  font-weight: 600;
+}
+.book-menu nav > ul > li > ul > li > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 70%, var(--body-background));
+  font-weight: 400;
+}
+.book-menu nav > ul a:hover,
+.book-menu nav > ul a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.book-menu nav > ul a.active {
+  color: var(--body-font-color);
+  background: var(--gray-100);
+  box-shadow: inset 3px 0 var(--gray-500);
+  font-weight: 700;
+  text-decoration: none;
+}
+</style></head>
 <body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
@@ -31,7 +121,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="../../../../../"><img src="../../../../../favicon.jpeg" alt="Logo" /><span>Class Homepage</span>
+  <a class="flex align-center" href="../../../../../" target="_self" rel="noopener noreferrer"><img src="../../../../../branding/ML.png" alt="Logo" /><span>Class Homepage</span>
   </a>
 </h2>
 
@@ -76,7 +166,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/course-info/course-overview/" class="">Course Overview</a>
+    <a href="../../../../../docs/course-info/course-overview/" class="" target="_self" rel="noopener noreferrer">Course Overview</a>
   
 
           </li>
@@ -91,7 +181,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/course-info/instructors-and-tas/" class="">People</a>
+    <a href="../../../../../docs/course-info/instructors-and-tas/" class="" target="_self" rel="noopener noreferrer">People</a>
   
 
           </li>
@@ -106,7 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/course-info/course-schedule-mahdi/" class="">Course Schedule (Online Max)</a>
+    <a href="../../../../../docs/course-info/course-schedule-mahdi/" class="" target="_self" rel="noopener noreferrer">Course Schedule (Max Mahdi)</a>
   
 
           </li>
@@ -141,7 +231,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/guidelines/general/" class="">General</a>
+    <a href="../../../../../docs/guidelines/general/" class="" target="_self" rel="noopener noreferrer">General</a>
   
 
           </li>
@@ -156,7 +246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/guidelines/office-hours/" class="">Office Hours</a>
+    <a href="../../../../../docs/guidelines/office-hours/" class="" target="_self" rel="noopener noreferrer">Office Hours</a>
   
 
           </li>
@@ -171,7 +261,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/guidelines/ed-discussion/" class="">Ed Discussion</a>
+    <a href="../../../../../docs/guidelines/project-interviews/" class="" target="_self" rel="noopener noreferrer">Project Interview Rules</a>
+  
+
+          </li>
+        
+      
+    
+      
+        
+          <li>
+            
+  
+  
+
+  
+    <a href="../../../../../docs/guidelines/ed-discussion/" class="" target="_self" rel="noopener noreferrer">Ed Discussion</a>
   
 
             
@@ -191,7 +296,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/guidelines/honorlock/" class="">Honorlock</a>
+    <a href="../../../../../docs/guidelines/honorlock/" class="" target="_self" rel="noopener noreferrer">Honorlock</a>
   
 
             
@@ -231,7 +336,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/categories/" class="">Categories</a>
+    <a href="../../../../../docs/grading/categories/" class="" target="_self" rel="noopener noreferrer">Categories</a>
   
 
           </li>
@@ -246,7 +351,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/qquizzes-and-exams/" class="">Quizzes and Exams</a>
+    <a href="../../../../../docs/grading/qquizzes-and-exams/" class="" target="_self" rel="noopener noreferrer">Quizzes and Exams</a>
   
 
             
@@ -266,7 +371,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/" class="">Projects: Individual and Team</a>
+    <a href="../../../../../docs/grading/project-breakdown/" class="" target="_self" rel="noopener noreferrer">Projects: Individual and Team</a>
   
 
             
@@ -280,7 +385,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/individual-project/" class="">Individual Project</a>
+    <a href="../../../../../docs/grading/project-breakdown/individual-project/" class="" target="_self" rel="noopener noreferrer">Individual Project</a>
   
 
             
@@ -294,7 +399,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/individual-project/requirements/" class="">Individual Project</a>
+    <a href="../../../../../docs/grading/project-breakdown/individual-project/requirements/" class="" target="_self" rel="noopener noreferrer">Requirements</a>
   
 
           </li>
@@ -309,7 +414,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/individual-project/website-template/" class="">Individual Project Website Template</a>
+    <a href="../../../../../docs/grading/project-breakdown/individual-project/website-template/" class="" target="_self" rel="noopener noreferrer">Individual Project Website Template</a>
   
 
           </li>
@@ -330,7 +435,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/team-project/" class="">Team Project</a>
+    <a href="../../../../../docs/grading/project-breakdown/team-project/" class="" target="_self" rel="noopener noreferrer">Team Project</a>
   
 
             
@@ -344,7 +449,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/team-project/topic-example/" class="">Topic and Project Example</a>
+    <a href="../../../../../docs/grading/project-breakdown/team-project/topic-example/" class="" target="_self" rel="noopener noreferrer">Topic and Project Example</a>
   
 
           </li>
@@ -359,7 +464,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/team-project/proposal/" class="">Team Proposal</a>
+    <a href="../../../../../docs/grading/project-breakdown/team-project/proposal/" class="" target="_self" rel="noopener noreferrer">Team Proposal</a>
   
 
           </li>
@@ -374,7 +479,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/team-project/midterm/" class="">Team Midterm Review</a>
+    <a href="../../../../../docs/grading/project-breakdown/team-project/midterm/" class="" target="_self" rel="noopener noreferrer">Team Midterm Review</a>
   
 
           </li>
@@ -389,7 +494,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/team-project/final/" class="">Team Final Report</a>
+    <a href="../../../../../docs/grading/project-breakdown/team-project/final/" class="" target="_self" rel="noopener noreferrer">Team Final Report</a>
   
 
           </li>
@@ -404,7 +509,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/team-project/website-template/" class="">Team Project Website Template</a>
+    <a href="../../../../../docs/grading/project-breakdown/team-project/website-template/" class="" target="_self" rel="noopener noreferrer">Team Project Website Template</a>
   
 
           </li>
@@ -419,7 +524,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/team-project/bonus/" class="">Bonus</a>
+    <a href="../../../../../docs/grading/project-breakdown/team-project/bonus/" class="" target="_self" rel="noopener noreferrer">Bonus</a>
   
 
           </li>
@@ -434,7 +539,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/grading/project-breakdown/team-project/awards-and-examples/" class="active">Awards and Examples</a>
+    <a href="../../../../../docs/grading/project-breakdown/team-project/awards-and-examples/" class="active" target="_self" rel="noopener noreferrer">Awards and Examples</a>
   
 
           </li>
@@ -483,7 +588,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/resources/collection/" class="">Collection</a>
+    <a href="../../../../../docs/resources/collection/" class="" target="_self" rel="noopener noreferrer">Collection</a>
   
 
           </li>
@@ -498,7 +603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../../../docs/resources/print-website/" class="">Print Website</a>
+    <a href="../../../../../docs/resources/print-website/" class="" target="_self" rel="noopener noreferrer">Print Website</a>
   
 
           </li>
@@ -563,20 +668,20 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#project-awards-and-examples">Project Awards and Examples</a>
+    <li><a href="#project-awards-and-examples" target="_self" rel="noopener noreferrer">Project Awards and Examples</a>
       <ul>
-        <li><a href="#what-makes-a-project-stand-out">What makes a project stand out</a></li>
-        <li><a href="#explore-earlier-projects">Explore earlier projects</a>
+        <li><a href="#what-makes-a-project-stand-out" target="_self" rel="noopener noreferrer">What makes a project stand out</a></li>
+        <li><a href="#explore-earlier-projects" target="_self" rel="noopener noreferrer">Explore earlier projects</a>
           <ul>
-            <li><a href="#out-of-stock-recommendation-system">Out-of-Stock Recommendation System</a></li>
-            <li><a href="#predicting-life-expectancy-with-interpretative-machine-learning">Predicting Life Expectancy with Interpretative Machine Learning</a></li>
-            <li><a href="#invisigan">invisiGAN</a></li>
-            <li><a href="#wheel-leg-robot-robust-locomotion-through-deep-reinforcement-learning-and-clustering">Wheel-Leg Robot Robust Locomotion through Deep Reinforcement Learning and Clustering</a></li>
-            <li><a href="#inverse-kinematics-approximation-using-machine-learning">Inverse Kinematics Approximation Using Machine Learning</a></li>
-            <li><a href="#cegs-lime-clustering-enhanced-graph-search-lime-for-cnn-explainability">CEGS-LIME: Clustering-Enhanced, Graph-Search LIME for CNN Explainability</a></li>
-            <li><a href="#advanced-quadrotor-control--stabilization">Advanced Quadrotor Control &amp; Stabilization</a></li>
-            <li><a href="#restaurant-review-prediction">Restaurant Review Prediction</a></li>
-            <li><a href="#learning-uav-state-estimator">Learning UAV State Estimator</a></li>
+            <li><a href="#out-of-stock-recommendation-system" target="_self" rel="noopener noreferrer">Out-of-Stock Recommendation System</a></li>
+            <li><a href="#predicting-life-expectancy-with-interpretative-machine-learning" target="_self" rel="noopener noreferrer">Predicting Life Expectancy with Interpretative Machine Learning</a></li>
+            <li><a href="#invisigan" target="_self" rel="noopener noreferrer">invisiGAN</a></li>
+            <li><a href="#wheel-leg-robot-robust-locomotion-through-deep-reinforcement-learning-and-clustering" target="_self" rel="noopener noreferrer">Wheel-Leg Robot Robust Locomotion through Deep Reinforcement Learning and Clustering</a></li>
+            <li><a href="#inverse-kinematics-approximation-using-machine-learning" target="_self" rel="noopener noreferrer">Inverse Kinematics Approximation Using Machine Learning</a></li>
+            <li><a href="#cegs-lime-clustering-enhanced-graph-search-lime-for-cnn-explainability" target="_self" rel="noopener noreferrer">CEGS-LIME: Clustering-Enhanced, Graph-Search LIME for CNN Explainability</a></li>
+            <li><a href="#advanced-quadrotor-control--stabilization" target="_self" rel="noopener noreferrer">Advanced Quadrotor Control &amp; Stabilization</a></li>
+            <li><a href="#restaurant-review-prediction" target="_self" rel="noopener noreferrer">Restaurant Review Prediction</a></li>
+            <li><a href="#learning-uav-state-estimator" target="_self" rel="noopener noreferrer">Learning UAV State Estimator</a></li>
           </ul>
         </li>
       </ul>
@@ -595,12 +700,12 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown"><h1 id="project-awards-and-examples">
   Project Awards and Examples
-  <a class="anchor" href="#project-awards-and-examples">#</a>
+  <a class="anchor" href="#project-awards-and-examples" target="_self" rel="noopener noreferrer">#</a>
 </h1>
-<p>These awards recognize exceptional <strong>individual and team projects</strong>. Awards are distinct from course grades and the <a href="../bonus/">optional team-project bonus</a>; an award is not needed for full credit or bonus credit. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See <a href="../../../categories/">Grading Categories</a> for the course-grade weights.</p>
+<p>These awards recognize exceptional <strong>individual and team projects</strong>. Awards are distinct from course grades and the <a href="../bonus/" target="_blank" rel="noopener noreferrer">optional team-project bonus</a>; an award is not needed for full credit or bonus credit. Every completed project is eligible for consideration; no separate award application is required. The final website and interview are the evidence reviewed. See <a href="../../../categories/" target="_blank" rel="noopener noreferrer">Grading Categories</a> for the course-grade weights.</p>
 <h2 id="what-makes-a-project-stand-out">
   What makes a project stand out
-  <a class="anchor" href="#what-makes-a-project-stand-out">#</a>
+  <a class="anchor" href="#what-makes-a-project-stand-out" target="_self" rel="noopener noreferrer">#</a>
 </h2>
 <ul>
 <li>A clear, important question and an honest account of related work.</li>
@@ -612,41 +717,41 @@ https://github.com/alex-shpak/hugo-book
 <p>The instructional team reviews completed websites and TA interview evidence after the final website deadline. It can recognize different strengths, such as research potential, applied impact, reproducibility, responsible AI, or effective communication; no category or number of awards is guaranteed. Website presentation alone does not overcome invalid experiments or unsupported claims. Public showcasing of a student&rsquo;s work requires permission and a privacy/licensing review; merely submitting a project does not grant permission to publish it elsewhere.</p>
 <h2 id="explore-earlier-projects">
   Explore earlier projects
-  <a class="anchor" href="#explore-earlier-projects">#</a>
+  <a class="anchor" href="#explore-earlier-projects" target="_self" rel="noopener noreferrer">#</a>
 </h2>
 <p>The following links were already listed in the course&rsquo;s historical award archive. They are <strong>examples for inspiration, not approved templates or verified current links</strong>. Many Georgia Tech GitHub Pages links require Institute sign-in, and access can change. Do not copy another team&rsquo;s text, code, data, or experimental design. The placeholder Spring 2026 entries have been removed.</p>
 <details open>
 <summary><strong>Project Awardees for Fall 2025</strong></summary>
 <h3 id="out-of-stock-recommendation-system">
   Out-of-Stock Recommendation System
-  <a class="anchor" href="#out-of-stock-recommendation-system">#</a>
+  <a class="anchor" href="#out-of-stock-recommendation-system" target="_self" rel="noopener noreferrer">#</a>
 </h3>
 <ul>
-<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/Group44-OOS-Recommendation/OOS-Product-Recommendation-Engine/">https://github.gatech.edu/pages/Group44-OOS-Recommendation/OOS-Product-Recommendation-Engine/</a></li>
+<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/Group44-OOS-Recommendation/OOS-Product-Recommendation-Engine/" target="_blank" rel="noopener noreferrer">https://github.gatech.edu/pages/Group44-OOS-Recommendation/OOS-Product-Recommendation-Engine/</a></li>
 <li><strong>Contributors:</strong> Arihanth Jayavijayan, Riya Bharathwaj, Nirmal Francis Xavier, Malhar Jadhav</li>
 </ul>
 <h3 id="predicting-life-expectancy-with-interpretative-machine-learning">
   Predicting Life Expectancy with Interpretative Machine Learning
-  <a class="anchor" href="#predicting-life-expectancy-with-interpretative-machine-learning">#</a>
+  <a class="anchor" href="#predicting-life-expectancy-with-interpretative-machine-learning" target="_self" rel="noopener noreferrer">#</a>
 </h3>
 <ul>
-<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/frahman39/CS7641-Group38/">https://github.gatech.edu/pages/frahman39/CS7641-Group38/</a></li>
+<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/frahman39/CS7641-Group38/" target="_blank" rel="noopener noreferrer">https://github.gatech.edu/pages/frahman39/CS7641-Group38/</a></li>
 <li><strong>Contributors:</strong> Amit Badoni, Allanda (Lonnie) Kriener, Tahsin nabi, Avinash Palliyil, Farhan Rahman</li>
 </ul>
 <h3 id="invisigan">
   invisiGAN
-  <a class="anchor" href="#invisigan">#</a>
+  <a class="anchor" href="#invisigan" target="_self" rel="noopener noreferrer">#</a>
 </h3>
 <ul>
-<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/jmaayah3/invisiGAN/">https://github.gatech.edu/pages/jmaayah3/invisiGAN/</a></li>
+<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/jmaayah3/invisiGAN/" target="_blank" rel="noopener noreferrer">https://github.gatech.edu/pages/jmaayah3/invisiGAN/</a></li>
 <li><strong>Contributors:</strong> Jameel Maayah, Caleb Rieck, Srikar Satluri, Ajinkya Argonda, Anish Vallabhaneni</li>
 </ul>
 <h3 id="wheel-leg-robot-robust-locomotion-through-deep-reinforcement-learning-and-clustering">
   Wheel-Leg Robot Robust Locomotion through Deep Reinforcement Learning and Clustering
-  <a class="anchor" href="#wheel-leg-robot-robust-locomotion-through-deep-reinforcement-learning-and-clustering">#</a>
+  <a class="anchor" href="#wheel-leg-robot-robust-locomotion-through-deep-reinforcement-learning-and-clustering" target="_self" rel="noopener noreferrer">#</a>
 </h3>
 <ul>
-<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/spolisetti6/ml-group-81/">https://github.gatech.edu/pages/spolisetti6/ml-group-81/</a></li>
+<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/spolisetti6/ml-group-81/" target="_blank" rel="noopener noreferrer">https://github.gatech.edu/pages/spolisetti6/ml-group-81/</a></li>
 <li><strong>Contributors:</strong> Zimeng Chai	,Collin Agarwal, Sasanka Polisetti, Trent Doiron, Nathan Donagi</li>
 </ul>
 <!-- Add more projects here as needed, each in the same format -->
@@ -655,10 +760,10 @@ https://github.com/alex-shpak/hugo-book
 <summary><strong>Project Awardees for Summer 2025</strong></summary>
 <h3 id="inverse-kinematics-approximation-using-machine-learning">
   Inverse Kinematics Approximation Using Machine Learning
-  <a class="anchor" href="#inverse-kinematics-approximation-using-machine-learning">#</a>
+  <a class="anchor" href="#inverse-kinematics-approximation-using-machine-learning" target="_self" rel="noopener noreferrer">#</a>
 </h3>
 <ul>
-<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/jmerrick6/InverseKinematics/FinalReport.html">https://github.gatech.edu/pages/jmerrick6/InverseKinematics/FinalReport.html</a></li>
+<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/jmerrick6/InverseKinematics/FinalReport.html" target="_blank" rel="noopener noreferrer">https://github.gatech.edu/pages/jmerrick6/InverseKinematics/FinalReport.html</a></li>
 <li><strong>Contributors:</strong> Terry Barrigah, Joao Fonseca, Jackson Thomas Merrick, Anand Nagpurkar, Yash Tahiliani</li>
 </ul>
 <!-- Add more projects here as needed, each in the same format -->
@@ -667,34 +772,34 @@ https://github.com/alex-shpak/hugo-book
 <summary><strong>Project Awardees for Spring 2025</strong></summary>
 <h3 id="cegs-lime-clustering-enhanced-graph-search-lime-for-cnn-explainability">
   CEGS-LIME: Clustering-Enhanced, Graph-Search LIME for CNN Explainability
-  <a class="anchor" href="#cegs-lime-clustering-enhanced-graph-search-lime-for-cnn-explainability">#</a>
+  <a class="anchor" href="#cegs-lime-clustering-enhanced-graph-search-lime-for-cnn-explainability" target="_self" rel="noopener noreferrer">#</a>
 </h3>
 <ul>
-<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/vkulkarni46/CS-7641-ML-Project/">https://github.gatech.edu/pages/vkulkarni46/CS-7641-ML-Project/</a></li>
+<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/vkulkarni46/CS-7641-ML-Project/" target="_blank" rel="noopener noreferrer">https://github.gatech.edu/pages/vkulkarni46/CS-7641-ML-Project/</a></li>
 <li><strong>Contributors:</strong> Vineet Kulkarni, Amogh Palasamudram, Ayush Panda, Khooshrin Pithawalla, Krishna Ravishankar</li>
 </ul>
 <h3 id="advanced-quadrotor-control--stabilization">
   Advanced Quadrotor Control &amp; Stabilization
-  <a class="anchor" href="#advanced-quadrotor-control--stabilization">#</a>
+  <a class="anchor" href="#advanced-quadrotor-control--stabilization" target="_self" rel="noopener noreferrer">#</a>
 </h3>
 <ul>
-<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/xyang626/ML-7641-Quadrotor-Group/docs/index.html">https://github.gatech.edu/pages/xyang626/ML-7641-Quadrotor-Group/docs/index.html</a></li>
+<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/xyang626/ML-7641-Quadrotor-Group/docs/index.html" target="_blank" rel="noopener noreferrer">https://github.gatech.edu/pages/xyang626/ML-7641-Quadrotor-Group/docs/index.html</a></li>
 <li><strong>Contributors:</strong> Dyllon Preston, Evan Dodani, Dennis Anthony, Ajay Tak, Xinyi Yang</li>
 </ul>
 <h3 id="restaurant-review-prediction">
   Restaurant Review Prediction
-  <a class="anchor" href="#restaurant-review-prediction">#</a>
+  <a class="anchor" href="#restaurant-review-prediction" target="_self" rel="noopener noreferrer">#</a>
 </h3>
 <ul>
-<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/agoli6/restaurant-review-prediction/">https://github.gatech.edu/pages/agoli6/restaurant-review-prediction/</a></li>
+<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/agoli6/restaurant-review-prediction/" target="_blank" rel="noopener noreferrer">https://github.gatech.edu/pages/agoli6/restaurant-review-prediction/</a></li>
 <li><strong>Contributors:</strong> Venkata Goli, Jack Hayley, Vasilisa Lyubimova, Prajval Manivannan, Roderic Parson</li>
 </ul>
 <h3 id="learning-uav-state-estimator">
   Learning UAV State Estimator
-  <a class="anchor" href="#learning-uav-state-estimator">#</a>
+  <a class="anchor" href="#learning-uav-state-estimator" target="_self" rel="noopener noreferrer">#</a>
 </h3>
 <ul>
-<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/adeb40/ML-Project-Group-60/">https://github.gatech.edu/pages/adeb40/ML-Project-Group-60/</a></li>
+<li><strong>Project Website:</strong> <a href="https://github.gatech.edu/pages/adeb40/ML-Project-Group-60/" target="_blank" rel="noopener noreferrer">https://github.gatech.edu/pages/adeb40/ML-Project-Group-60/</a></li>
 <li><strong>Contributors:</strong> Aditya Deb, Benjamin Monnig, Hunter Kuperman, Tristan Thakur, Xiaomeng Ye</li>
 </ul>
 <!-- Add more projects here as needed, each in the same format -->
@@ -739,20 +844,20 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#project-awards-and-examples">Project Awards and Examples</a>
+    <li><a href="#project-awards-and-examples" target="_self" rel="noopener noreferrer">Project Awards and Examples</a>
       <ul>
-        <li><a href="#what-makes-a-project-stand-out">What makes a project stand out</a></li>
-        <li><a href="#explore-earlier-projects">Explore earlier projects</a>
+        <li><a href="#what-makes-a-project-stand-out" target="_self" rel="noopener noreferrer">What makes a project stand out</a></li>
+        <li><a href="#explore-earlier-projects" target="_self" rel="noopener noreferrer">Explore earlier projects</a>
           <ul>
-            <li><a href="#out-of-stock-recommendation-system">Out-of-Stock Recommendation System</a></li>
-            <li><a href="#predicting-life-expectancy-with-interpretative-machine-learning">Predicting Life Expectancy with Interpretative Machine Learning</a></li>
-            <li><a href="#invisigan">invisiGAN</a></li>
-            <li><a href="#wheel-leg-robot-robust-locomotion-through-deep-reinforcement-learning-and-clustering">Wheel-Leg Robot Robust Locomotion through Deep Reinforcement Learning and Clustering</a></li>
-            <li><a href="#inverse-kinematics-approximation-using-machine-learning">Inverse Kinematics Approximation Using Machine Learning</a></li>
-            <li><a href="#cegs-lime-clustering-enhanced-graph-search-lime-for-cnn-explainability">CEGS-LIME: Clustering-Enhanced, Graph-Search LIME for CNN Explainability</a></li>
-            <li><a href="#advanced-quadrotor-control--stabilization">Advanced Quadrotor Control &amp; Stabilization</a></li>
-            <li><a href="#restaurant-review-prediction">Restaurant Review Prediction</a></li>
-            <li><a href="#learning-uav-state-estimator">Learning UAV State Estimator</a></li>
+            <li><a href="#out-of-stock-recommendation-system" target="_self" rel="noopener noreferrer">Out-of-Stock Recommendation System</a></li>
+            <li><a href="#predicting-life-expectancy-with-interpretative-machine-learning" target="_self" rel="noopener noreferrer">Predicting Life Expectancy with Interpretative Machine Learning</a></li>
+            <li><a href="#invisigan" target="_self" rel="noopener noreferrer">invisiGAN</a></li>
+            <li><a href="#wheel-leg-robot-robust-locomotion-through-deep-reinforcement-learning-and-clustering" target="_self" rel="noopener noreferrer">Wheel-Leg Robot Robust Locomotion through Deep Reinforcement Learning and Clustering</a></li>
+            <li><a href="#inverse-kinematics-approximation-using-machine-learning" target="_self" rel="noopener noreferrer">Inverse Kinematics Approximation Using Machine Learning</a></li>
+            <li><a href="#cegs-lime-clustering-enhanced-graph-search-lime-for-cnn-explainability" target="_self" rel="noopener noreferrer">CEGS-LIME: Clustering-Enhanced, Graph-Search LIME for CNN Explainability</a></li>
+            <li><a href="#advanced-quadrotor-control--stabilization" target="_self" rel="noopener noreferrer">Advanced Quadrotor Control &amp; Stabilization</a></li>
+            <li><a href="#restaurant-review-prediction" target="_self" rel="noopener noreferrer">Restaurant Review Prediction</a></li>
+            <li><a href="#learning-uav-state-estimator" target="_self" rel="noopener noreferrer">Learning UAV State Estimator</a></li>
           </ul>
         </li>
       </ul>

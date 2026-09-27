@@ -1,12 +1,12 @@
 ---
-title: Individual Project
+title: Requirements
 weight: 10
 bookHidden: false
 bookFlatSection: false
 aliases:
 - /docs/grading/project-breakdown/individual/
 ---
-# Individual Project
+# Requirements
 
 [ML Class Hub](https://ml-class.cc.gatech.edu/) will give you the **required dataset**. Do not choose a different one. The final prediction question or questions depend on that dataset and will be stated separately; this website template does not decide them. This is your own project, separate from the team project.
 
@@ -20,7 +20,7 @@ Open the [rendered individual website template](../website-template/) to see the
 
 First, prepare the assigned data. Then use at least one way to keep fewer original features or create fewer new features. Run a **clustering method** twice: once using all features and once using the smaller feature version. Show the groups, use suitable class-taught measures that do not need labels, and explain what worked or failed. The [template's midterm section](../website-template/#3-midterm-finding-patterns-without-using-the-answers) walks through every subsection.
 
-Submit **one 10-minute unlisted YouTube video link** in the individual project area of ML Class Hub. Explain your work and a result in the video. There is no individual TA interview at midterm; the team midterm meeting is a separate requirement.
+Submit **one 10-minute unlisted YouTube video link** in the individual project area of ML Class Hub. Explain your work and a result in the video. There is no individual TA interview at midterm; the team midterm interview is a separate requirement and needs no video. Open [your projects in ML Class Hub](https://ml-class.cc.gatech.edu/projects/), select your individual midterm checkpoint, and save your unlisted YouTube link. Test playback while signed out and keep it available through grading.
 
 ## Final: predict the answers the course assigned
 
@@ -33,4 +33,8 @@ For **each** prediction question the course states for the dataset, test each pr
 
 ## Final TA interview and deadline
 
+The individual final is a live interview. **No individual final video is required.**
+
 Show your current website and code in the final TA meeting. Be ready to explain your data, method choices, comparisons, mistakes, and what you personally did. These are common question areas, **not a complete question list**; the TA may ask other relevant questions or request a small demonstration. There is no extra early website submission. You may keep improving the website until the final deadline on the [course schedule](../../../../course-info/course-schedule-mahdi/).
+
+Before attending, read the [Project Interview Rules](../../../../guidelines/project-interviews/), which apply to both the team midterm and individual final interviews.

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Class Homepage</title>
+    <title>Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online on Class Homepage</title>
     <link>/</link>
-    <description>Recent content in Home on Class Homepage</description>
+    <description>Recent content in Machine Learning CS 4641 &amp; 7641 - Spring 2027 - Online on Class Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -23,8 +23,7 @@ Component Course weight Quizzes 1–14 15% Midterm exam 10% Individual project 3
       
       <guid>/docs/resources/collection/</guid>
       <description>GT Resources # For any resources related to Student Engagement and Wellbeing such as Dean of Student&amp;rsquo;s contacts, Library, etc., please refer to this LINK
-Class Resources # Required Course Materials # No textbook will be required for this course, however you are strongly encouraged to complete the readings indicated for each class. You may also find the following books very helpful:
-Learning from data, by Yaser S. Abu-Mostafa Pattern recognition and machine learning, by Christopher Bishop Machine learning, by Tom Mitchell Data Mining: Concepts and Techniques, by Jiawei Han, Micheline Kamber, and Jian Pei The Elements of Statistical Learning, by Trevor Hastie, Robert Tibshirani, and Jerome Friedman Deep Learning, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville Other resources, such as machine learning toolboxes and datasets, will be provided throughout the course.</description>
+Class Resources # Main Course Reference # The main reference for this course is Pattern Recognition and Machine Learning (PRML) by Christopher M. Bishop. The course is based primarily on this book, with lecture materials and assigned readings providing additional coverage. A free official PDF is available, so purchasing a printed copy is not required.</description>
     </item>
     
     <item>
@@ -48,12 +47,12 @@ Course-created videos, notes, assessment questions, and code are for enrolled st
     </item>
     
     <item>
-      <title>Individual Project</title>
+      <title>Requirements</title>
       <link>/docs/grading/project-breakdown/individual-project/requirements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/individual-project/requirements/</guid>
-      <description>Individual Project # ML Class Hub will give you the required dataset. Do not choose a different one. The final prediction question or questions depend on that dataset and will be stated separately; this website template does not decide them. This is your own project, separate from the team project.
+      <description>Requirements # ML Class Hub will give you the required dataset. Do not choose a different one. The final prediction question or questions depend on that dataset and will be stated separately; this website template does not decide them. This is your own project, separate from the team project.
 Start with the required website template # Create your own GitHub Pages project website and register its link in ML Class Hub.</description>
     </item>
     
@@ -63,8 +62,7 @@ Start with the required website template # Create your own GitHub Pages project 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/team-project/topic-example/</guid>
-      <description>Choosing a Team Project Topic # One example across stages # Suppose a team has customer reviews and asks &amp;ldquo;Can we predict whether a review is positive or negative, and what themes appear in the reviews?&amp;rdquo; This is only an example; teams may choose other questions, datasets, and algorithms.
-Proposal: describe the data and plan to try a majority-label baseline, logistic regression, and a decision tree to predict positive/negative labels.</description>
+      <description>Choosing a Team Project Topic # Create something that matters beyond this course # A central goal of the team project is to develop your creativity through collaboration. Bring together your different backgrounds, interests, and experiences. Share ideas, brainstorm openly, question assumptions, and make room for every member to contribute. Connecting perspectives from different fields can reveal a useful question or approach that none of you would have found alone.</description>
     </item>
     
     <item>
@@ -123,7 +121,17 @@ Choose a feasible question # Identify a meaningful ML question, a lawful and obt
       
       <guid>/docs/course-info/course-schedule-mahdi/</guid>
       <description>Schedule # Important
-All deadline and due dates in this course will be at 11:59 PM ET. Scroll horizontally to see the full schedule table on mobile devices Week Dates Topics (Available on canvas) Quizzes Exam Individual &amp;amp; team projects Readings 1 Jan 11th - Jan 15th Course introduction (L1) NumPy and broadcasting (L2) Q0: L1, L2 (warmup) Individual and team projects released: Jan 15th Team project requirements and examples introduced: Jan 15th GT Honor Code Heilmeier Catechism GitHub Pages Quickstart YAML Configuration NumPy Tutorial seaborn: statistical data visualization Overleaf for GT students NumPy tutorial 2 Jan 18th - Jan 22nd Official institute holiday &amp;ndash; Martin Luther King, Jr.</description>
+All deadline and due dates in this course will be at 11:59 PM ET. Scroll horizontally to see the full schedule table on mobile devices Week Dates Topics (Available on canvas) Quizzes Exam Individual &amp;amp; team projects Readings 1 Jan 11th - Jan 15th Course introduction (L1) NumPy and broadcasting (L2) Q0: L1, L2 (warmup) Individual and team projects released: Jan 15th GT Honor Code Heilmeier Catechism GitHub Pages Quickstart YAML Configuration NumPy Tutorial seaborn: statistical data visualization Overleaf for GT students NumPy tutorial 2 Jan 18th - Jan 22nd Official institute holiday &amp;ndash; Martin Luther King, Jr.</description>
+    </item>
+    
+    <item>
+      <title>Project Interview Rules</title>
+      <link>/docs/guidelines/project-interviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/guidelines/project-interviews/</guid>
+      <description>Project Interview Rules # These rules apply to both the team midterm interview and the individual final interview.
+Camera on: every participating student must keep their camera on with their face clearly visible throughout the interview, including all members attending a team interview. If an approved accommodation or a technical problem affects this requirement, contact your assigned mentor through a private Ed Discussion post before the interview when possible (see contact instructions).</description>
     </item>
     
     <item>
@@ -152,8 +160,7 @@ Introduction and related work: refine the question and explain any justified cha
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/team-project/final/</guid>
-      <description>Team Final Report, Website, and TA Interview # Complete a paper-style report on the same team website, with supporting code and reproduction instructions. The TA interview is in the two-week final-review window; the completed website is due on the last instructional day in the course schedule. Keep the same ML Class Hub team link. The individual final is separate; see Individual Project.
-Use the rendered team website template as the minimum report structure, including the required interactive visualization.</description>
+      <description>Team Final Report, Website, and Video # Complete a paper-style report on the same team website, with supporting code and reproduction instructions. Submit one unlisted YouTube video for the entire team. There is no team final interview. See the course schedule for the separate deadlines for the team final video and completed website/report. Keep the same ML Class Hub team link. The individual final is separate; see Individual Project.</description>
     </item>
     
     <item>

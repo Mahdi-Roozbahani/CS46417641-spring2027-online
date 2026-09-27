@@ -21,7 +21,97 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   
-</head>
+<meta name="course-image-preview" content="enabled"><style>.book-brand { display: flex; flex-direction: column; align-items: center; gap: .75rem; text-align: center; }
+.book-brand > a { justify-content: center; width: 100%; line-height: 1.25; }
+.book-brand .course-image-open img { display: block; width: 8rem; height: 8rem; max-width: 100%; margin: 0; object-fit: contain; }
+.book-brand .course-image-open:focus:not(:focus-visible) { outline: none; }
+.book-brand .course-image-open { flex: none; padding: 0; border: 0; background: transparent; cursor: zoom-in; color: inherit; font: inherit; }
+.course-image-open:focus-visible, .course-image-close:focus-visible { outline: 2px solid var(--color-link); outline-offset: 3px; }
+.course-image-dialog { padding: 2.5rem 1rem 1rem; border: 1px solid var(--gray-200); border-radius: .25rem; background: var(--body-background); color: var(--body-font-color); max-width: 95vw; max-height: 95vh; }
+.course-image-dialog::backdrop { background: var(--body-font-color); opacity: .75; }
+.course-image-dialog > img { display: block; width: auto; height: auto; max-width: 88vw; max-height: 82vh; object-fit: contain; }
+.course-image-close { position: absolute; right: .5rem; top: .25rem; border: 0; background: transparent; color: inherit; font-size: 2rem; cursor: pointer; min-width: 2rem; }
+@media print { .course-image-dialog { display: none !important; } }
+</style><script>/* Used by the published site and the trusted, script-sandboxed draft wrapper. */
+window.initializeCourseImagePreview = function (doc) {
+  if (!doc.querySelector('meta[name="course-image-preview"]')) return;
+  const image = doc.querySelector('.book-brand img');
+  if (!image || image.closest('button')) return;
+  const link = image.closest('a');
+  if (!link) return;
+  const button = doc.createElement('button');
+  button.type = 'button';
+  button.className = 'course-image-open';
+  button.setAttribute('aria-label', 'Enlarge class picture');
+  link.before(button);
+  button.append(image);
+  const dialog = doc.createElement('dialog');
+  dialog.className = 'course-image-dialog';
+  dialog.setAttribute('aria-label', 'Class picture');
+  const close = doc.createElement('button');
+  close.type = 'button';
+  close.className = 'course-image-close';
+  close.setAttribute('aria-label', 'Close enlarged picture');
+  close.textContent = '\u00d7';
+  const enlarged = doc.createElement('img');
+  enlarged.alt = 'Enlarged class picture';
+  dialog.append(close, enlarged);
+  doc.body.append(dialog);
+  button.addEventListener('click', () => {
+    enlarged.src = image.currentSrc || image.src;
+    dialog.showModal();
+    close.focus();
+  });
+  close.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => button.focus());
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => window.initializeCourseImagePreview(document));
+} else {
+  window.initializeCourseImagePreview(document);
+}
+</script><style id="course-navigation-levels">/* Use the course theme's neutral palette for the sidebar hierarchy. */
+/* Let the desktop menu follow the document; retain the mobile drawer scroll. */
+@media screen and (min-width: 56.001rem) {
+  .book-menu .book-menu-content {
+    position: static;
+    overflow: visible;
+  }
+}
+
+.book-menu nav > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  font-weight: 700;
+}
+.book-menu nav > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 80%, var(--body-background));
+  font-weight: 400;
+}
+.book-menu nav > ul > li > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 85%, var(--body-background));
+  font-weight: 600;
+}
+.book-menu nav > ul > li > ul > li > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 70%, var(--body-background));
+  font-weight: 400;
+}
+.book-menu nav > ul a:hover,
+.book-menu nav > ul a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.book-menu nav > ul a.active {
+  color: var(--body-font-color);
+  background: var(--gray-100);
+  box-shadow: inset 3px 0 var(--gray-500);
+  font-weight: 700;
+  text-decoration: none;
+}
+</style></head>
 <body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
@@ -31,7 +121,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="../../../"><img src="../../../favicon.jpeg" alt="Logo" /><span>Class Homepage</span>
+  <a class="flex align-center" href="../../../" target="_self" rel="noopener noreferrer"><img src="../../../branding/ML.png" alt="Logo" /><span>Class Homepage</span>
   </a>
 </h2>
 
@@ -76,7 +166,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/course-info/course-overview/" class="">Course Overview</a>
+    <a href="../../../docs/course-info/course-overview/" class="" target="_self" rel="noopener noreferrer">Course Overview</a>
   
 
           </li>
@@ -91,7 +181,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/course-info/instructors-and-tas/" class="">People</a>
+    <a href="../../../docs/course-info/instructors-and-tas/" class="" target="_self" rel="noopener noreferrer">People</a>
   
 
           </li>
@@ -106,7 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/course-info/course-schedule-mahdi/" class="">Course Schedule (Online Max)</a>
+    <a href="../../../docs/course-info/course-schedule-mahdi/" class="" target="_self" rel="noopener noreferrer">Course Schedule (Max Mahdi)</a>
   
 
           </li>
@@ -141,7 +231,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/guidelines/general/" class="active">General</a>
+    <a href="../../../docs/guidelines/general/" class="active" target="_self" rel="noopener noreferrer">General</a>
   
 
           </li>
@@ -156,7 +246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/guidelines/office-hours/" class="">Office Hours</a>
+    <a href="../../../docs/guidelines/office-hours/" class="" target="_self" rel="noopener noreferrer">Office Hours</a>
   
 
           </li>
@@ -171,7 +261,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/guidelines/ed-discussion/" class="">Ed Discussion</a>
+    <a href="../../../docs/guidelines/project-interviews/" class="" target="_self" rel="noopener noreferrer">Project Interview Rules</a>
+  
+
+          </li>
+        
+      
+    
+      
+        
+          <li>
+            
+  
+  
+
+  
+    <a href="../../../docs/guidelines/ed-discussion/" class="" target="_self" rel="noopener noreferrer">Ed Discussion</a>
   
 
             
@@ -191,7 +296,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/guidelines/honorlock/" class="">Honorlock</a>
+    <a href="../../../docs/guidelines/honorlock/" class="" target="_self" rel="noopener noreferrer">Honorlock</a>
   
 
             
@@ -231,7 +336,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/categories/" class="">Categories</a>
+    <a href="../../../docs/grading/categories/" class="" target="_self" rel="noopener noreferrer">Categories</a>
   
 
           </li>
@@ -246,7 +351,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/qquizzes-and-exams/" class="">Quizzes and Exams</a>
+    <a href="../../../docs/grading/qquizzes-and-exams/" class="" target="_self" rel="noopener noreferrer">Quizzes and Exams</a>
   
 
             
@@ -266,7 +371,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/" class="">Projects: Individual and Team</a>
+    <a href="../../../docs/grading/project-breakdown/" class="" target="_self" rel="noopener noreferrer">Projects: Individual and Team</a>
   
 
             
@@ -280,7 +385,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/individual-project/" class="">Individual Project</a>
+    <a href="../../../docs/grading/project-breakdown/individual-project/" class="" target="_self" rel="noopener noreferrer">Individual Project</a>
   
 
             
@@ -294,7 +399,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/individual-project/requirements/" class="">Individual Project</a>
+    <a href="../../../docs/grading/project-breakdown/individual-project/requirements/" class="" target="_self" rel="noopener noreferrer">Requirements</a>
   
 
           </li>
@@ -309,7 +414,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/individual-project/website-template/" class="">Individual Project Website Template</a>
+    <a href="../../../docs/grading/project-breakdown/individual-project/website-template/" class="" target="_self" rel="noopener noreferrer">Individual Project Website Template</a>
   
 
           </li>
@@ -330,7 +435,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/" class="">Team Project</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/" class="" target="_self" rel="noopener noreferrer">Team Project</a>
   
 
             
@@ -344,7 +449,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/topic-example/" class="">Topic and Project Example</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/topic-example/" class="" target="_self" rel="noopener noreferrer">Topic and Project Example</a>
   
 
           </li>
@@ -359,7 +464,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/proposal/" class="">Team Proposal</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/proposal/" class="" target="_self" rel="noopener noreferrer">Team Proposal</a>
   
 
           </li>
@@ -374,7 +479,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/midterm/" class="">Team Midterm Review</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/midterm/" class="" target="_self" rel="noopener noreferrer">Team Midterm Review</a>
   
 
           </li>
@@ -389,7 +494,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/final/" class="">Team Final Report</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/final/" class="" target="_self" rel="noopener noreferrer">Team Final Report</a>
   
 
           </li>
@@ -404,7 +509,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/website-template/" class="">Team Project Website Template</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/website-template/" class="" target="_self" rel="noopener noreferrer">Team Project Website Template</a>
   
 
           </li>
@@ -419,7 +524,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/bonus/" class="">Bonus</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/bonus/" class="" target="_self" rel="noopener noreferrer">Bonus</a>
   
 
           </li>
@@ -434,7 +539,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/awards-and-examples/" class="">Awards and Examples</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/awards-and-examples/" class="" target="_self" rel="noopener noreferrer">Awards and Examples</a>
   
 
           </li>
@@ -483,7 +588,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/resources/collection/" class="">Collection</a>
+    <a href="../../../docs/resources/collection/" class="" target="_self" rel="noopener noreferrer">Collection</a>
   
 
           </li>
@@ -498,7 +603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/resources/print-website/" class="">Print Website</a>
+    <a href="../../../docs/resources/print-website/" class="" target="_self" rel="noopener noreferrer">Print Website</a>
   
 
           </li>
@@ -563,14 +668,14 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#general-course-policies">General Course Policies</a>
+    <li><a href="#general-course-policies" target="_self" rel="noopener noreferrer">General Course Policies</a>
       <ul>
-        <li><a href="#online-participation-and-course-materials">Online participation and course materials</a></li>
-        <li><a href="#course-platforms">Course platforms</a></li>
-        <li><a href="#deadlines-and-time-zones">Deadlines and time zones</a></li>
-        <li><a href="#academic-integrity-and-generative-ai">Academic integrity and generative AI</a></li>
-        <li><a href="#accommodations-and-exceptional-circumstances">Accommodations and exceptional circumstances</a></li>
-        <li><a href="#regrades-and-changes">Regrades and changes</a></li>
+        <li><a href="#online-participation-and-course-materials" target="_self" rel="noopener noreferrer">Online participation and course materials</a></li>
+        <li><a href="#course-platforms" target="_self" rel="noopener noreferrer">Course platforms</a></li>
+        <li><a href="#deadlines-and-time-zones" target="_self" rel="noopener noreferrer">Deadlines and time zones</a></li>
+        <li><a href="#academic-integrity-and-generative-ai" target="_self" rel="noopener noreferrer">Academic integrity and generative AI</a></li>
+        <li><a href="#accommodations-and-exceptional-circumstances" target="_self" rel="noopener noreferrer">Accommodations and exceptional circumstances</a></li>
+        <li><a href="#regrades-and-changes" target="_self" rel="noopener noreferrer">Regrades and changes</a></li>
       </ul>
     </li>
   </ul>
@@ -587,43 +692,43 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown"><h1 id="general-course-policies">
   General Course Policies
-  <a class="anchor" href="#general-course-policies">#</a>
+  <a class="anchor" href="#general-course-policies" target="_self" rel="noopener noreferrer">#</a>
 </h1>
 <h2 id="online-participation-and-course-materials">
   Online participation and course materials
-  <a class="anchor" href="#online-participation-and-course-materials">#</a>
+  <a class="anchor" href="#online-participation-and-course-materials" target="_self" rel="noopener noreferrer">#</a>
 </h2>
 <p>Core lectures are pre-recorded; live lecture attendance is not required. Study the assigned videos and notes, complete assessments within their availability windows, and work on both the individual and team projects. The schedule also links interactive visualizations and demonstrations when available.</p>
 <p>Course-created videos, notes, assessment questions, and code are for enrolled students. Do not redistribute them outside the course without written permission.</p>
 <h2 id="course-platforms">
   Course platforms
-  <a class="anchor" href="#course-platforms">#</a>
+  <a class="anchor" href="#course-platforms" target="_self" rel="noopener noreferrer">#</a>
 </h2>
 <ul>
 <li><strong>Canvas</strong> hosts lecture modules, quizzes, the midterm exam, and the gradebook. Canvas timestamps control Canvas assessment submissions.</li>
-<li><strong><a href="https://ml-class.cc.gatech.edu/">ML Class Hub</a></strong> manages project teams, project links and submissions, accommodation-document intake, and the <a href="https://ml-class.cc.gatech.edu/midterm/reference-sheet/">midterm reference-sheet PDF</a>.</li>
-<li><strong><a href="../ed-discussion/">Ed Discussion</a></strong> is the official announcement and course-question channel. Its page explains notifications, public and private posts, and assessment-discussion limits.</li>
+<li><strong><a href="https://ml-class.cc.gatech.edu/" target="_blank" rel="noopener noreferrer">ML Class Hub</a></strong> manages project teams, project links and submissions, accommodation-document intake, and the <a href="https://ml-class.cc.gatech.edu/midterm/reference-sheet/" target="_blank" rel="noopener noreferrer">midterm reference-sheet PDF</a>.</li>
+<li><strong><a href="../ed-discussion/" target="_blank" rel="noopener noreferrer">Ed Discussion</a></strong> is the official announcement and course-question channel. Its page explains notifications, public and private posts, and assessment-discussion limits.</li>
 </ul>
 <h2 id="deadlines-and-time-zones">
   Deadlines and time zones
-  <a class="anchor" href="#deadlines-and-time-zones">#</a>
+  <a class="anchor" href="#deadlines-and-time-zones" target="_self" rel="noopener noreferrer">#</a>
 </h2>
-<p>Website deadlines are 11:59 PM Eastern Time (ET), Atlanta local time, unless stated otherwise. ET changes between EST and EDT. Canvas can display deadlines in your account&rsquo;s time zone; the exact Canvas deadline controls Canvas assessments. Check and convert times before an availability window closes. The course <a href="../../course-info/course-schedule-mahdi/">schedule</a> lists weekly dates.</p>
+<p>Website deadlines are 11:59 PM Eastern Time (ET), Atlanta local time, unless stated otherwise. ET changes between EST and EDT. Canvas can display deadlines in your account&rsquo;s time zone; the exact Canvas deadline controls Canvas assessments. Check and convert times before an availability window closes. The course <a href="../../course-info/course-schedule-mahdi/" target="_blank" rel="noopener noreferrer">schedule</a> lists weekly dates.</p>
 <h2 id="academic-integrity-and-generative-ai">
   Academic integrity and generative AI
-  <a class="anchor" href="#academic-integrity-and-generative-ai">#</a>
+  <a class="anchor" href="#academic-integrity-and-generative-ai" target="_self" rel="noopener noreferrer">#</a>
 </h2>
-<p>The <a href="https://policylibrary.gatech.edu/student-life/academic-honor-code">Georgia Tech Academic Honor Code</a> applies to all work. Quizzes and the midterm must be completed independently without generative AI or unauthorized assistance; see <a href="../../grading/qquizzes-and-exams/">Quizzes and Exams</a> for permitted materials. Collaboration within a registered team and disclosed use of generative AI are allowed for the projects under the <a href="../../grading/project-breakdown/">project rules</a>. The individual project must represent the student&rsquo;s own understanding.</p>
+<p>The <a href="https://policylibrary.gatech.edu/student-life/academic-honor-code" target="_blank" rel="noopener noreferrer">Georgia Tech Academic Honor Code</a> applies to all work. Quizzes and the midterm must be completed independently without generative AI or unauthorized assistance; see <a href="../../grading/qquizzes-and-exams/" target="_blank" rel="noopener noreferrer">Quizzes and Exams</a> for permitted materials. Collaboration within a registered team and disclosed use of generative AI are allowed for the projects under the <a href="../../grading/project-breakdown/" target="_blank" rel="noopener noreferrer">project rules</a>. The individual project must represent the student&rsquo;s own understanding.</p>
 <p>For either project, disclose each AI tool, its purpose, and the scope of its contribution. Verify generated code, text, data, results, and references. Do not put sensitive, protected, regulated, confidential, licensed, or personally identifiable information into an AI system. Every citation must identify a real source that you reviewed and that supports the cited claim. Do not fabricate sources or results. Suspected violations are referred to the Georgia Tech Office of Student Integrity; that office determines responsibility under Institute procedures.</p>
 <h2 id="accommodations-and-exceptional-circumstances">
   Accommodations and exceptional circumstances
-  <a class="anchor" href="#accommodations-and-exceptional-circumstances">#</a>
+  <a class="anchor" href="#accommodations-and-exceptional-circumstances" target="_self" rel="noopener noreferrer">#</a>
 </h2>
-<p>Disability accommodations require approval through the <a href="https://disabilityservices.gatech.edu/">Office of Disability Services</a> and an official Faculty Notification Letter. Request that the letter be sent through the Institute process, then submit the ODS request and PDF in <a href="https://ml-class.cc.gatech.edu/accommodations/">ML Class Hub Accommodations</a> for course-team verification. A student-uploaded copy alone does not grant approval.</p>
-<p>For an exceptional circumstance or assessment make-up, first use the <a href="https://studentlife.gatech.edu/request-assistance">Dean of Students Request Assistance process</a>. Upload the official notification as a PDF in ML Class Hub Accommodations; an official email may be saved or printed to PDF. Then notify the team through a private Ed post identifying the affected requirement. Do not send medical records or diagnoses to course staff or Ed. An informal message alone does not approve a make-up. Contact the Institute and course team promptly; a letter received more than one week after the affected deadline cannot support a retroactive course exception under the current policy.</p>
+<p>Disability accommodations require approval through the <a href="https://disabilityservices.gatech.edu/" target="_blank" rel="noopener noreferrer">Office of Disability Services</a> and an official Faculty Notification Letter. Request that the letter be sent through the Institute process, then submit the ODS request and PDF in <a href="https://ml-class.cc.gatech.edu/accommodations/" target="_blank" rel="noopener noreferrer">ML Class Hub Accommodations</a> for course-team verification. A student-uploaded copy alone does not grant approval.</p>
+<p>For an exceptional circumstance or assessment make-up, first use the <a href="https://studentlife.gatech.edu/request-assistance" target="_blank" rel="noopener noreferrer">Dean of Students Request Assistance process</a>. Upload the official notification as a PDF in ML Class Hub Accommodations; an official email may be saved or printed to PDF. Then notify your assigned mentor through a private Ed post identifying the affected requirement; follow the <a href="../ed-discussion/#contact-your-mentor-through-ed-discussion" target="_blank" rel="noopener noreferrer">contact instructions</a>. Do not send medical records or diagnoses to course staff or Ed. An informal message alone does not approve a make-up. Contact the Institute and course team promptly; a letter received more than one week after the affected deadline cannot support a retroactive course exception under the current policy.</p>
 <h2 id="regrades-and-changes">
   Regrades and changes
-  <a class="anchor" href="#regrades-and-changes">#</a>
+  <a class="anchor" href="#regrades-and-changes" target="_self" rel="noopener noreferrer">#</a>
 </h2>
 <p>Follow the instructions and deadline published with an assessment for a specific grading correction. A full regrade can raise, leave unchanged, or lower the score. Course-wide changes are announced on Ed and reflected in the relevant course page or Canvas item.</p>
 </article>
@@ -667,14 +772,14 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#general-course-policies">General Course Policies</a>
+    <li><a href="#general-course-policies" target="_self" rel="noopener noreferrer">General Course Policies</a>
       <ul>
-        <li><a href="#online-participation-and-course-materials">Online participation and course materials</a></li>
-        <li><a href="#course-platforms">Course platforms</a></li>
-        <li><a href="#deadlines-and-time-zones">Deadlines and time zones</a></li>
-        <li><a href="#academic-integrity-and-generative-ai">Academic integrity and generative AI</a></li>
-        <li><a href="#accommodations-and-exceptional-circumstances">Accommodations and exceptional circumstances</a></li>
-        <li><a href="#regrades-and-changes">Regrades and changes</a></li>
+        <li><a href="#online-participation-and-course-materials" target="_self" rel="noopener noreferrer">Online participation and course materials</a></li>
+        <li><a href="#course-platforms" target="_self" rel="noopener noreferrer">Course platforms</a></li>
+        <li><a href="#deadlines-and-time-zones" target="_self" rel="noopener noreferrer">Deadlines and time zones</a></li>
+        <li><a href="#academic-integrity-and-generative-ai" target="_self" rel="noopener noreferrer">Academic integrity and generative AI</a></li>
+        <li><a href="#accommodations-and-exceptional-circumstances" target="_self" rel="noopener noreferrer">Accommodations and exceptional circumstances</a></li>
+        <li><a href="#regrades-and-changes" target="_self" rel="noopener noreferrer">Regrades and changes</a></li>
       </ul>
     </li>
   </ul>

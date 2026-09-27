@@ -21,7 +21,97 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   
-</head>
+<meta name="course-image-preview" content="enabled"><style>.book-brand { display: flex; flex-direction: column; align-items: center; gap: .75rem; text-align: center; }
+.book-brand > a { justify-content: center; width: 100%; line-height: 1.25; }
+.book-brand .course-image-open img { display: block; width: 8rem; height: 8rem; max-width: 100%; margin: 0; object-fit: contain; }
+.book-brand .course-image-open:focus:not(:focus-visible) { outline: none; }
+.book-brand .course-image-open { flex: none; padding: 0; border: 0; background: transparent; cursor: zoom-in; color: inherit; font: inherit; }
+.course-image-open:focus-visible, .course-image-close:focus-visible { outline: 2px solid var(--color-link); outline-offset: 3px; }
+.course-image-dialog { padding: 2.5rem 1rem 1rem; border: 1px solid var(--gray-200); border-radius: .25rem; background: var(--body-background); color: var(--body-font-color); max-width: 95vw; max-height: 95vh; }
+.course-image-dialog::backdrop { background: var(--body-font-color); opacity: .75; }
+.course-image-dialog > img { display: block; width: auto; height: auto; max-width: 88vw; max-height: 82vh; object-fit: contain; }
+.course-image-close { position: absolute; right: .5rem; top: .25rem; border: 0; background: transparent; color: inherit; font-size: 2rem; cursor: pointer; min-width: 2rem; }
+@media print { .course-image-dialog { display: none !important; } }
+</style><script>/* Used by the published site and the trusted, script-sandboxed draft wrapper. */
+window.initializeCourseImagePreview = function (doc) {
+  if (!doc.querySelector('meta[name="course-image-preview"]')) return;
+  const image = doc.querySelector('.book-brand img');
+  if (!image || image.closest('button')) return;
+  const link = image.closest('a');
+  if (!link) return;
+  const button = doc.createElement('button');
+  button.type = 'button';
+  button.className = 'course-image-open';
+  button.setAttribute('aria-label', 'Enlarge class picture');
+  link.before(button);
+  button.append(image);
+  const dialog = doc.createElement('dialog');
+  dialog.className = 'course-image-dialog';
+  dialog.setAttribute('aria-label', 'Class picture');
+  const close = doc.createElement('button');
+  close.type = 'button';
+  close.className = 'course-image-close';
+  close.setAttribute('aria-label', 'Close enlarged picture');
+  close.textContent = '\u00d7';
+  const enlarged = doc.createElement('img');
+  enlarged.alt = 'Enlarged class picture';
+  dialog.append(close, enlarged);
+  doc.body.append(dialog);
+  button.addEventListener('click', () => {
+    enlarged.src = image.currentSrc || image.src;
+    dialog.showModal();
+    close.focus();
+  });
+  close.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => button.focus());
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => window.initializeCourseImagePreview(document));
+} else {
+  window.initializeCourseImagePreview(document);
+}
+</script><style id="course-navigation-levels">/* Use the course theme's neutral palette for the sidebar hierarchy. */
+/* Let the desktop menu follow the document; retain the mobile drawer scroll. */
+@media screen and (min-width: 56.001rem) {
+  .book-menu .book-menu-content {
+    position: static;
+    overflow: visible;
+  }
+}
+
+.book-menu nav > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  font-weight: 700;
+}
+.book-menu nav > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 80%, var(--body-background));
+  font-weight: 400;
+}
+.book-menu nav > ul > li > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 85%, var(--body-background));
+  font-weight: 600;
+}
+.book-menu nav > ul > li > ul > li > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 70%, var(--body-background));
+  font-weight: 400;
+}
+.book-menu nav > ul a:hover,
+.book-menu nav > ul a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.book-menu nav > ul a.active {
+  color: var(--body-font-color);
+  background: var(--gray-100);
+  box-shadow: inset 3px 0 var(--gray-500);
+  font-weight: 700;
+  text-decoration: none;
+}
+</style></head>
 <body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
@@ -31,7 +121,7 @@ https://github.com/alex-shpak/hugo-book
         
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="../../../"><img src="../../../favicon.jpeg" alt="Logo" /><span>Class Homepage</span>
+  <a class="flex align-center" href="../../../" target="_self" rel="noopener noreferrer"><img src="../../../branding/ML.png" alt="Logo" /><span>Class Homepage</span>
   </a>
 </h2>
 
@@ -76,7 +166,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/course-info/course-overview/" class="">Course Overview</a>
+    <a href="../../../docs/course-info/course-overview/" class="" target="_self" rel="noopener noreferrer">Course Overview</a>
   
 
           </li>
@@ -91,7 +181,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/course-info/instructors-and-tas/" class="">People</a>
+    <a href="../../../docs/course-info/instructors-and-tas/" class="" target="_self" rel="noopener noreferrer">People</a>
   
 
           </li>
@@ -106,7 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/course-info/course-schedule-mahdi/" class="">Course Schedule (Online Max)</a>
+    <a href="../../../docs/course-info/course-schedule-mahdi/" class="" target="_self" rel="noopener noreferrer">Course Schedule (Max Mahdi)</a>
   
 
           </li>
@@ -141,7 +231,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/guidelines/general/" class="">General</a>
+    <a href="../../../docs/guidelines/general/" class="" target="_self" rel="noopener noreferrer">General</a>
   
 
           </li>
@@ -156,7 +246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/guidelines/office-hours/" class="active">Office Hours</a>
+    <a href="../../../docs/guidelines/office-hours/" class="active" target="_self" rel="noopener noreferrer">Office Hours</a>
   
 
           </li>
@@ -171,7 +261,22 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/guidelines/ed-discussion/" class="">Ed Discussion</a>
+    <a href="../../../docs/guidelines/project-interviews/" class="" target="_self" rel="noopener noreferrer">Project Interview Rules</a>
+  
+
+          </li>
+        
+      
+    
+      
+        
+          <li>
+            
+  
+  
+
+  
+    <a href="../../../docs/guidelines/ed-discussion/" class="" target="_self" rel="noopener noreferrer">Ed Discussion</a>
   
 
             
@@ -191,7 +296,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/guidelines/honorlock/" class="">Honorlock</a>
+    <a href="../../../docs/guidelines/honorlock/" class="" target="_self" rel="noopener noreferrer">Honorlock</a>
   
 
             
@@ -231,7 +336,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/categories/" class="">Categories</a>
+    <a href="../../../docs/grading/categories/" class="" target="_self" rel="noopener noreferrer">Categories</a>
   
 
           </li>
@@ -246,7 +351,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/qquizzes-and-exams/" class="">Quizzes and Exams</a>
+    <a href="../../../docs/grading/qquizzes-and-exams/" class="" target="_self" rel="noopener noreferrer">Quizzes and Exams</a>
   
 
             
@@ -266,7 +371,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/" class="">Projects: Individual and Team</a>
+    <a href="../../../docs/grading/project-breakdown/" class="" target="_self" rel="noopener noreferrer">Projects: Individual and Team</a>
   
 
             
@@ -280,7 +385,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/individual-project/" class="">Individual Project</a>
+    <a href="../../../docs/grading/project-breakdown/individual-project/" class="" target="_self" rel="noopener noreferrer">Individual Project</a>
   
 
             
@@ -294,7 +399,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/individual-project/requirements/" class="">Individual Project</a>
+    <a href="../../../docs/grading/project-breakdown/individual-project/requirements/" class="" target="_self" rel="noopener noreferrer">Requirements</a>
   
 
           </li>
@@ -309,7 +414,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/individual-project/website-template/" class="">Individual Project Website Template</a>
+    <a href="../../../docs/grading/project-breakdown/individual-project/website-template/" class="" target="_self" rel="noopener noreferrer">Individual Project Website Template</a>
   
 
           </li>
@@ -330,7 +435,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/" class="">Team Project</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/" class="" target="_self" rel="noopener noreferrer">Team Project</a>
   
 
             
@@ -344,7 +449,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/topic-example/" class="">Topic and Project Example</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/topic-example/" class="" target="_self" rel="noopener noreferrer">Topic and Project Example</a>
   
 
           </li>
@@ -359,7 +464,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/proposal/" class="">Team Proposal</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/proposal/" class="" target="_self" rel="noopener noreferrer">Team Proposal</a>
   
 
           </li>
@@ -374,7 +479,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/midterm/" class="">Team Midterm Review</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/midterm/" class="" target="_self" rel="noopener noreferrer">Team Midterm Review</a>
   
 
           </li>
@@ -389,7 +494,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/final/" class="">Team Final Report</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/final/" class="" target="_self" rel="noopener noreferrer">Team Final Report</a>
   
 
           </li>
@@ -404,7 +509,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/website-template/" class="">Team Project Website Template</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/website-template/" class="" target="_self" rel="noopener noreferrer">Team Project Website Template</a>
   
 
           </li>
@@ -419,7 +524,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/bonus/" class="">Bonus</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/bonus/" class="" target="_self" rel="noopener noreferrer">Bonus</a>
   
 
           </li>
@@ -434,7 +539,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/grading/project-breakdown/team-project/awards-and-examples/" class="">Awards and Examples</a>
+    <a href="../../../docs/grading/project-breakdown/team-project/awards-and-examples/" class="" target="_self" rel="noopener noreferrer">Awards and Examples</a>
   
 
           </li>
@@ -483,7 +588,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/resources/collection/" class="">Collection</a>
+    <a href="../../../docs/resources/collection/" class="" target="_self" rel="noopener noreferrer">Collection</a>
   
 
           </li>
@@ -498,7 +603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="../../../docs/resources/print-website/" class="">Print Website</a>
+    <a href="../../../docs/resources/print-website/" class="" target="_self" rel="noopener noreferrer">Print Website</a>
   
 
           </li>
@@ -563,9 +668,9 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#online-office-hours">Online Office Hours</a>
+    <li><a href="#online-office-hours" target="_self" rel="noopener noreferrer">Online Office Hours</a>
       <ul>
-        <li><a href="#joining-a-session">Joining a session</a></li>
+        <li><a href="#joining-a-session" target="_self" rel="noopener noreferrer">Joining a session</a></li>
       </ul>
     </li>
   </ul>
@@ -582,12 +687,12 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown"><h1 id="online-office-hours">
   Online Office Hours
-  <a class="anchor" href="#online-office-hours">#</a>
+  <a class="anchor" href="#online-office-hours" target="_self" rel="noopener noreferrer">#</a>
 </h1>
 <p>Office hours are optional online help sessions. They do not replace scheduled project reviews.</p>
 <h2 id="joining-a-session">
   Joining a session
-  <a class="anchor" href="#joining-a-session">#</a>
+  <a class="anchor" href="#joining-a-session" target="_self" rel="noopener noreferrer">#</a>
 </h2>
 <ol>
 <li>A TA announces the session in an Ed thread with the time and any focus topic.</li>
@@ -595,7 +700,7 @@ https://github.com/alex-shpak/hugo-book
 <li>The TA answers in the thread when useful to the class, or sends a private meeting link when screen sharing or individual discussion is needed.</li>
 <li>The TA works through the queue as time allows and posts when the session ends. Joining the queue does not guarantee service before the session ends.</li>
 </ol>
-<p>Come prepared with the relevant lecture, error, small code example, or project requirement. TAs can explain concepts, isolated errors, and requirements; they do not debug an entire repository, design a project for a team, provide active assessment answers, or pre-grade a submission. See <a href="../ed-discussion/">Ed Discussion</a> for posting and privacy rules.</p>
+<p>Come prepared with the relevant lecture, error, small code example, or project requirement. TAs can explain concepts, isolated errors, and requirements; they do not debug an entire repository, design a project for a team, provide active assessment answers, or pre-grade a submission. See <a href="../ed-discussion/" target="_blank" rel="noopener noreferrer">Ed Discussion</a> for posting and privacy rules.</p>
 </article>
  
       
@@ -637,9 +742,9 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#online-office-hours">Online Office Hours</a>
+    <li><a href="#online-office-hours" target="_self" rel="noopener noreferrer">Online Office Hours</a>
       <ul>
-        <li><a href="#joining-a-session">Joining a session</a></li>
+        <li><a href="#joining-a-session" target="_self" rel="noopener noreferrer">Joining a session</a></li>
       </ul>
     </li>
   </ul>

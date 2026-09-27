@@ -6,19 +6,19 @@
   </url><url>
     <loc>/docs/resources/collection/</loc>
   </url><url>
-    <loc>/docs/course-info/</loc>
-  </url><url>
     <loc>/docs/course-info/course-overview/</loc>
   </url><url>
     <loc>/docs/guidelines/general/</loc>
   </url><url>
     <loc>/docs/grading/project-breakdown/individual-project/</loc>
   </url><url>
+    <loc>/</loc>
+  </url><url>
     <loc>/docs/grading/project-breakdown/individual-project/requirements/</loc>
   </url><url>
     <loc>/docs/grading/project-breakdown/team-project/topic-example/</loc>
   </url><url>
-    <loc>/docs/guidelines/</loc>
+    <loc>/docs/course-info/</loc>
   </url><url>
     <loc>/docs/grading/project-breakdown/individual-project/website-template/</loc>
   </url><url>
@@ -36,9 +36,9 @@
   </url><url>
     <loc>/docs/course-info/course-schedule-mahdi/</loc>
   </url><url>
-    <loc>/docs/guidelines/ed-discussion/</loc>
+    <loc>/docs/guidelines/</loc>
   </url><url>
-    <loc>/docs/grading/</loc>
+    <loc>/docs/guidelines/project-interviews/</loc>
   </url><url>
     <loc>/docs/grading/project-breakdown/project-ta-meeting/</loc>
   </url><url>
@@ -46,11 +46,15 @@
   </url><url>
     <loc>/docs/grading/project-breakdown/team-project/midterm/</loc>
   </url><url>
+    <loc>/docs/guidelines/ed-discussion/</loc>
+  </url><url>
+    <loc>/docs/grading/</loc>
+  </url><url>
+    <loc>/docs/grading/project-breakdown/team-project/final/</loc>
+  </url><url>
     <loc>/docs/guidelines/honorlock/</loc>
   </url><url>
     <loc>/docs/resources/</loc>
-  </url><url>
-    <loc>/docs/grading/project-breakdown/team-project/final/</loc>
   </url><url>
     <loc>/docs/grading/project-breakdown/team-project/website-template/</loc>
   </url><url>
@@ -61,8 +65,6 @@
     <loc>/categories/</loc>
   </url><url>
     <loc>/docs/</loc>
-  </url><url>
-    <loc>/</loc>
   </url><url>
     <loc>/tags/</loc>
   </url>

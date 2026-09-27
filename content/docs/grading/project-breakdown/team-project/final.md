@@ -6,9 +6,9 @@ bookFlatSection: false
 aliases:
 - /docs/grading/project-breakdown/final/
 ---
-# Team Final Report, Website, and TA Interview
+# Team Final Report, Website, and Video
 
-Complete a **paper-style report on the same team website**, with supporting code and reproduction instructions. The TA interview is in the two-week final-review window; the completed website is due on the last instructional day in the [course schedule](../../../../course-info/course-schedule-mahdi/). Keep the same ML Class Hub team link. The individual final is separate; see [Individual Project](../../individual-project/requirements/).
+Complete a **paper-style report on the same team website**, with supporting code and reproduction instructions. Submit **one unlisted YouTube video for the entire team**. There is **no team final interview**. See the [course schedule](../../../../course-info/course-schedule-mahdi/) for the separate deadlines for the team final video and completed website/report. Keep the same ML Class Hub team link. The individual final is separate; see [Individual Project](../../individual-project/requirements/).
 
 Use the [rendered team website template](../website-template/) as the minimum report structure, including the required interactive visualization. You may add useful sections and features beyond it while keeping the core headings.
 
@@ -34,10 +34,13 @@ The final team website must include an interactive visualization that lets a rea
 
 The report is not subject to the proposal's 800-word limit. A working demo can help when relevant, but a polished interface does not replace valid ML evidence.
 
-## Prepared final-interview questions
+## Team final video: one link for the whole team
 
-Common questions may cover the project question, relevant prior work, data and splits, baseline, method choice, evaluation measure, one meaningful result or failure, reproducibility, and each member's contribution. These are examples, not a complete question list. The TA may ask other relevant questions about any part of the team project or request a small live demonstration. Questions are based on the team project and what the team shows during the meeting.
+Explain the project question, data, baseline, methods, meaningful results, limitations, and each member's actual contribution. Show the website, relevant code, and evidence that supports your conclusions. Every member should understand the whole project.
 
-## Final TA interview
+1. Upload the team's video to YouTube and choose **Unlisted**.
+2. Open [your projects in ML Class Hub](https://ml-class.cc.gatech.edu/projects/) and select the **team final video** checkpoint for your course.
+3. One team member saves the video link on behalf of the whole team. Do not submit a separate video for each member.
+4. Confirm that the saved link appears and plays while signed out. Keep it available through grading. Anyone with an unlisted link can watch and reshare it.
 
-Bring a working core algorithm, baseline, and preliminary results. Show the website and code, explain mathematical and experimental choices, and answer questions about results and failures. Every member must understand the whole project. Continue improving the website after the interview until the instructional-day deadline. There is no separate pre-interview upload or website freeze. Show the current team website and code during the meeting; the TA asks questions about the work the team can explain then. Later edits count toward the existing final website deadline, not toward answers given in the interview.
+The video and final website/report are separate graded components. See [Grading Categories](../../../categories/) for their weights. You may continue improving the website until the final website deadline in the [course schedule](../../../../course-info/course-schedule-mahdi/). The individual final interview remains required, and the team midterm remains a live interview with no video.

@@ -1,85 +1,64 @@
-{
-  "mode": "online",
-  "labels": {
-    "online_schedule_prefix": "Online"
-  },
-  "visibility": {
-    "features": {
-      "course_people": true,
-      "project_breakdown": false
-    },
-    "people": {
-      "instructors": true,
-      "head-tas": false,
-      "tas": false
-    }
-  },
-  "schedule": {
-    "columns": [
-      {
-        "key": "Week",
-        "label": "Week",
-        "type": "text",
-        "class": "week",
-        "width": 4
-      },
-      {
-        "key": "Dates",
-        "label": "Dates",
-        "type": "text",
-        "class": "dates",
-        "width": 9
-      },
-      {
-        "key": "Topics",
-        "label": "Topics (Available on canvas)",
-        "type": "topics",
-        "class": "topics",
-        "width": 24
-      },
-      {
-        "key": "Quizzes",
-        "label": "Quizzes",
-        "type": "list",
-        "class": "quizzes",
-        "width": 11
-      },
-      {
-        "key": "Exam",
-        "label": "Exam",
-        "type": "list",
-        "class": "exam",
-        "width": 12
-      },
-      {
-        "key": "Project",
-        "label": "Individual & team projects",
-        "type": "list",
-        "class": "project",
-        "width": 10
-      },
-      {
-        "key": "Readings",
-        "label": "Readings",
-        "type": "list",
-        "class": "readings",
-        "width": 16
-      }
-    ]
-  },
-  "grading": {
-    "policy_sections": []
-  },
-  "staff": {
-    "auto_discovery": {
-      "collections": {
-        "head-tas": {
-          "directory": "profiles/head-tas"
-        },
-        "tas": {
-          "directory": "profiles/tas"
-        }
-      }
-    }
-  }
-}
+mode: online
+labels:
+  online_schedule_prefix: Online
+visibility:
+  features:
+    course_people: true
+    project_breakdown: false
+  people:
+    instructors: true
+    head-tas: false
+    tas: false
+schedule:
+  columns:
+  - key: Week
+    label: Week
+    type: text
+    class: week
+    width: 4
+  - key: Dates
+    label: Dates
+    type: text
+    class: dates
+    width: 9
+  - key: Topics
+    label: Topics (Available on canvas)
+    type: topics
+    class: topics
+    width: 24
+  - key: Quizzes
+    label: Quizzes
+    type: list
+    class: quizzes
+    width: 11
+  - key: Exam
+    label: Exam
+    type: list
+    class: exam
+    width: 12
+  - key: Project
+    label: Individual & team projects
+    type: list
+    class: project
+    width: 10
+  - key: Readings
+    label: Readings
+    type: list
+    class: readings
+    width: 16
+grading:
+  policy_sections: []
+staff:
+  auto_discovery:
+    collections:
+      head-tas:
+        directory: profiles/head-tas
+      tas:
+        directory: profiles/tas
+links:
+  open_in_new_tab: true
+navigation:
+  colored_levels: true
+branding:
+  logo: branding/ML.png
+  enlarge_logo: true

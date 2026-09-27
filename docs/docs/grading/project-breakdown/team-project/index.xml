@@ -12,8 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/team-project/topic-example/</guid>
-      <description>Choosing a Team Project Topic # One example across stages # Suppose a team has customer reviews and asks &amp;ldquo;Can we predict whether a review is positive or negative, and what themes appear in the reviews?&amp;rdquo; This is only an example; teams may choose other questions, datasets, and algorithms.
-Proposal: describe the data and plan to try a majority-label baseline, logistic regression, and a decision tree to predict positive/negative labels.</description>
+      <description>Choosing a Team Project Topic # Create something that matters beyond this course # A central goal of the team project is to develop your creativity through collaboration. Bring together your different backgrounds, interests, and experiences. Share ideas, brainstorm openly, question assumptions, and make room for every member to contribute. Connecting perspectives from different fields can reveal a useful question or approach that none of you would have found alone.</description>
     </item>
     
     <item>
@@ -43,8 +42,7 @@ Introduction and related work: refine the question and explain any justified cha
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/grading/project-breakdown/team-project/final/</guid>
-      <description>Team Final Report, Website, and TA Interview # Complete a paper-style report on the same team website, with supporting code and reproduction instructions. The TA interview is in the two-week final-review window; the completed website is due on the last instructional day in the course schedule. Keep the same ML Class Hub team link. The individual final is separate; see Individual Project.
-Use the rendered team website template as the minimum report structure, including the required interactive visualization.</description>
+      <description>Team Final Report, Website, and Video # Complete a paper-style report on the same team website, with supporting code and reproduction instructions. Submit one unlisted YouTube video for the entire team. There is no team final interview. See the course schedule for the separate deadlines for the team final video and completed website/report. Keep the same ML Class Hub team link. The individual final is separate; see Individual Project.</description>
     </item>
     
     <item>

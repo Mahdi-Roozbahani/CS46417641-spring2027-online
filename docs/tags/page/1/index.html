@@ -6,5 +6,95 @@
     <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="0; url=../../../tags/">
-  </head>
+  <meta name="course-image-preview" content="enabled"><style>.book-brand { display: flex; flex-direction: column; align-items: center; gap: .75rem; text-align: center; }
+.book-brand > a { justify-content: center; width: 100%; line-height: 1.25; }
+.book-brand .course-image-open img { display: block; width: 8rem; height: 8rem; max-width: 100%; margin: 0; object-fit: contain; }
+.book-brand .course-image-open:focus:not(:focus-visible) { outline: none; }
+.book-brand .course-image-open { flex: none; padding: 0; border: 0; background: transparent; cursor: zoom-in; color: inherit; font: inherit; }
+.course-image-open:focus-visible, .course-image-close:focus-visible { outline: 2px solid var(--color-link); outline-offset: 3px; }
+.course-image-dialog { padding: 2.5rem 1rem 1rem; border: 1px solid var(--gray-200); border-radius: .25rem; background: var(--body-background); color: var(--body-font-color); max-width: 95vw; max-height: 95vh; }
+.course-image-dialog::backdrop { background: var(--body-font-color); opacity: .75; }
+.course-image-dialog > img { display: block; width: auto; height: auto; max-width: 88vw; max-height: 82vh; object-fit: contain; }
+.course-image-close { position: absolute; right: .5rem; top: .25rem; border: 0; background: transparent; color: inherit; font-size: 2rem; cursor: pointer; min-width: 2rem; }
+@media print { .course-image-dialog { display: none !important; } }
+</style><script>/* Used by the published site and the trusted, script-sandboxed draft wrapper. */
+window.initializeCourseImagePreview = function (doc) {
+  if (!doc.querySelector('meta[name="course-image-preview"]')) return;
+  const image = doc.querySelector('.book-brand img');
+  if (!image || image.closest('button')) return;
+  const link = image.closest('a');
+  if (!link) return;
+  const button = doc.createElement('button');
+  button.type = 'button';
+  button.className = 'course-image-open';
+  button.setAttribute('aria-label', 'Enlarge class picture');
+  link.before(button);
+  button.append(image);
+  const dialog = doc.createElement('dialog');
+  dialog.className = 'course-image-dialog';
+  dialog.setAttribute('aria-label', 'Class picture');
+  const close = doc.createElement('button');
+  close.type = 'button';
+  close.className = 'course-image-close';
+  close.setAttribute('aria-label', 'Close enlarged picture');
+  close.textContent = '\u00d7';
+  const enlarged = doc.createElement('img');
+  enlarged.alt = 'Enlarged class picture';
+  dialog.append(close, enlarged);
+  doc.body.append(dialog);
+  button.addEventListener('click', () => {
+    enlarged.src = image.currentSrc || image.src;
+    dialog.showModal();
+    close.focus();
+  });
+  close.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => button.focus());
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => window.initializeCourseImagePreview(document));
+} else {
+  window.initializeCourseImagePreview(document);
+}
+</script><style id="course-navigation-levels">/* Use the course theme's neutral palette for the sidebar hierarchy. */
+/* Let the desktop menu follow the document; retain the mobile drawer scroll. */
+@media screen and (min-width: 56.001rem) {
+  .book-menu .book-menu-content {
+    position: static;
+    overflow: visible;
+  }
+}
+
+.book-menu nav > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  font-weight: 700;
+}
+.book-menu nav > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 80%, var(--body-background));
+  font-weight: 400;
+}
+.book-menu nav > ul > li > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 85%, var(--body-background));
+  font-weight: 600;
+}
+.book-menu nav > ul > li > ul > li > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 70%, var(--body-background));
+  font-weight: 400;
+}
+.book-menu nav > ul a:hover,
+.book-menu nav > ul a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.book-menu nav > ul a.active {
+  color: var(--body-font-color);
+  background: var(--gray-100);
+  box-shadow: inset 3px 0 var(--gray-500);
+  font-weight: 700;
+  text-decoration: none;
+}
+</style></head>
 </html>

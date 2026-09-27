@@ -13,8 +13,7 @@
       
       <guid>/docs/resources/collection/</guid>
       <description>GT Resources # For any resources related to Student Engagement and Wellbeing such as Dean of Student&amp;rsquo;s contacts, Library, etc., please refer to this LINK
-Class Resources # Required Course Materials # No textbook will be required for this course, however you are strongly encouraged to complete the readings indicated for each class. You may also find the following books very helpful:
-Learning from data, by Yaser S. Abu-Mostafa Pattern recognition and machine learning, by Christopher Bishop Machine learning, by Tom Mitchell Data Mining: Concepts and Techniques, by Jiawei Han, Micheline Kamber, and Jian Pei The Elements of Statistical Learning, by Trevor Hastie, Robert Tibshirani, and Jerome Friedman Deep Learning, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville Other resources, such as machine learning toolboxes and datasets, will be provided throughout the course.</description>
+Class Resources # Main Course Reference # The main reference for this course is Pattern Recognition and Machine Learning (PRML) by Christopher M. Bishop. The course is based primarily on this book, with lecture materials and assigned readings providing additional coverage. A free official PDF is available, so purchasing a printed copy is not required.</description>
     </item>
     
     <item>

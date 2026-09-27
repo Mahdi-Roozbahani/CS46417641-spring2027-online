@@ -99,4 +99,4 @@ List the sources you actually used and cite them where they support a claim, met
 
 ## 7. AI-use disclosure
 
-If you used generative AI for this project, name the tool, what you used it for, how much of the work it affected, and what you checked yourself. Follow the course AI policy. If you did not use it, say so.
+If you used generative AI for this project, name the tool, what you used it for, how much of the work it affected, and what you checked yourself. Follow the [course AI policy](../../../../guidelines/general/#academic-integrity-and-generative-ai). If you did not use it, say so.

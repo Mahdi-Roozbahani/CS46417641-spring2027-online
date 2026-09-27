@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GT Lagrange Multiplier Studio v5</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+:root{
+  --navy:#003057; --navy2:#0b4778; --gold:#B3A369; --goldBright:#EAAA00;
+  --ink:#14304d; --muted:#5e7287; --panel:#fff; --bg:#eef3f8;
+  --blue:#3187d2; --pink:#d64086; --green:#168a63; --purple:#7f55b6;
+  --shadow:0 15px 38px rgba(4,33,68,.10);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:linear-gradient(180deg,#f6f9fc,#edf2f7);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink)}
+.wrap{max-width:1420px;margin:0 auto;padding:18px}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:28px;padding:20px 22px;box-shadow:var(--shadow)}
+.brand{display:flex;gap:15px;align-items:center}.gt{width:66px;height:66px;border-radius:17px;background:linear-gradient(180deg,#f1d37b,#d9b65b);color:#08223a;display:grid;place-items:center;font-weight:950;font-size:28px;flex:none}
+h1{margin:0;font-size:clamp(28px,4vw,48px);line-height:1.05;letter-spacing:-.03em}.hero-sub{margin-top:5px;color:rgba(255,255,255,.88);font-size:clamp(14px,1.8vw,18px);line-height:1.35;max-width:980px}
+.controls{margin-top:17px;display:grid;grid-template-columns:1.2fr auto auto auto;gap:12px;align-items:end;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.13);border-radius:22px;padding:14px}
+.control{min-width:0}.label{display:block;text-transform:uppercase;letter-spacing:.1em;font-size:11px;font-weight:900;margin-bottom:8px;color:#dfeaf5}.rangeRow{display:flex;gap:10px;align-items:center}.rangeVal{font-weight:900;font-size:22px;color:#ffe8a1;min-width:85px;text-align:right}
+input[type=range]{width:100%;appearance:none;height:12px;border-radius:999px;background:linear-gradient(90deg,#f1b702,#c8ae61,#9fc1df);outline:none}input[type=range]::-webkit-slider-thumb{appearance:none;width:28px;height:28px;border-radius:50%;background:#fff;border:5px solid var(--goldBright);box-shadow:0 0 0 8px rgba(234,170,0,.17);cursor:pointer}input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;background:#fff;border:5px solid var(--goldBright);box-shadow:0 0 0 8px rgba(234,170,0,.17);cursor:pointer}
+.btn{border:0;border-radius:15px;padding:13px 16px;font-weight:900;font-size:14px;cursor:pointer;min-height:48px}.btn.gold{background:linear-gradient(180deg,#f2d57d,#e4c266);color:#624800;border:1px solid #cca742}.btn.ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.17)}.btn.active{background:#f7f0d8;color:#806100;border-color:#dbc274}
+.statusRow{margin-top:12px;display:flex;gap:9px;flex-wrap:wrap}.pill{padding:9px 13px;border-radius:999px;font-size:13px;font-weight:850;background:#f7f1dc;color:#856300;border:1px solid #ddc77b}.pill.blue{background:#eaf4fe;color:#165e95;border-color:#b8d7ef}.pill.green{background:#e7f6f0;color:#0e7b58;border-color:#bee4d6}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;align-items:start}.panel{background:#fff;border:1px solid rgba(10,45,82,.08);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}.panelHead{padding:18px 20px 8px;display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.panelTitle{font-size:clamp(22px,2.2vw,32px);font-weight:950;line-height:1.05;color:#133454}.panelSub{margin-top:5px;color:var(--muted);line-height:1.4;font-size:14.5px;max-width:760px}.badge{padding:9px 12px;border-radius:999px;background:#f6f1df;color:#856400;border:1px solid #dcc47c;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.07em;white-space:nowrap}
+#barrierSvg{width:100%;height:auto;display:block;background:linear-gradient(180deg,#fcfdff,#f6fafe)}.svgWrap{padding:0 12px 10px}.formulas{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:0 14px 14px}.formula{background:#f7fafc;border:1px solid #e0e8f0;border-radius:17px;padding:13px}.fk{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#6a7c8e;font-weight:900}.fv{margin-top:5px;font-size:18px;color:#173b60;font-family:Cambria,"Times New Roman",serif}.fs{margin-top:5px;font-size:13px;color:#617486;line-height:1.35}.note{padding:0 16px 16px;font-size:13px;color:#617486;line-height:1.45}
+.hiddenSection{display:none!important}
+.gradBalance{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:8px 14px 16px;padding:14px 16px;border-radius:18px;background:#f6f9fc;border:1px solid #dfe8f0}
+.gradVec{display:flex;align-items:center;gap:7px;font-weight:900;font-size:15px}.gradArrow{width:52px;height:5px;border-radius:999px;position:relative}.gradArrow:after{content:'';position:absolute;top:50%;transform:translateY(-50%);border-top:8px solid transparent;border-bottom:8px solid transparent}.gradArrow.right{background:#2f80c9}.gradArrow.right:after{right:-2px;border-left:12px solid #2f80c9}.gradArrow.left{background:#c79b24}.gradArrow.left:after{left:-2px;border-right:12px solid #c79b24}.zeroBadge{padding:9px 13px;border-radius:999px;background:#e8f6ef;color:#167452;border:1px solid #b8dfcf;font-weight:950}.btn[disabled]{opacity:.45;cursor:not-allowed}
+.plotWrap{position:relative}.overlay{position:absolute;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;padding:24px;pointer-events:none}.overlayBox{max-width:520px;background:rgba(255,255,255,.95);border:1px solid #d9e4ee;border-radius:20px;padding:20px;text-align:center;box-shadow:0 15px 35px rgba(7,35,67,.12)}.overlayBox strong{display:block;font-size:20px;color:#17395e}.overlayBox span{display:block;margin-top:8px;color:#63768a;line-height:1.4}.hidden{display:none!important}
+#surface3d{width:100%;height:540px}.cameraRow{display:flex;gap:7px;flex-wrap:wrap;padding:0 14px 8px}.cam{padding:9px 12px;border-radius:12px;border:1px solid #d7e2eb;background:#f8fbfd;color:#234b70;font-weight:800;cursor:pointer}.cam:hover{background:#edf5fb}
+.saddleCallout{margin:0 14px 14px;border-radius:17px;padding:13px 14px;background:#fff8e4;border:1px solid #e1cb87;color:#785a00;line-height:1.4;font-size:14px}.saddleCallout strong{color:#5d4600}
+@media(max-width:1080px){.controls{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.formulas{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.wrap{padding:10px}.hero{padding:15px;border-radius:22px}.gt{width:52px;height:52px;font-size:22px}.controls{grid-template-columns:1fr}.grid{gap:12px;margin-top:12px}.panelHead{padding:15px 15px 8px}.svgWrap{padding:0 6px 8px}.formulas{grid-template-columns:1fr;padding:0 10px 10px}#surface3d{height:455px}.saddleCallout{margin:0 10px 10px}.cameraRow{padding:0 10px 8px}}
+</style>
+<meta name="course-image-preview" content="enabled"><style>.book-brand { display: flex; flex-direction: column; align-items: center; gap: .75rem; text-align: center; }
+.book-brand > a { justify-content: center; width: 100%; line-height: 1.25; }
+.book-brand .course-image-open img { display: block; width: 8rem; height: 8rem; max-width: 100%; margin: 0; object-fit: contain; }
+.book-brand .course-image-open:focus:not(:focus-visible) { outline: none; }
+.book-brand .course-image-open { flex: none; padding: 0; border: 0; background: transparent; cursor: zoom-in; color: inherit; font: inherit; }
+.course-image-open:focus-visible, .course-image-close:focus-visible { outline: 2px solid var(--color-link); outline-offset: 3px; }
+.course-image-dialog { padding: 2.5rem 1rem 1rem; border: 1px solid var(--gray-200); border-radius: .25rem; background: var(--body-background); color: var(--body-font-color); max-width: 95vw; max-height: 95vh; }
+.course-image-dialog::backdrop { background: var(--body-font-color); opacity: .75; }
+.course-image-dialog > img { display: block; width: auto; height: auto; max-width: 88vw; max-height: 82vh; object-fit: contain; }
+.course-image-close { position: absolute; right: .5rem; top: .25rem; border: 0; background: transparent; color: inherit; font-size: 2rem; cursor: pointer; min-width: 2rem; }
+@media print { .course-image-dialog { display: none !important; } }
+</style><script>/* Used by the published site and the trusted, script-sandboxed draft wrapper. */
+window.initializeCourseImagePreview = function (doc) {
+  if (!doc.querySelector('meta[name="course-image-preview"]')) return;
+  const image = doc.querySelector('.book-brand img');
+  if (!image || image.closest('button')) return;
+  const link = image.closest('a');
+  if (!link) return;
+  const button = doc.createElement('button');
+  button.type = 'button';
+  button.className = 'course-image-open';
+  button.setAttribute('aria-label', 'Enlarge class picture');
+  link.before(button);
+  button.append(image);
+  const dialog = doc.createElement('dialog');
+  dialog.className = 'course-image-dialog';
+  dialog.setAttribute('aria-label', 'Class picture');
+  const close = doc.createElement('button');
+  close.type = 'button';
+  close.className = 'course-image-close';
+  close.setAttribute('aria-label', 'Close enlarged picture');
+  close.textContent = '\u00d7';
+  const enlarged = doc.createElement('img');
+  enlarged.alt = 'Enlarged class picture';
+  dialog.append(close, enlarged);
+  doc.body.append(dialog);
+  button.addEventListener('click', () => {
+    enlarged.src = image.currentSrc || image.src;
+    dialog.showModal();
+    close.focus();
+  });
+  close.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => button.focus());
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => window.initializeCourseImagePreview(document));
+} else {
+  window.initializeCourseImagePreview(document);
+}
+</script><style id="course-navigation-levels">/* Use the course theme's neutral palette for the sidebar hierarchy. */
+/* Let the desktop menu follow the document; retain the mobile drawer scroll. */
+@media screen and (min-width: 56.001rem) {
+  .book-menu .book-menu-content {
+    position: static;
+    overflow: visible;
+  }
+}
+
+.book-menu nav > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  font-weight: 700;
+}
+.book-menu nav > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 80%, var(--body-background));
+  font-weight: 400;
+}
+.book-menu nav > ul > li > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 85%, var(--body-background));
+  font-weight: 600;
+}
+.book-menu nav > ul > li > ul > li > ul > li > ul > li > :is(a, span, label) {
+  color: var(--body-font-color);
+  color: color-mix(in srgb, var(--body-font-color) 70%, var(--body-background));
+  font-weight: 400;
+}
+.book-menu nav > ul a:hover,
+.book-menu nav > ul a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.book-menu nav > ul a.active {
+  color: var(--body-font-color);
+  background: var(--gray-100);
+  box-shadow: inset 3px 0 var(--gray-500);
+  font-weight: 700;
+  text-decoration: none;
+}
+</style></head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="brand"><div class="gt">GT</div><div><h1>Lagrange Multiplier Studio</h1></div></div>
+    <div class="controls">
+      <div class="control"><span class="label">Ball release position x₀</span><div class="rangeRow"><input id="startSlider" type="range" min="3.2" max="5" step="0.1" value="4.6"><span class="rangeVal" id="startVal">4.6</span></div></div>
+      <button class="btn ghost" id="constraintBtn">Add constraint x = 3</button>
+      <button class="btn gold" id="dropBtn">Drop ball</button>
+      <button class="btn ghost" id="show3dBtn" disabled>Show 3D Lagrangian</button>
+      <button class="btn ghost" id="resetBtn">Reset</button>
+    </div>
+    <div class="statusRow"><div class="pill" id="statusPill">Start unconstrained</div><div class="pill blue" id="gradPill">No constraint active</div><div class="pill green" id="lambdaPill">λ* appears after adding x = 3</div></div>
+  </section>
+
+  <section class="grid">
+    <article class="panel">
+      <div class="panelHead"><div><div class="panelTitle">1. Barrier intuition</div><div class="panelSub">At first there is only the objective <strong>f(x) = x²</strong>. Add <strong>x = 3</strong> when you are ready. At the constrained point, the two signed terms in the Lagrangian gradient point in opposite directions and cancel, so <strong>∇L = 0</strong>.</div></div><div class="badge" id="barrierBadge">unconstrained first</div></div>
+      <div class="svgWrap"><svg id="barrierSvg" viewBox="0 0 860 540" aria-label="Parabola and optional x equals 3 constraint"></svg></div>
+      <div class="formulas">
+        <div class="formula"><div class="fk">Objective</div><div class="fv">f(x) = x<sup>2</sup></div><div class="fs">Without a constraint, the minimum is x* = 0.</div></div>
+        <div class="formula"><div class="fk">Constraint</div><div class="fv">g(x) = x − 3 = 0</div><div class="fs">When activated, the only feasible x-value is x = 3.</div></div>
+        <div class="formula"><div class="fk">Lagrangian</div><div class="fv">L(x, λ) = x<sup>2</sup> − λ(x − 3)</div><div class="fs">This is activated only after the constraint is introduced.</div></div>
+        <div class="formula"><div class="fk">KKT stationarity</div><div class="fv">2x − λ = 0 and x − 3 = 0</div><div class="fs">Therefore x* = 3 and λ* = 6.</div></div>
+      </div>
+      <div class="gradBalance" id="gradBalance" style="display:none">
+        <div class="gradVec" style="color:#246fae"><span>∇f = +6</span><span class="gradArrow right"></span></div>
+        <div class="zeroBadge">∇L = ∇f − λ∇g = 0</div>
+        <div class="gradVec" style="color:#9a7200"><span class="gradArrow left"></span><span>−λ∇g = −6</span></div>
+      </div>
+      <div class="note"><strong>Important:</strong> the vertical gold line is a physical teaching analogy. Mathematically, the key condition is <strong>∇L = 0</strong>: the objective-gradient term and the signed constraint-gradient term cancel at the feasible point.</div>
+    </article>
+
+    <article class="panel hiddenSection" id="surfacePanel">
+      <div class="panelHead"><div><div class="panelTitle">2. Lagrangian surface after adding x = 3</div><div class="panelSub">This panel appears only after the constraint exists. The highlighted point (x*, λ*) = (3, 6) satisfies both components of the Lagrangian gradient, so <strong>∇L(3,6) = (0,0)</strong>.</div></div><div class="badge" id="surfaceBadge">waiting for constraint</div></div>
+      <div class="cameraRow"><button class="cam" data-cam="default">Perspective</button><button class="cam" data-cam="side">Side</button><button class="cam" data-cam="top">Top</button><button class="cam" data-cam="saddle">Saddle view</button></div>
+      <div class="plotWrap"><div id="surface3d"></div><div class="overlay" id="surfaceOverlay"><div class="overlayBox"><strong>Add the constraint x = 3</strong><span>The Lagrangian is introduced only after the constraint exists. This keeps the classroom sequence clean: unconstrained objective first, constrained problem second.</span></div></div></div>
+      <div class="saddleCallout"><strong>Main teaching point:</strong> at (x*, λ*) = (3, 6), both partial derivatives vanish: ∂L/∂x = 0 and ∂L/∂λ = 0. Therefore <strong>∇L = (0,0)</strong>. The full Lagrangian surface is still a saddle, not an ordinary minimum in both variables.</div>
+      <div class="formulas">
+        <div class="formula"><div class="fk">x component of ∇L</div><div class="fv">∂L/∂x = 2x − λ</div><div class="fs">At (3,6): 2(3) − 6 = 0.</div></div>
+        <div class="formula"><div class="fk">λ component of ∇L</div><div class="fv">∂L/∂λ = −(x − 3)</div><div class="fs">At x = 3: −(3 − 3) = 0.</div></div>
+        <div class="formula"><div class="fk">Gradient at the stationary point</div><div class="fv">∇L(3,6) = (0, 0)</div><div class="fs">This is the central stationarity condition you want students to see.</div></div>
+        <div class="formula"><div class="fk">Equivalent balance</div><div class="fv">∇f = λ∇g</div><div class="fs">Equivalently, inside ∇L = ∇f − λ∇g, the two signed terms cancel.</div></div>
+      </div>
+    </article>
+  </section>
+</div>
+<script>
+(() => {
+  'use strict';
+  const svg = document.getElementById('barrierSvg');
+  const startSlider = document.getElementById('startSlider');
+  const startVal = document.getElementById('startVal');
+  const constraintBtn = document.getElementById('constraintBtn');
+  const dropBtn = document.getElementById('dropBtn');
+  const show3dBtn = document.getElementById('show3dBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const statusPill = document.getElementById('statusPill');
+  const gradPill = document.getElementById('gradPill');
+  const lambdaPill = document.getElementById('lambdaPill');
+  const barrierBadge = document.getElementById('barrierBadge');
+  const surfaceBadge = document.getElementById('surfaceBadge');
+  const surfaceOverlay = document.getElementById('surfaceOverlay');
+  const surfaceDiv = document.getElementById('surface3d');
+  const surfacePanel = document.getElementById('surfacePanel');
+  const gradBalance = document.getElementById('gradBalance');
+  const camButtons = Array.from(document.querySelectorAll('[data-cam]'));
+
+  const C = 3;
+  const lambdaStar = 6;
+  let constrained = false;
+  let x0 = 4.6;
+  let ballX = x0;
+  let raf = null;
+  let plotReady = false;
+  let cameraMode = 'default';
+  let surfaceVisible = false;
+
+  const W = 860, H = 540, M = {l:64,r:28,t:28,b:62};
+  const xmin=-5,xmax=5,ymin=-0.4,ymax=26;
+  const f = x => x*x;
+  const sx = x => M.l + (x-xmin)/(xmax-xmin)*(W-M.l-M.r);
+  const sy = y => H-M.b - (y-ymin)/(ymax-ymin)*(H-M.t-M.b);
+
+  function curvePath(){
+    let d=''; const n=260;
+    for(let i=0;i<=n;i++){
+      const x=xmin+(xmax-xmin)*i/n, px=sx(x), py=sy(f(x));
+      d += i===0 ? `M ${px} ${py}` : ` L ${px} ${py}`;
+    }
+    return d;
+  }
+
+  function updateText(){
+    startVal.textContent=x0.toFixed(1);
+    if(constrained){
+      constraintBtn.textContent='Remove constraint';
+      constraintBtn.classList.add('active');
+      statusPill.textContent='Constrained solution: x* = 3';
+      gradPill.textContent="At x* = 3: f′(3) = 6 = λ*g′(3)";
+      lambdaPill.textContent='λ* = 6';
+      barrierBadge.textContent='constraint active at x = 3';
+      surfaceBadge.textContent='stationary saddle at (3, 6)';
+      surfaceOverlay.classList.add('hidden');
+      show3dBtn.disabled = false;
+      show3dBtn.textContent = surfaceVisible ? 'Hide 3D Lagrangian' : 'Show 3D Lagrangian';
+      gradBalance.style.display = 'flex';
+    } else {
+      constraintBtn.textContent='Add constraint x = 3';
+      constraintBtn.classList.remove('active');
+      statusPill.textContent='Start unconstrained';
+      gradPill.textContent='No constraint active';
+      lambdaPill.textContent='λ* appears after adding x = 3';
+      barrierBadge.textContent='unconstrained first';
+      surfaceBadge.textContent='waiting for constraint';
+      surfaceOverlay.classList.remove('hidden');
+      show3dBtn.disabled = true;
+      show3dBtn.textContent = 'Show 3D Lagrangian';
+      gradBalance.style.display = 'none';
+      surfaceVisible = false;
+      surfacePanel.classList.add('hiddenSection');
+    }
+  }
+
+  function drawSvg(){
+    const axisY=sy(0), cy=sy(f(ballX))-10;
+    svg.innerHTML=`
+      <defs>
+        <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#17324d" flood-opacity=".18"/></filter>
+        <marker id="arrBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2e80cc"/></marker>
+        <marker id="arrGold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c79b24"/></marker>
+      </defs>
+      <rect width="860" height="540" rx="18" fill="#fbfdff"/>
+      ${Array.from({length:8},(_,i)=>`<line x1="${M.l}" y1="${M.t+i*(H-M.t-M.b)/7}" x2="${W-M.r}" y2="${M.t+i*(H-M.t-M.b)/7}" stroke="#e8eef4"/>`).join('')}
+      ${Array.from({length:11},(_,i)=>`<line x1="${M.l+i*(W-M.l-M.r)/10}" y1="${M.t}" x2="${M.l+i*(W-M.l-M.r)/10}" y2="${H-M.b}" stroke="#edf2f6"/>`).join('')}
+      <line x1="${M.l}" y1="${axisY}" x2="${W-M.r}" y2="${axisY}" stroke="#1c3e61" stroke-width="2"/>
+      <line x1="${sx(0)}" y1="${M.t}" x2="${sx(0)}" y2="${H-M.b}" stroke="#1c3e61" stroke-width="2"/>
+      <text x="${W-25}" y="${axisY-10}" fill="#193a5d" font-size="19" font-weight="800">x</text>
+      <text x="${sx(0)+12}" y="${M.t+22}" fill="#193a5d" font-size="19" font-weight="800">f(x)</text>
+      <path d="${curvePath()}" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="${sx(0)}" cy="${sy(0)}" r="9" fill="#3187d2" stroke="#fff" stroke-width="3"/>
+      <text x="${sx(0)-94}" y="${sy(0)-16}" fill="#246da9" font-size="16" font-weight="900">minimum x = 0</text>
+      ${constrained ? `
+        <line x1="${sx(C)}" y1="${M.t}" x2="${sx(C)}" y2="${H-M.b}" stroke="#c79b24" stroke-width="5"/>
+        <text x="${sx(C)+10}" y="${H-M.b-14}" fill="#a77b00" font-size="17" font-weight="900">x = 3</text>
+        <circle cx="${sx(C)}" cy="${sy(9)}" r="10" fill="#d64086" stroke="#fff" stroke-width="3"/>
+        <text x="${sx(C)+14}" y="${sy(9)-14}" fill="#ae285f" font-size="16" font-weight="900">stationary constrained point</text>
+
+
+        <line x1="${sx(C)-10}" y1="${sy(9)+17}" x2="${sx(C)+58}" y2="${sy(9)-97}" stroke="#2e80cc" stroke-width="5" stroke-linecap="round" marker-end="url(#arrBlue)"/>
+        <text x="${sx(C)+64}" y="${sy(9)-104}" fill="#2e80cc" font-size="17" font-weight="900">∇f = +6</text>
+
+        <line x1="${sx(C)+8}" y1="${sy(9)-12}" x2="${sx(C)-58}" y2="${sy(9)+99}" stroke="#c79b24" stroke-width="5" stroke-linecap="round" marker-end="url(#arrGold)"/>
+        <text x="${sx(C)-226}" y="${sy(9)+107}" fill="#9a7200" font-size="17" font-weight="900">−λ∇g = −6</text>
+
+        <rect x="${sx(C)-76}" y="${sy(9)+126}" width="152" height="38" rx="19" fill="#e8f6ef" stroke="#b8dfcf"/>
+        <text x="${sx(C)}" y="${sy(9)+152}" text-anchor="middle" fill="#167452" font-size="18" font-weight="950">∇L = 0</text>
+      ` : ''}    <g filter="url(#shadow)"><circle cx="${sx(ballX)}" cy="${cy}" r="14" fill="#f7fbfe" stroke="#2a3d50" stroke-width="4"/><circle cx="${sx(ballX)-4}" cy="${cy-4}" r="4" fill="#fff"/></g>
+      <rect x="26" y="24" width="300" height="88" rx="17" fill="#fff" stroke="#dce5ee"/>
+      <text x="46" y="55" fill="#13395f" font-size="24" font-weight="900">${constrained ? 'Constraint ON' : 'No constraint yet'}</text>
+      <text x="46" y="82" fill="#617589" font-size="17">release x₀ = ${x0.toFixed(1)}</text>
+      <text x="46" y="104" fill="#617589" font-size="17">target = ${constrained ? 'x = 3' : 'x = 0'}</text>
+    `;
+  }
+
+  function animateBall(){
+    if(raf) cancelAnimationFrame(raf);
+    const start=ballX, target=constrained?C:0, duration=3300, begin=performance.now();
+    function frame(now){
+      const u=Math.min(1,(now-begin)/duration);
+      const ease=1-Math.pow(1-u,3);
+      ballX=start+(target-start)*ease;
+      drawSvg();
+      if(u<1) raf=requestAnimationFrame(frame);
+    }
+    raf=requestAnimationFrame(frame);
+  }
+
+  function cameras(){return{
+    default:{eye:{x:1.55,y:1.45,z:.95},up:{x:0,y:0,z:1}},
+    side:{eye:{x:0,y:2.55,z:.55},up:{x:0,y:0,z:1}},
+    top:{eye:{x:.01,y:.01,z:2.65},up:{x:0,y:1,z:0}},
+    saddle:{eye:{x:-1.55,y:1.75,z:.85},up:{x:0,y:0,z:1}}
+  }}
+
+  function lagrangianData(){
+    const xs=[], ls=[], z=[], n=60;
+    for(let i=0;i<n;i++) xs.push(-4+8*i/(n-1));
+    for(let j=0;j<n;j++) ls.push(-2+12*j/(n-1));
+    for(let j=0;j<n;j++) z.push(xs.map(x=>x*x-ls[j]*(x-C)));
+
+    const surface={type:'surface',x:xs,y:ls,z,colorscale:[[0,'#2f78ce'],[.3,'#5cc4df'],[.58,'#8fdfc6'],[.8,'#edd66d'],[1,'#ed8b66']],showscale:false,opacity:.9,hovertemplate:'x=%{x:.2f}<br>λ=%{y:.2f}<br>L=%{z:.2f}<extra></extra>'};
+
+    const crossX=[] , crossY=[], crossZ=[];
+    for(let i=0;i<140;i++){const x=-4+8*i/139;crossX.push(x);crossY.push(lambdaStar);crossZ.push(x*x-lambdaStar*(x-C));}
+    const xCross={type:'scatter3d',mode:'lines',x:crossX,y:crossY,z:crossZ,line:{color:'#0f5fa8',width:8},hoverinfo:'skip',name:'minimum in x at λ*=6'};
+
+    const lamX=[],lamY=[],lamZ=[];
+    for(let i=0;i<120;i++){const lam=-2+12*i/119;lamX.push(C);lamY.push(lam);lamZ.push(9);}
+    const flatCross={type:'scatter3d',mode:'lines',x:lamX,y:lamY,z:lamZ,line:{color:'#c79b24',width:7,dash:'dash'},hoverinfo:'skip',name:'flat along x=3'};
+
+    const point={type:'scatter3d',mode:'markers+text',x:[3],y:[6],z:[9],marker:{size:8,color:'#d64086',line:{color:'#fff',width:3}},text:['stationary saddle (3, 6, 9)'],textposition:'top center',textfont:{size:13,color:'#8f2351'},hovertemplate:'x*=3<br>λ*=6<br>L*=9<extra></extra>'};
+    return [surface,xCross,flatCross,point];
+  }
+
+  function lagrangianLayout(){
+    const cams=cameras();
+    return {margin:{l:0,r:0,t:0,b:0},paper_bgcolor:'#fff',plot_bgcolor:'#fff',showlegend:false,uirevision:'lagrange-view-v2',scene:{dragmode:'orbit',camera:cams[cameraMode],aspectmode:'manual',aspectratio:{x:1.1,y:1.05,z:.78},xaxis:{title:'x',backgroundcolor:'#f5f9fc',showbackground:true,gridcolor:'#dbe5ee',zerolinecolor:'#9cb0c3'},yaxis:{title:'λ',backgroundcolor:'#f5f9fc',showbackground:true,gridcolor:'#dbe5ee',zerolinecolor:'#9cb0c3'},zaxis:{title:'L(x, λ)',backgroundcolor:'#f5f9fc',showbackground:true,gridcolor:'#dbe5ee',zerolinecolor:'#9cb0c3'}}};
+  }
+
+  function renderSurface(){
+    Plotly.react(surfaceDiv,lagrangianData(),lagrangianLayout(),{responsive:true,displaylogo:false,scrollZoom:true,modeBarButtonsToRemove:['select2d','lasso2d','toImage']});
+  }
+
+  function activateConstraint(){
+    constrained=!constrained;
+    ballX=x0;
+    if(constrained){
+      surfaceVisible=true;
+      surfacePanel.classList.remove('hiddenSection');
+    } else {
+      surfaceVisible=false;
+      surfacePanel.classList.add('hiddenSection');
+    }
+    updateText();
+    drawSvg();
+    if(constrained){
+      requestAnimationFrame(()=>{
+        renderSurface();
+        Plotly.Plots.resize(surfaceDiv);
+      });
+    }
+  }
+
+  function toggleSurface(){
+    if(!constrained) return;
+    surfaceVisible=!surfaceVisible;
+    surfacePanel.classList.toggle('hiddenSection', !surfaceVisible);
+    show3dBtn.textContent = surfaceVisible ? 'Hide 3D Lagrangian' : 'Show 3D Lagrangian';
+    if(surfaceVisible){
+      requestAnimationFrame(()=>{
+        renderSurface();
+        Plotly.Plots.resize(surfaceDiv);
+        surfacePanel.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    }
+  }
+
+  startSlider.addEventListener('input',()=>{x0=parseFloat(startSlider.value);ballX=x0;updateText();drawSvg();});
+  constraintBtn.addEventListener('click',activateConstraint);
+  show3dBtn.addEventListener('click',toggleSurface);
+  dropBtn.addEventListener('click',animateBall);
+  resetBtn.addEventListener('click',()=>{if(raf)cancelAnimationFrame(raf);constrained=false;surfaceVisible=false;surfacePanel.classList.add('hiddenSection');x0=4.6;ballX=x0;startSlider.value='4.6';cameraMode='default';updateText();drawSvg();});
+  camButtons.forEach(btn=>btn.addEventListener('click',()=>{cameraMode=btn.dataset.cam;if(constrained&&surfaceVisible)renderSurface();}));
+  window.addEventListener('resize',()=>{if(surfaceVisible&&(plotReady||surfaceDiv.data)) Plotly.Plots.resize(surfaceDiv);});
+
+  updateText();
+  drawSvg();
+})();
+</script>
+</body>
+</html>

@@ -13,8 +13,7 @@
       ],
       "Exam": [],
       "Project": [
-        "Individual and team projects released: Jan 15th",
-        "Team project requirements and examples introduced: Jan 15th"
+        "Individual and team projects released: Jan 15th"
       ],
       "Readings": [
         "[GT Honor Code](https://policies.gatech.edu/student-life/academic-honor-code)",
@@ -38,9 +37,7 @@
         "Q1: L3; Syllabus quiz"
       ],
       "Exam": [],
-      "Project": [
-        "[Team project selection guidance](/docs/grading/project-breakdown/): Jan 19th"
-      ],
+      "Project": [],
       "Readings": [
         "[Linear Algebra Review by Zico Kolter](https://cs229.stanford.edu/section/cs229-linalg.pdf)",
         "[Stanford linear algebra review](https://cs229.stanford.edu/section/cs229-linalg.pdf)"
@@ -69,7 +66,9 @@
       "Dates": "Feb 1st - Feb 5th",
       "Topics": [
         "Information theory (L5)",
-        "Optimization (L6)",
+        "Optimization (L6) ",
+        "[Jensen Inequality Interactive Visualization](/files/interactive-visualization/jensen_concave_interactive.html)",
+        "[Lagrange Function](/files/interactive-visualization/Lagrange_Barrier_Surface_Studio_v5_CLEAN.html)",
         "Toolbox, part 2 (L7)"
       ],
       "Quizzes": [
@@ -258,7 +257,7 @@
       ],
       "Exam": [],
       "Project": [
-        "Individual and team finals: meet with your TA: Apr 12th - Apr 25th"
+        "Individual final interview: meet with your TA (no individual final video): Apr 12th - Apr 25th"
       ],
       "Readings": [
         "[Convolutional Neural Network Live Demo](https://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html)",
@@ -280,7 +279,9 @@
         "Q14: L23, L24"
       ],
       "Exam": [],
-      "Project": [],
+      "Project": [
+        "Team final video due (one unlisted YouTube link per team; no interview; 11:59 PM ET): Apr 25th"
+      ],
       "Readings": [
         "[Support vector machines](https://scikit-learn.org/stable/modules/svm.html)"
       ]
