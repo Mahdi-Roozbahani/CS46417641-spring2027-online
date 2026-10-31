@@ -43,7 +43,7 @@ input[type=range]{width:100%;appearance:none;height:12px;border-radius:999px;bac
 .course-image-open:focus-visible, .course-image-close:focus-visible { outline: 2px solid var(--color-link); outline-offset: 3px; }
 .course-image-dialog { padding: 2.5rem 1rem 1rem; border: 1px solid var(--gray-200); border-radius: .25rem; background: var(--body-background); color: var(--body-font-color); max-width: 95vw; max-height: 95vh; }
 .course-image-dialog::backdrop { background: var(--body-font-color); opacity: .75; }
-.course-image-dialog > img { display: block; width: auto; height: auto; max-width: 88vw; max-height: 82vh; object-fit: contain; }
+.course-image-dialog > img { display: block; width: auto; height: auto; max-width: min(88vw, calc(95vw - 2rem - 2px)); max-height: min(82vh, calc(100dvh - 5rem)); object-fit: contain; }
 .course-image-close { position: absolute; right: .5rem; top: .25rem; border: 0; background: transparent; color: inherit; font-size: 2rem; cursor: pointer; min-width: 2rem; }
 @media print { .course-image-dialog { display: none !important; } }
 </style><script>/* Used by the published site and the trusted, script-sandboxed draft wrapper. */

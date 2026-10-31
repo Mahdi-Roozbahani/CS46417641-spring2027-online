@@ -1,5 +1,7 @@
 ---
-title: Machine Learning CS 4641 & 7641 - Spring 2027 - Online
+title: Machine Learning CS 4641 & 7641 - Spring 2027 - Online (The class website is
+  still being heavily changed and we are working on it to make it available for Spring
+  2027 - very EXCITED)
 type: docs
 weight: 10
 bookHidden: false
