@@ -6,15 +6,7 @@ bookFlatSection: false
 ---
 # Choosing a Team Project Topic
 
-## Create something that matters beyond this course
-
-**A central goal of the team project is to develop your creativity through collaboration.** Bring together your different backgrounds, interests, and experiences. Share ideas, brainstorm openly, question assumptions, and make room for every member to contribute. Connecting perspectives from different fields can reveal a useful question or approach that none of you would have found alone.
-
-This course also gives you an opportunity that can be hard to find later: a group of people coming together because they are curious, want to learn from one another, and care about creating something worthwhile. Your motivation can be the shared purpose of the work itself, without needing an immediate financial payoff. Make the most of this time to explore an idea you believe in, encourage one another, and build something you are proud to share.
-
-Think beyond completing an assignment: who could benefit from your work, what problem could it help solve, and how would you measure whether it helps? Your project could become the starting point for a research paper, a startup, an open-source tool, or a practical solution that improves other people's lives. Start with a focused, achievable version of that idea and use experiments and evidence to decide what to pursue.
-
-Be willing to explore unexpected ideas, learn from unsuccessful experiments, and build on one another's strengths. The aim is to combine imagination with sound machine learning and honest evaluation. **These possibilities are aspirations, not additional grading requirements:** you do not need to publish a paper, launch a company, or achieve commercial success to earn full credit. Follow the [project requirements](../final/) and [grading criteria](../../../categories/).
+For the purpose of the team project and how to make the most of working together, see [Team Project: Create something that matters beyond this course](../#create-something-that-matters-beyond-this-course).
 
 ## One example across stages
 
@@ -28,7 +20,11 @@ The named algorithms and review dataset are illustrative, not required. A differ
 
 ## Choose an ambitious but feasible topic
 
-A strong topic has a clear question, data you can lawfully use, a baseline, an evaluation plan, and time for error analysis. Possible domains include language, vision, health or scientific data, recommendations, time series, security, robotics, and responsible AI. Simply calling a model API, using a fashionable dataset, or promising high accuracy is not enough. Ask what your project will teach someone that a straightforward baseline cannot.
+**Any project with a substantive AI component is welcome.** You may work on classical machine learning, deep learning, natural language processing (NLP), reinforcement learning, computer vision, generative AI, robotics, recommender systems, or any other AI area. Applications may involve health or scientific data, time series, security, responsible AI, or another domain that interests your team.
+
+**You are allowed and encouraged to use topics, algorithms, and methods that are not covered in this course.** Going beyond the syllabus to learn new material and apply it thoughtfully is a valuable part of the team project. Explain how your chosen methods work, why they fit your question, and what the evidence shows. Meet the published [proposal](../proposal/), [midterm](../midterm/), and [final](../final/) requirements, including the method expectations for your course level.
+
+A strong topic has a clear question, data you can lawfully use, a baseline, an evaluation plan, and time for error analysis. Simply calling a model API, using a fashionable dataset, or promising high accuracy is not enough. Ask what your project will teach someone that a straightforward baseline cannot.
 
 Originality can come from a new question, data source, application setting, careful comparison, method adaptation, evaluation under realistic constraints, or a usable system. Novelty is encouraged, **not required for full credit**. A careful, reproducible study can be excellent even when its models are established. The [past awardees](../awards-and-examples/) offer inspiration, not templates to copy; some older Georgia Tech links require sign-in.
 
