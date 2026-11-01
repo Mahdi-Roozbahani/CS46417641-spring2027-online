@@ -10,7 +10,7 @@ bookHidden: false
 
 {{< hint info >}}
 **Important**  
-All deadline and due dates in this course will be at 11:59 PM ET.
+Unless explicitly stated otherwise, deadlines and due dates listed on this website are **11:59 PM Anywhere on Earth (AoE, UTC-12)**. AoE does not change for daylight saving time. See [AoE conversions and daylight saving guidance](../../guidelines/general/#deadlines-and-time-zones). For Canvas assessments, check the exact due and availability closing times in Canvas.
 {{< /hint >}}
 
 {{< hint warning >}}
