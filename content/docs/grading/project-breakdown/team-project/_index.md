@@ -16,6 +16,19 @@ Think beyond completing an assignment: who could benefit from your work, what pr
 
 Be willing to explore unexpected ideas, learn from unsuccessful experiments, and build on one another's strengths. The aim is to combine imagination with sound machine learning and honest evaluation. **These possibilities are aspirations, not additional grading requirements:** you do not need to publish a paper, launch a company, or achieve commercial success to earn full credit. Follow the [project requirements](final/) and [grading criteria](../../categories/).
 
+## How the team project is graded
+
+**Higher accuracy does not automatically mean a higher grade.** We grade the team's understanding, the quality and depth of the work it creates, and how thoughtfully its ideas and components come together to address a meaningful problem. In particular, we look for:
+
+- **Understanding:** each member can explain the project, the methods and design decisions, the results, and their limitations, including their own contribution to the work.
+- **Effort and iteration:** substantive, documented work investigating the problem, comparing alternatives, diagnosing issues, and improving the approach. Explain what you learned from experiments that did not work as expected.
+- **Creativity and problem-solving:** thoughtful questions, well-motivated choices, and useful connections between ideas and methods that help the project address its problem. Originality is encouraged; a novel algorithm is not required for full credit.
+- **Collaboration:** meaningful contributions from team members, learning from one another, and integrating those contributions into a coherent project that the team understands.
+
+**Accuracy and other evaluation metrics still matter as evidence.** Choose measures appropriate to your question, evaluate the required methods and baselines fairly, compare the results, and explain errors, tradeoffs, and limitations. Report results honestly, including weak or unsuccessful ones. A careful explanation of modest results can demonstrate substantial understanding; a high number by itself does not establish the quality of the project.
+
+Complete the published checkpoint requirements and use the [grading breakdown](../../categories/) for the course weights.
+
 ## Explore beyond the course
 
 Your team may pursue **any project with a substantive AI component**. Topics and methods beyond the syllabus are **allowed and encouraged**: learning new material and applying it thoughtfully is part of the purpose of the project. See [Choosing a Team Project Topic](topic-example/#choose-an-ambitious-but-feasible-topic) for examples of AI areas and guidance on planning a feasible project. The published course-level project requirements still apply.

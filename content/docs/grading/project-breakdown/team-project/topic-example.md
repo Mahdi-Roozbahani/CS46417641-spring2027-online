@@ -8,6 +8,8 @@ bookFlatSection: false
 
 For the purpose of the team project and how to make the most of working together, see [Team Project: Create something that matters beyond this course](../#create-something-that-matters-beyond-this-course).
 
+**Higher accuracy does not automatically mean a higher grade.** The project is assessed through understanding, substantive documented effort, creativity, collaboration, and thoughtful evaluation. See [how the team project is graded](../#how-the-team-project-is-graded).
+
 ## One example across stages
 
 Suppose a team has customer reviews and asks **"Can we predict whether a review is positive or negative, and what themes appear in the reviews?"** This is only an example; teams may choose other questions, datasets, and algorithms.
