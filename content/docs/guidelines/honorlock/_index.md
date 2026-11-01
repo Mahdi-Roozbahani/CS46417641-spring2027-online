@@ -19,6 +19,19 @@ This page covers proctoring setup and technical incidents. See [Quizzes and Exam
 
 Before each assessment, confirm that your camera and microphone work, disconnect external monitors and unauthorized devices, close communication, recording, remote-access, and AI applications, and launch from the Honorlock-enabled Canvas link.
 
+## Academic Integrity Warning: Cheating and Proctoring Violations
+
+**Unauthorized assistance and attempts to bypass proctoring are serious academic-integrity concerns. Suspected violations are referred to the Georgia Tech Office of Student Integrity under Institute procedures.**
+
+- **Keep your head facing the assessment screen and your face clearly visible.** Sit upright in a well-lit room with your full face centered in the camera view. Keep your attention on the assessment and explicitly permitted materials. Do not repeatedly turn your head or look away toward unauthorized notes, screens, devices, or other people. Normal blinking, reading across the screen, and consulting explicitly permitted materials are expected; you do not need to hold your eyes or head motionless. Leaving the camera frame can trigger an Honorlock flag, and repeated head turns or prolonged off-screen glances may be reviewed by the teaching team in context.
+- **No messaging, social media, calls, or outside help.** Do not use WhatsApp, Telegram, Signal, SMS/iMessage, Discord, Slack, Microsoft Teams, Zoom, email, Facebook, Instagram, Snapchat, or any other messaging, calling, or social-media service during a quiz or the midterm. Close these applications before starting. Do not communicate with classmates, friends, tutors, paid helpers, or anyone else about an active assessment. Use only the built-in Honorlock support channel for technical assistance, as described below.
+- **No AI assistance or question/answer handoffs.** Do not use ChatGPT, Claude, Gemini, Copilot, or any other AI assistant, chatbot, browser assistant, or AI application during an assessment. Do not photograph, screenshot, copy, dictate, forward, stream, or otherwise hand off assessment questions or answers to another person, group, service, or AI system, or receive answers or guidance from them. This prohibition applies across all devices, accounts, browsers, and applications, including indirect handoffs through another person.
+- **Do not bypass or interfere with Honorlock.** Virtual machines, remote desktop, screen sharing, second devices, unauthorized browser environments, remote assistance, and any other method of evading proctoring or obtaining unauthorized help are prohibited.
+
+An automated Honorlock flag alone is not a misconduct finding; the team reviews relevant recordings and logs in context. Do not assume that an unflagged action is permitted.
+
+Approved disability accommodations are implemented with the Office of Disability Services. See [General Course Policies](../general/) for the approval and Hub-document process.
+
 ## Websites during an assessment
 
 Do not browse websites during a quiz or the midterm. The only sites permitted in the proctored browser are Canvas/Honorlock and, **for the midterm only**, the authorized ML Class Hub link to your own reference sheet. Other Hub pages are not permitted. Do not use a second device or another browser to reach a blocked site. If the reference-sheet link does not open during the midterm, contact Honorlock live support immediately instead of bypassing the restriction, then report the incident to your assigned mentor in a private Ed post after the attempt.
@@ -30,9 +43,3 @@ Do not browse websites during a quiz or the midterm. The only sites permitted in
 If Canvas asks for an access code, do not request one from another student or the team. Exit before beginning, confirm Chrome and the Honorlock extension are active, then relaunch through the Honorlock-enabled Canvas link. Contact Honorlock live support if the problem continues.
 
 If a problem occurs during an attempt, contact Honorlock live support immediately, follow its instructions, preserve the case number, and submit a private Ed post to your assigned mentor promptly afterward with the assessment name, time, and factual description. Do not open an unauthorized app or device to troubleshoot. A technical incident does not automatically grant another attempt; the team reviews the available records.
-
-## Assessment security and review
-
-Do not bypass or interfere with Honorlock using a virtual machine, remote desktop, screen sharing, second device, unauthorized browser environment, or another method. Suspected violations are referred to the Georgia Tech Office of Student Integrity under Institute procedures. An automated Honorlock flag alone is not a misconduct finding; the team reviews relevant recordings and logs.
-
-Approved disability accommodations are implemented with the Office of Disability Services. See [General Course Policies](../general/) for the approval and Hub-document process.
