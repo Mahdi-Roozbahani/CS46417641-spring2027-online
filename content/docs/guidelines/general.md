@@ -20,7 +20,18 @@ Course-created videos, notes, assessment questions, and code are for enrolled st
 
 ## Deadlines and time zones
 
-Website deadlines are 11:59 PM Eastern Time (ET), Atlanta local time, unless stated otherwise. ET changes between EST and EDT. Canvas can display deadlines in your account's time zone; the exact Canvas deadline controls Canvas assessments. Check and convert times before an availability window closes. The course [schedule](../../course-info/course-schedule-mahdi/) lists weekly dates.
+**Unless a different time or time zone is explicitly stated, website deadlines are 11:59 PM Anywhere on Earth (AoE, UTC-12) on the listed date.** AoE means the date has ended everywhere on Earth. It is one fixed worldwide deadline, not 11:59 PM in your own time zone. AoE stays at UTC-12 all year and does not observe daylight saving time.
+
+For illustration only, these are equivalent times for two hypothetical deadlines:
+
+| Website deadline (AoE) | UTC equivalent | Atlanta local time (ET) |
+| --- | --- | --- |
+| February 14, 2027, 11:59 PM AoE | February 15, 2027, 11:59 AM UTC | February 15, 2027, 6:59 AM EST |
+| March 21, 2027, 11:59 PM AoE | March 22, 2027, 11:59 AM UTC | March 22, 2027, 7:59 AM EDT |
+
+**Pay close attention to daylight saving time (DST): your local conversion can change during the semester even though AoE does not.** Atlanta uses Eastern Standard Time (EST, UTC-5) in winter and Eastern Daylight Time (EDT, UTC-4) during DST. Under the current U.S. rules, clocks move forward on the second Sunday in March at 2:00 AM (2:00 AM becomes 3:00 AM) and back on the first Sunday in November at 2:00 AM (2:00 AM becomes 1:00 AM). In 2027, those dates are **March 14** and **November 7**. Other countries may change clocks on different dates or not at all. Convert each deadline using the time zone and daylight saving rules in effect on that date; do not reuse a fixed offset throughout the term.
+
+**Canvas assessments follow the exact due date and availability closing time shown in Canvas.** Canvas may display those times in your account's time zone. The website's AoE convention does not extend a Canvas availability window. Check the date, time zone, due time, and closing time before starting an attempt, and submit before the applicable deadline. You are responsible for checking and converting all deadlines carefully, especially around clock changes. The course [schedule](../../course-info/course-schedule-mahdi/) lists weekly dates.
 
 ## Academic integrity and generative AI
 
