@@ -6,7 +6,7 @@ bookFlatSection: false
 ---
 # Honorlock and Proctored Assessments
 
-This page covers proctoring setup and technical incidents. See [Quizzes and Exams](../../grading/qquizzes-and-exams/) for assessment content, permitted materials, and the midterm reference-sheet policy.
+These Honorlock instructions apply to graded online quizzes in all sections and to the CS 7641 online midterm. CS 4641 O1 takes the midterm in person during its assigned campus meeting. See [Quizzes and Exams](../../grading/qquizzes-and-exams/) for assessment content, permitted materials, and the midterm reference-sheet policy.
 
 ## Prepare with Quiz 0
 

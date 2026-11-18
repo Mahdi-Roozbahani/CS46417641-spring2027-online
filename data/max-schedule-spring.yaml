@@ -173,14 +173,15 @@
     },
     {
       "Week": 10,
+      "InPersonMidtermSections": ["CS-4641-O1"],
       "Dates": "Mar 15th - Mar 19th",
       "Topics": [
         "Midterm review"
       ],
       "Quizzes": [],
       "Exam": [
-        "Midterm exam opens: through L14; Canvas has exam instructions: Mar 15th",
-        "Midterm exam closes (11:59 PM AoE): Mar 21st"
+        "Midterm exam opens for CS 7641 online sections on Mar 15th (through L14).",
+        "Midterm exam closes for CS 7641 online sections on Mar 21st at 11:59 PM AoE. CS 4641 O1 takes the midterm in person at its assigned campus meeting. Check BuzzPort for the time and room."
       ],
       "Project": [
         "Team midterm review (update your website before your meeting): Mar 15th - Mar 28th"
