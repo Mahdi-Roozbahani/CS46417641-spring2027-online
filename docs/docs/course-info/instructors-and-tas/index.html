@@ -32,17 +32,11 @@ https://github.com/alex-shpak/hugo-book
 @media print { .course-image-dialog { display: none !important; } }
 </style><script>/* Used by the published site and the trusted, script-sandboxed draft wrapper. */
 window.initializeCourseImagePreview = function (doc) {
-  if (!doc.querySelector('meta[name="course-image-preview"]')) return;
-  const image = doc.querySelector('.book-brand img');
-  if (!image || image.closest('button')) return;
-  const link = image.closest('a');
-  if (!link) return;
-  const button = doc.createElement('button');
-  button.type = 'button';
-  button.className = 'course-image-open';
-  button.setAttribute('aria-label', 'Enlarge class picture');
-  link.before(button);
-  button.append(image);
+  const logoEnabled = doc.querySelector('meta[name="course-image-preview"]');
+  const logo = logoEnabled && doc.querySelector('.book-brand a img');
+  const portraits = doc.querySelectorAll('.profile-grid img.profile-pic');
+  if ((!logo && !portraits.length) || doc.querySelector('.course-image-dialog')) return;
+  let opener;
   const dialog = doc.createElement('dialog');
   dialog.className = 'course-image-dialog';
   dialog.setAttribute('aria-label', 'Class picture');
@@ -55,14 +49,31 @@ window.initializeCourseImagePreview = function (doc) {
   enlarged.alt = 'Enlarged class picture';
   dialog.append(close, enlarged);
   doc.body.append(dialog);
-  button.addEventListener('click', () => {
-    enlarged.src = image.currentSrc || image.src;
-    dialog.showModal();
-    close.focus();
-  });
+  function enable(image, isPortrait) {
+    const button = doc.createElement('button');
+    button.type = 'button';
+    button.className = 'course-image-open';
+    const label = isPortrait ? image.alt || 'Profile picture' : 'Class picture';
+    button.setAttribute('aria-label', isPortrait ? 'Enlarge ' + label : 'Enlarge class picture');
+    button.setAttribute('aria-haspopup', 'dialog');
+    const target = isPortrait ? image : image.closest('a');
+    target.before(button);
+    button.append(image);
+    button.addEventListener('click', () => {
+      opener = button;
+      enlarged.alt = label;
+      enlarged.src = image.currentSrc || image.src;
+      dialog.setAttribute('aria-label', label);
+      dialog.classList.toggle('course-portrait-dialog', isPortrait);
+      dialog.showModal();
+      close.focus();
+    });
+  }
+  if (logo) enable(logo, false);
+  portraits.forEach(image => enable(image, true));
   close.addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
-  dialog.addEventListener('close', () => button.focus());
+  dialog.addEventListener('close', () => opener?.focus());
 };
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => window.initializeCourseImagePreview(document));
@@ -108,6 +119,61 @@ if (document.readyState === 'loading') {
   box-shadow: inset 3px 0 var(--gray-500);
   font-weight: 700;
   text-decoration: none;
+}
+</style><style>@media screen {
+  main.container:has(article .profile-grid) {
+    max-width: 120rem;
+  }
+
+  .book-page:has(.profile-grid) {
+    min-width: 0;
+  }
+
+  .book-page:has(.profile-grid) + .book-toc:has(a:only-of-type[href="#people"]):not(:has(li:nth-child(2), li li)) {
+    display: none;
+  }
+
+  .markdown .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+    gap: .75rem;
+  }
+
+  .markdown .profile-grid .profile {
+    min-width: 0;
+    gap: .75rem;
+    padding: .75rem;
+    border: 1px solid var(--gray-200);
+    border-radius: .375rem;
+  }
+
+  .profile-grid .course-image-open {
+    flex: none;
+    display: block;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    cursor: zoom-in;
+  }
+
+  dialog.course-portrait-dialog > img {
+    width: min(32rem, 80vw);
+  }
+
+  .markdown .profile-grid .profile-pic {
+    display: block;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .markdown .profile-grid .profile > div {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
 }
 </style></head>
 <body dir="ltr">

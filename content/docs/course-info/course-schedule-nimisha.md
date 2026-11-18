@@ -10,7 +10,7 @@ bookHidden: false
 
 {{< hint info >}}
 **Important**  
-All deadline and due dates in this course will be at 11:59 PM ET.
+All deadline and due dates in this course will be at 11:59 PM AoE.
 {{< /hint >}}
 
 {{< hint warning >}}
